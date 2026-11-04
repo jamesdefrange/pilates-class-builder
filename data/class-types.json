@@ -156,7 +156,7 @@
         "standingHop": 4,
         "shortHopPerMinute": 2.5,
         "shareDeviation": 25,
-        "springChange": 2.2,
+        "springChange": 3.2,
         "springDropFactor": 0.5,
         "familyRepeat": 2,
         "muscleRepeat": 0.6,

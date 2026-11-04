@@ -2855,7 +2855,8 @@
       ],
       "prepares": [
         "shoulder-extension",
-        "scapular-control"
+        "scapular-control",
+        "shoulder-stability"
       ],
       "reps": "x10",
       "minutes": {
@@ -3116,7 +3117,8 @@
       ],
       "prepares": [
         "shoulder-mobility",
-        "core-stability"
+        "core-stability",
+        "chest-opening"
       ],
       "reps": "x8",
       "minutes": {
@@ -3168,7 +3170,9 @@
       ],
       "prepares": [
         "shoulder-extension",
-        "scapular-control"
+        "scapular-control",
+        "chest-opening",
+        "spinal-extension"
       ],
       "reps": "x8",
       "minutes": {
@@ -3218,7 +3222,8 @@
         "shoulders"
       ],
       "prepares": [
-        "scapular-control"
+        "scapular-control",
+        "chest-opening"
       ],
       "reps": "x10",
       "minutes": {
@@ -3321,7 +3326,8 @@
         "biceps"
       ],
       "prepares": [
-        "scapular-control"
+        "scapular-control",
+        "shoulder-stability"
       ],
       "reps": "x10",
       "minutes": {
@@ -3372,7 +3378,8 @@
         "upper-back"
       ],
       "prepares": [
-        "shoulder-mobility"
+        "shoulder-mobility",
+        "shoulder-stability"
       ],
       "reps": "x8",
       "minutes": {
@@ -3424,7 +3431,8 @@
       ],
       "prepares": [
         "shoulder-mobility",
-        "scapular-control"
+        "scapular-control",
+        "chest-opening"
       ],
       "reps": "x8",
       "minutes": {
@@ -3479,7 +3487,8 @@
       "prepares": [
         "shoulder-extension",
         "spinal-extension",
-        "balance"
+        "balance",
+        "chest-opening"
       ],
       "reps": "x8",
       "minutes": {
@@ -3744,7 +3753,8 @@
         "abdominals"
       ],
       "prepares": [
-        "scapular-control"
+        "scapular-control",
+        "shoulder-stability"
       ],
       "reps": "x10",
       "minutes": {
@@ -5469,7 +5479,8 @@
       ],
       "prepares": [
         "spinal-extension",
-        "shoulder-extension"
+        "shoulder-extension",
+        "chest-opening"
       ],
       "reps": "x6",
       "minutes": {
@@ -6200,7 +6211,9 @@
       ],
       "prepares": [
         "shoulder-extension",
-        "scapular-control"
+        "scapular-control",
+        "chest-opening",
+        "spinal-extension"
       ],
       "reps": "x8",
       "minutes": {
@@ -6250,7 +6263,8 @@
         "shoulders"
       ],
       "prepares": [
-        "scapular-control"
+        "scapular-control",
+        "shoulder-stability"
       ],
       "reps": "x8",
       "minutes": {
@@ -7079,7 +7093,8 @@
       ],
       "prepares": [
         "shoulder-extension",
-        "scapular-control"
+        "scapular-control",
+        "chest-opening"
       ],
       "reps": "x8",
       "minutes": {
@@ -9729,7 +9744,8 @@
         "abdominals"
       ],
       "prepares": [
-        "scapular-control"
+        "scapular-control",
+        "shoulder-stability"
       ],
       "reps": "x10",
       "minutes": {
@@ -10244,7 +10260,8 @@
       ],
       "secondary": [],
       "prepares": [
-        "scapular-control"
+        "scapular-control",
+        "chest-opening"
       ],
       "reps": "x10",
       "minutes": {
@@ -10298,7 +10315,8 @@
       ],
       "prepares": [
         "shoulder-mobility",
-        "core-stability"
+        "core-stability",
+        "shoulder-stability"
       ],
       "reps": "x10",
       "minutes": {
@@ -10350,7 +10368,9 @@
         "upper-back"
       ],
       "prepares": [
-        "scapular-control"
+        "scapular-control",
+        "shoulder-stability",
+        "chest-opening"
       ],
       "reps": "x10",
       "minutes": {
@@ -10401,7 +10421,8 @@
       ],
       "secondary": [],
       "prepares": [
-        "shoulder-mobility"
+        "shoulder-mobility",
+        "shoulder-stability"
       ],
       "reps": "x10",
       "minutes": {
@@ -11839,7 +11860,8 @@
       ],
       "prepares": [
         "shoulder-extension",
-        "scapular-control"
+        "scapular-control",
+        "chest-opening"
       ],
       "reps": "x8",
       "minutes": {
@@ -11939,7 +11961,8 @@
       ],
       "secondary": [],
       "prepares": [
-        "scapular-control"
+        "scapular-control",
+        "chest-opening"
       ],
       "reps": "x10",
       "minutes": {
@@ -11987,7 +12010,8 @@
       ],
       "secondary": [],
       "prepares": [
-        "shoulder-extension"
+        "shoulder-extension",
+        "shoulder-stability"
       ],
       "reps": "x10",
       "minutes": {
@@ -12089,7 +12113,8 @@
         "shoulders"
       ],
       "prepares": [
-        "scapular-control"
+        "scapular-control",
+        "shoulder-stability"
       ],
       "reps": "x10",
       "minutes": {
@@ -12402,7 +12427,8 @@
       ],
       "prepares": [
         "shoulder-extension",
-        "core-stability"
+        "core-stability",
+        "chest-opening"
       ],
       "reps": "x8 ea move",
       "minutes": {

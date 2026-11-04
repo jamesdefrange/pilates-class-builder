@@ -77,3 +77,5 @@ Every judgment call made during the overnight build, with the reason. Newest sec
 ## Publishing
 
 - **Published to GitHub Pages from a public repo** at https://jamesdefrange.github.io/pilates-class-builder/ because the brief asked for it and the free plan needs a public repo. Contents are not sensitive.
+- **Spring changes tuned down.** Raising the spring change weight from 2.2 to 3.2 cut the average from 7.5 to about 6.4 per class with no loss of variety. 4.5 cut it to 5.3 but weakened peak preparation and stopped honoring Jay's equipment percentages, so 3.2 was kept.
+- **Upper body prep tags enriched.** Chest expansion, rows and similar now also count as opening the chest or steadying the shoulders, which they do. This keeps swan and push-up classes well prepared.
