@@ -1,0 +1,45 @@
+/* Cue card: US Letter landscape, two columns, folds in half.
+   Left half is the first half of class, right half the second half.
+   js/print.js shrinks --s (type and thumbnails) until everything fits on one sheet. */
+@page { size: letter landscape; margin: 0.3in; }
+
+.card-page { width: 10.4in; height: 7.86in; overflow: hidden; background: #fff; break-after: avoid; page-break-after: avoid; }
+.card {
+  --s: 1;
+  width: 10.4in; height: 7.86in; display: grid; grid-template-columns: 1fr 0.32in 1fr;
+  color: #000; background: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: calc(8.8pt * var(--s)); line-height: 1.22;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.card-col { height: 7.86in; overflow: hidden; display: flex; flex-direction: column; }
+.card-fold { position: relative; }
+.card-fold::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; border-left: 1px dashed #9a9a9a; }
+.card-head { border-bottom: 2px solid #000; padding-bottom: calc(3pt * var(--s)); margin-bottom: calc(4pt * var(--s)); }
+.card-title { font-size: calc(12pt * var(--s)); font-weight: 800; }
+.card-sub { font-size: calc(8pt * var(--s)); }
+.card-block { margin-bottom: calc(4pt * var(--s)); break-inside: avoid; }
+.card-bh {
+  display: flex; justify-content: space-between; gap: 6pt; align-items: baseline;
+  background: #000; color: #fff; padding: calc(1.5pt * var(--s)) calc(4pt * var(--s));
+  font-weight: 800; font-size: calc(8.6pt * var(--s));
+}
+.card-bh span:last-child { font-weight: 600; white-space: nowrap; }
+.cx { display: grid; grid-template-columns: calc(0.5in * var(--s)) 1fr; gap: calc(4pt * var(--s)); padding: calc(2pt * var(--s)) 0; border-bottom: 1px solid #c8c8c8; }
+.cx img { width: calc(0.5in * var(--s)); height: calc(0.5in * var(--s)); object-fit: cover; border: 1px solid #bbb; background: #fff; }
+.cx-top { display: flex; justify-content: space-between; gap: 6pt; }
+.cx-top b { font-size: calc(9.2pt * var(--s)); }
+.cx-time { font-weight: 800; white-space: nowrap; }
+.cx-meta { font-size: calc(7.8pt * var(--s)); }
+.cx-cues { font-size: calc(8pt * var(--s)); }
+.cx.peak { border-left: 3pt solid #000; padding-left: 3pt; }
+.cx.peak b::after { content: "  PEAK"; font-size: calc(7pt * var(--s)); letter-spacing: .05em; }
+.card-key { margin-top: auto; border-top: 2px solid #000; padding-top: calc(3pt * var(--s)); font-size: calc(7.2pt * var(--s)); }
+.card-key b { font-weight: 800; }
+
+@media print {
+  html, body { background: #fff !important; margin: 0 !important; }
+  .toast, .modal-back, .no-print { display: none !important; }
+  body.has-card .topbar, body.has-card main, body.has-card .footer { display: none !important; }
+  body.has-card #print-root { position: static !important; visibility: visible !important; left: auto !important; }
+  body:not(.has-card) #print-root { display: none !important; }
+}

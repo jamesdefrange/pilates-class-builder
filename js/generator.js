@@ -296,7 +296,9 @@
 
   function isPeakPrep(env, blockId, e) {
     if (!env.peak || !env.peakEx || blockId !== val(env.ct.peakBlock) || e.equipment !== env.peakEx.equipment) return false;
-    if (e.blocks.length === 1 && (e.blocks[0] === 'stretch' || e.blocks[0] === 'winddown')) return false;
+    // only borrow working exercises, not warm-ups, bridges or stretches
+    var working = ['abs', 'lower', 'upper', 'side', 'prone', 'full'];
+    if (!e.blocks.some(function (b) { return working.indexOf(b) >= 0; })) return false;
     var req = env.peak.requires || [];
     return e.prepares.some(function (t) { return req.indexOf(t) >= 0; });
   }

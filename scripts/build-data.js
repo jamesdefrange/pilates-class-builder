@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 
 const dataDir = path.join(__dirname, '..', 'data');
-const files = ['levels', 'client-groups', 'class-types', 'equipment', 'exercises', 'peak-poses', 'abbreviations'];
+const files = ['levels', 'client-groups', 'class-types', 'equipment', 'exercises', 'peak-poses', 'abbreviations', 'questions'];
 
 const bundle = {};
 for (const name of files) {
