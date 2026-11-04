@@ -14,3 +14,12 @@ Every judgment call made during the overnight build, with the reason. Newest sec
 - **Classic scripts, not ES modules.** ES modules also fail when opened from disk in Chrome, so every script attaches to one global (`window.PCB`).
 - **Everything Jay saves lives in the browser (localStorage).** No accounts, no server. Downside: saved classes and feedback stay on the device he used. The "Export my feedback" file is the bridge to James.
 - **GitHub Pages needs a public repo on the free GitHub plan.** James's account shows no paid plan, so the repo is public. Nothing private is in it: exercise data, images and code only.
+
+## Images
+
+- **Model and quality: GPT Image 2.5, medium, 1k, square.** Costs 0.5 credits per image (preflight checked). Low was 0.25 and high 1.5. Medium gave a clean, correct teaser on the first try, so all images use it.
+- **Style locked by James.** James saw the first test image (teaser on the reformer) mid-build and said to follow that same style for every position image. The prompt template in scripts/images/prompts.js is that exact template.
+- **Peak pose images reuse the full-version exercise image.** A peak pose is an exercise, so generating it twice would spend credits on a duplicate. Peak images are generated first.
+- **Images saved as 480 px grayscale JPEG.** Converting to grayscale guarantees "no color". Each file is about 15 KB, so the whole set stays small for phones.
+- **Images run one at a time in a background helper** while the app is built, following James's pacing rules. Progress is tracked in images/status.json so the run can resume.
+- **Image checks use contact sheets.** Every 6 images are tiled into one labeled sheet and checked by eye against the prompt (position, equipment, which parts are lifted).

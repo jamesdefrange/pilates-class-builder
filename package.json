@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build-data": "node scripts/build-data.js",
-    "test": "node scripts/build-data.js && node --test tests/",
+    "test": "node scripts/build-data.js && node --test tests/*.test.js",
     "samples": "node scripts/make-samples.js"
   },
   "license": "UNLICENSED"

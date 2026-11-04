@@ -12634,7 +12634,8 @@
       "props": [],
       "blocks": [
         "stretch",
-        "full"
+        "full",
+        "winddown"
       ],
       "minLevel": 1,
       "groups": [
@@ -12677,6 +12678,593 @@
       "family": "pike",
       "pose": "standing in front of a wall-mounted Pilates springboard, facing the board holding a roll down bar, hips hinged back with a flat back and long arms",
       "image": "sp-standing-hinge.jpg",
+      "source": "research"
+    },
+    {
+      "id": "sp-arm-float",
+      "name": "Standing arm float with springs",
+      "equipment": "springboard",
+      "setup": "Mat in front of the springboard.",
+      "props": [],
+      "blocks": [
+        "winddown"
+      ],
+      "minLevel": 1,
+      "groups": [
+        "older",
+        "middle",
+        "younger"
+      ],
+      "unilateral": false,
+      "bodyPartsLifted": 0,
+      "inversion": false,
+      "spinalFlexion": "none",
+      "floor": false,
+      "position": "standing",
+      "usesStraps": false,
+      "springs": "sb-top-light",
+      "primary": [
+        "shoulders"
+      ],
+      "secondary": [
+        "lats"
+      ],
+      "prepares": [
+        "shoulder-mobility"
+      ],
+      "reps": "x5",
+      "minutes": {
+        "min": 1,
+        "typical": 1.5,
+        "max": 2.5
+      },
+      "cues": [
+        "Face board, handles high",
+        "Inh, let arms float up",
+        "Exh, draw arms down slow"
+      ],
+      "olderNote": "",
+      "intensity": 1,
+      "family": "breath",
+      "pose": "standing tall in front of a wall-mounted Pilates springboard, facing the board, holding handles with springs hooked high, arms floating up overhead",
+      "image": "sp-arm-float.jpg",
+      "source": "research"
+    },
+    {
+      "id": "sp-chest-opener",
+      "name": "Standing chest opener with springs",
+      "equipment": "springboard",
+      "setup": "Mat in front of the springboard.",
+      "props": [],
+      "blocks": [
+        "stretch",
+        "winddown"
+      ],
+      "minLevel": 1,
+      "groups": [
+        "older",
+        "middle",
+        "younger"
+      ],
+      "unilateral": false,
+      "bodyPartsLifted": 0,
+      "inversion": false,
+      "spinalFlexion": "none",
+      "floor": false,
+      "position": "standing",
+      "usesStraps": false,
+      "springs": "sb-middle-light",
+      "primary": [
+        "chest"
+      ],
+      "secondary": [
+        "shoulders"
+      ],
+      "prepares": [
+        "chest-opening"
+      ],
+      "reps": "3 breaths",
+      "minutes": {
+        "min": 1,
+        "typical": 1.5,
+        "max": 2.5
+      },
+      "cues": [
+        "Back to board, handles in hands",
+        "Let arms open wide and back",
+        "Lift chest, breathe"
+      ],
+      "olderNote": "",
+      "intensity": 1,
+      "family": "stretch-chest",
+      "pose": "standing tall with back to a wall-mounted Pilates springboard, holding handles with springs, arms opened wide and slightly back, chest lifted",
+      "image": "sp-chest-opener.jpg",
+      "source": "research"
+    },
+    {
+      "id": "mt-fw-seated",
+      "name": "Seated foot and ankle series",
+      "equipment": "mat",
+      "setup": "Mat on the floor.",
+      "props": [],
+      "blocks": [
+        "footwork",
+        "winddown"
+      ],
+      "minLevel": 1,
+      "groups": [
+        "older",
+        "middle",
+        "younger"
+      ],
+      "unilateral": false,
+      "bodyPartsLifted": 0,
+      "inversion": false,
+      "spinalFlexion": "none",
+      "floor": true,
+      "position": "seated",
+      "usesStraps": false,
+      "springs": "none",
+      "primary": [
+        "calves-feet"
+      ],
+      "secondary": [
+        "hamstrings"
+      ],
+      "prepares": [
+        "ankle-strength",
+        "hamstring-length"
+      ],
+      "reps": "x10 ea move",
+      "minutes": {
+        "min": 1,
+        "typical": 1.5,
+        "max": 2.5
+      },
+      "cues": [
+        "Sit tall, legs long",
+        "Point and flex, then circle ankles",
+        "Toes spread, breathe"
+      ],
+      "olderNote": "",
+      "intensity": 1,
+      "family": "footwork",
+      "pose": "sitting tall on a mat with legs straight in front, hands resting beside the hips, feet pointing and flexing",
+      "image": "mt-fw-seated.jpg",
+      "source": "assumption"
+    },
+    {
+      "id": "mt-heel-slides",
+      "name": "Supine heel slides",
+      "equipment": "mat",
+      "setup": "Mat on the floor.",
+      "props": [],
+      "blocks": [
+        "footwork",
+        "abs"
+      ],
+      "minLevel": 1,
+      "groups": [
+        "older",
+        "middle",
+        "younger"
+      ],
+      "unilateral": false,
+      "bodyPartsLifted": 0,
+      "inversion": false,
+      "spinalFlexion": "none",
+      "floor": true,
+      "position": "supine",
+      "usesStraps": false,
+      "springs": "none",
+      "primary": [
+        "quads",
+        "abdominals"
+      ],
+      "secondary": [
+        "hamstrings"
+      ],
+      "prepares": [
+        "knee-extension",
+        "core-stability"
+      ],
+      "reps": "x8 ea",
+      "minutes": {
+        "min": 1,
+        "typical": 1.5,
+        "max": 2.5
+      },
+      "cues": [
+        "Lie on back, knees bent",
+        "Slide one heel long, return",
+        "Pelvis still, switch"
+      ],
+      "olderNote": "",
+      "intensity": 1,
+      "family": "footwork",
+      "pose": "lying on the back on a mat with one knee bent and that foot flat, the other leg sliding long along the mat",
+      "image": "mt-heel-slides.jpg",
+      "source": "assumption"
+    },
+    {
+      "id": "sd-turnout-raises",
+      "name": "Standing heel raises in turnout",
+      "equipment": "standing",
+      "setup": "Standing beside the equipment, clear space around.",
+      "props": [],
+      "blocks": [
+        "footwork",
+        "lower"
+      ],
+      "minLevel": 1,
+      "groups": [
+        "older",
+        "middle",
+        "younger"
+      ],
+      "unilateral": false,
+      "bodyPartsLifted": 0,
+      "inversion": false,
+      "spinalFlexion": "none",
+      "floor": false,
+      "position": "standing",
+      "usesStraps": false,
+      "springs": "none",
+      "primary": [
+        "calves-feet",
+        "adductors"
+      ],
+      "secondary": [
+        "glutes"
+      ],
+      "prepares": [
+        "ankle-strength",
+        "balance",
+        "hip-adduction"
+      ],
+      "reps": "x10",
+      "minutes": {
+        "min": 1,
+        "typical": 1.5,
+        "max": 2.5
+      },
+      "cues": [
+        "Heels together, toes apart",
+        "Rise up, squeeze inner thighs",
+        "Lower slow, hand on support"
+      ],
+      "olderNote": "",
+      "intensity": 1,
+      "family": "footwork",
+      "pose": "standing tall with heels together and toes turned out, rising up onto the balls of the feet, one hand lightly on a support",
+      "image": "sd-turnout-raises.jpg",
+      "source": "assumption"
+    },
+    {
+      "id": "sp-leg-press-heels",
+      "name": "Leg springs: heel press",
+      "equipment": "springboard",
+      "setup": "Mat in front of the springboard.",
+      "props": [],
+      "blocks": [
+        "footwork",
+        "lower"
+      ],
+      "minLevel": 1,
+      "groups": [
+        "older",
+        "middle",
+        "younger"
+      ],
+      "unilateral": false,
+      "bodyPartsLifted": 0,
+      "inversion": false,
+      "spinalFlexion": "none",
+      "floor": true,
+      "position": "supine",
+      "usesStraps": false,
+      "springs": "sb-top-medium",
+      "primary": [
+        "hamstrings",
+        "glutes"
+      ],
+      "secondary": [
+        "quads"
+      ],
+      "prepares": [
+        "hip-extension",
+        "knee-extension"
+      ],
+      "reps": "x10",
+      "minutes": {
+        "min": 1,
+        "typical": 1.5,
+        "max": 2.5
+      },
+      "cues": [
+        "Lie on mat, feet in leg springs",
+        "Heels press down and away",
+        "Knees bend in, slow return"
+      ],
+      "olderNote": "",
+      "intensity": 1,
+      "family": "footwork",
+      "pose": "lying on the back on a mat in front of a wall-mounted Pilates springboard, head toward the wall, feet in leg springs, legs pressing straight down and away at a low angle",
+      "image": "sp-leg-press-heels.jpg",
+      "source": "assumption"
+    },
+    {
+      "id": "sp-leg-press-v",
+      "name": "Leg springs: Pilates V press",
+      "equipment": "springboard",
+      "setup": "Mat in front of the springboard.",
+      "props": [],
+      "blocks": [
+        "footwork",
+        "lower"
+      ],
+      "minLevel": 1,
+      "groups": [
+        "older",
+        "middle",
+        "younger"
+      ],
+      "unilateral": false,
+      "bodyPartsLifted": 0,
+      "inversion": false,
+      "spinalFlexion": "none",
+      "floor": true,
+      "position": "supine",
+      "usesStraps": false,
+      "springs": "sb-top-medium",
+      "primary": [
+        "adductors",
+        "hamstrings"
+      ],
+      "secondary": [
+        "glutes"
+      ],
+      "prepares": [
+        "hip-adduction",
+        "hip-extension"
+      ],
+      "reps": "x10",
+      "minutes": {
+        "min": 1,
+        "typical": 1.5,
+        "max": 2.5
+      },
+      "cues": [
+        "Feet in springs, heels together",
+        "Toes apart, press legs long",
+        "Inner thighs zip, return"
+      ],
+      "olderNote": "",
+      "intensity": 1,
+      "family": "footwork",
+      "pose": "lying on the back on a mat in front of a wall-mounted Pilates springboard, feet in leg springs with heels together and toes apart, legs pressing long on a low diagonal",
+      "image": "sp-leg-press-v.jpg",
+      "source": "assumption"
+    },
+    {
+      "id": "sd-squat-reach",
+      "name": "Squat with overhead reach",
+      "equipment": "standing",
+      "setup": "Standing beside the equipment, clear space around.",
+      "props": [],
+      "blocks": [
+        "full",
+        "lower"
+      ],
+      "minLevel": 1,
+      "groups": [
+        "older",
+        "middle",
+        "younger"
+      ],
+      "unilateral": false,
+      "bodyPartsLifted": 0,
+      "inversion": false,
+      "spinalFlexion": "none",
+      "floor": false,
+      "position": "standing",
+      "usesStraps": false,
+      "springs": "none",
+      "primary": [
+        "quads",
+        "glutes"
+      ],
+      "secondary": [
+        "shoulders",
+        "back-extensors"
+      ],
+      "prepares": [
+        "knee-extension",
+        "hip-extension",
+        "shoulder-mobility",
+        "core-stability"
+      ],
+      "reps": "x10",
+      "minutes": {
+        "min": 1,
+        "typical": 1.5,
+        "max": 2.5
+      },
+      "cues": [
+        "Feet hip wd, arms forward",
+        "Sit back into squat",
+        "Stand, reach arms up, ribs down"
+      ],
+      "olderNote": "",
+      "intensity": 1,
+      "family": "standing-legs",
+      "pose": "standing tall with feet hip width apart, rising from a squat with both arms reaching straight up overhead",
+      "image": "sd-squat-reach.jpg",
+      "source": "research"
+    },
+    {
+      "id": "sd-roll-down-squat",
+      "name": "Roll down to squat",
+      "equipment": "standing",
+      "setup": "Standing beside the equipment, clear space around.",
+      "props": [],
+      "blocks": [
+        "full",
+        "winddown"
+      ],
+      "minLevel": 1,
+      "groups": [
+        "older",
+        "middle",
+        "younger"
+      ],
+      "unilateral": false,
+      "bodyPartsLifted": 0,
+      "inversion": false,
+      "spinalFlexion": "light",
+      "floor": false,
+      "position": "standing",
+      "usesStraps": false,
+      "springs": "none",
+      "primary": [
+        "back-extensors",
+        "quads"
+      ],
+      "secondary": [
+        "hamstrings",
+        "abdominals"
+      ],
+      "prepares": [
+        "spinal-articulation",
+        "hamstring-length",
+        "knee-extension"
+      ],
+      "reps": "x4",
+      "minutes": {
+        "min": 1,
+        "typical": 1.5,
+        "max": 2.5
+      },
+      "cues": [
+        "Roll down bone by bone",
+        "Bend knees, sit into squat",
+        "Stand, roll up tall"
+      ],
+      "olderNote": "",
+      "intensity": 1,
+      "family": "roll-down",
+      "pose": "standing with feet hip width apart, spine rolled forward and knees bent into a low squat, arms hanging toward the floor",
+      "image": "sd-roll-down-squat.jpg",
+      "source": "research"
+    },
+    {
+      "id": "mt-bridge-reach",
+      "name": "Bridge with arm reach",
+      "equipment": "mat",
+      "setup": "Mat on the floor.",
+      "props": [],
+      "blocks": [
+        "full",
+        "bridging"
+      ],
+      "minLevel": 1,
+      "groups": [
+        "older",
+        "middle",
+        "younger"
+      ],
+      "unilateral": false,
+      "bodyPartsLifted": 0,
+      "inversion": false,
+      "spinalFlexion": "none",
+      "floor": true,
+      "position": "supine",
+      "usesStraps": false,
+      "springs": "none",
+      "primary": [
+        "glutes",
+        "hamstrings"
+      ],
+      "secondary": [
+        "shoulders",
+        "abdominals"
+      ],
+      "prepares": [
+        "hip-extension",
+        "spinal-articulation",
+        "shoulder-mobility"
+      ],
+      "reps": "x6",
+      "minutes": {
+        "min": 1,
+        "typical": 1.5,
+        "max": 2.5
+      },
+      "cues": [
+        "Feet flat, peel hips up",
+        "Arms float overhead at top",
+        "Arms return, roll down slow"
+      ],
+      "olderNote": "",
+      "intensity": 1,
+      "family": "bridge",
+      "pose": "lying on the back on a mat, knees bent with feet flat, hips lifted in a bridge, both arms reaching overhead along the floor",
+      "image": "mt-bridge-reach.jpg",
+      "source": "research"
+    },
+    {
+      "id": "sp-press-rise",
+      "name": "Chest press with heel rise",
+      "equipment": "springboard",
+      "setup": "Mat in front of the springboard.",
+      "props": [],
+      "blocks": [
+        "full",
+        "upper"
+      ],
+      "minLevel": 1,
+      "groups": [
+        "older",
+        "middle",
+        "younger"
+      ],
+      "unilateral": false,
+      "bodyPartsLifted": 0,
+      "inversion": false,
+      "spinalFlexion": "none",
+      "floor": false,
+      "position": "standing",
+      "usesStraps": false,
+      "springs": "sb-middle-medium",
+      "primary": [
+        "chest",
+        "calves-feet"
+      ],
+      "secondary": [
+        "triceps",
+        "abdominals"
+      ],
+      "prepares": [
+        "shoulder-stability",
+        "balance",
+        "core-stability"
+      ],
+      "reps": "x10",
+      "minutes": {
+        "min": 1,
+        "typical": 1.5,
+        "max": 2.5
+      },
+      "cues": [
+        "Back to board, handles in hands",
+        "Press arms forward, rise on toes",
+        "Lower heels as arms return"
+      ],
+      "olderNote": "",
+      "intensity": 1,
+      "family": "board-standing",
+      "pose": "standing with back to a wall-mounted Pilates springboard, up on the balls of the feet, arms pressing straight forward holding handles with springs",
+      "image": "sp-press-rise.jpg",
       "source": "research"
     }
   ]

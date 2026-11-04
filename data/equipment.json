@@ -303,14 +303,14 @@
     {
       "id": "bosu",
       "label": "Bosu",
-      "default": false,
-      "source": "assumption"
+      "default": true,
+      "source": "jay"
     },
     {
       "id": "springboard",
       "label": "Springboard",
-      "default": false,
-      "source": "assumption"
+      "default": true,
+      "source": "jay"
     },
     {
       "id": "box",

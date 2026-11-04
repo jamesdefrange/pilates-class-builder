@@ -17,7 +17,7 @@ Black and white 3D render of a smooth, faceless, sculpted figure like an elegant
 File: `images/ab-short-spine.jpg` (peak pose)
 
 ```
-Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage with feet in the straps, hips lifted over the shoulders and knees bent, spine rolling down. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage with the head toward the strap end and the feet in the straps. The hips and pelvis are lifted high off the carriage and stacked directly above the shoulders, the spine rounded, weight resting on the shoulders and upper back, knees bent with the heels toward the buttocks and the thighs angled over the chest, arms long on the carriage. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
 ## 3. Elephant
@@ -73,7 +73,7 @@ Black and white 3D render of a smooth, faceless, sculpted figure like an elegant
 File: `images/br-sl-reach.jpg` (peak pose)
 
 ```
-Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, one foot on the footbar, the other leg straight up toward the ceiling, hips lifted. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs, no anatomical detail and no hair or clothing details. The figure is in a single leg bridge on the reformer: lying on the back on the carriage with the head on the headrest, the pelvis lifted off the carriage in a bridge, one knee bent with that foot pressing on the footbar, and the other leg extended straight up toward the ceiling, arms long by the sides. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
 ## 10. Mermaid with twist
@@ -1036,7 +1036,95 @@ File: `images/sp-standing-hinge.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing in front of a wall-mounted Pilates springboard, facing the board holding a roll down bar, hips hinged back with a flat back and long arms. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 130. Footwork: prances
+## 130. Standing arm float with springs
+
+File: `images/sp-arm-float.jpg`
+
+```
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing tall in front of a wall-mounted Pilates springboard, facing the board, holding handles with springs hooked high, arms floating up overhead. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+```
+
+## 131. Standing chest opener with springs
+
+File: `images/sp-chest-opener.jpg`
+
+```
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing tall with back to a wall-mounted Pilates springboard, holding handles with springs, arms opened wide and slightly back, chest lifted. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+```
+
+## 132. Seated foot and ankle series
+
+File: `images/mt-fw-seated.jpg`
+
+```
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting tall on a mat with legs straight in front, hands resting beside the hips, feet pointing and flexing. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+```
+
+## 133. Supine heel slides
+
+File: `images/mt-heel-slides.jpg`
+
+```
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat with one knee bent and that foot flat, the other leg sliding long along the mat. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+```
+
+## 134. Standing heel raises in turnout
+
+File: `images/sd-turnout-raises.jpg`
+
+```
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing tall with heels together and toes turned out, rising up onto the balls of the feet, one hand lightly on a support. No equipment, the figure stands on a plain floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+```
+
+## 135. Leg springs: heel press
+
+File: `images/sp-leg-press-heels.jpg`
+
+```
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat in front of a wall-mounted Pilates springboard, head toward the wall, feet in leg springs, legs pressing straight down and away at a low angle. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+```
+
+## 136. Leg springs: Pilates V press
+
+File: `images/sp-leg-press-v.jpg`
+
+```
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat in front of a wall-mounted Pilates springboard, feet in leg springs with heels together and toes apart, legs pressing long on a low diagonal. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+```
+
+## 137. Squat with overhead reach
+
+File: `images/sd-squat-reach.jpg`
+
+```
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing tall with feet hip width apart, rising from a squat with both arms reaching straight up overhead. No equipment, the figure stands on a plain floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+```
+
+## 138. Roll down to squat
+
+File: `images/sd-roll-down-squat.jpg`
+
+```
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing with feet hip width apart, spine rolled forward and knees bent into a low squat, arms hanging toward the floor. No equipment, the figure stands on a plain floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+```
+
+## 139. Bridge with arm reach
+
+File: `images/mt-bridge-reach.jpg`
+
+```
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat, knees bent with feet flat, hips lifted in a bridge, both arms reaching overhead along the floor. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+```
+
+## 140. Chest press with heel rise
+
+File: `images/sp-press-rise.jpg`
+
+```
+Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing with back to a wall-mounted Pilates springboard, up on the balls of the feet, arms pressing straight forward holding handles with springs. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
+```
+
+## 141. Footwork: prances
 
 File: `images/fw-prances.jpg`
 
@@ -1044,7 +1132,7 @@ File: `images/fw-prances.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, head on the headrest, the balls of both feet on the footbar, legs almost straight, one heel lowered and one heel lifted. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 131. Footwork: single leg heel
+## 142. Footwork: single leg heel
 
 File: `images/fw-sl-heel.jpg`
 
@@ -1052,7 +1140,7 @@ File: `images/fw-sl-heel.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, head on the headrest, one heel on the footbar, the other leg lifted in tabletop with knee bent 90 degrees. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 132. Footwork: single leg toes
+## 143. Footwork: single leg toes
 
 File: `images/fw-sl-toes.jpg`
 
@@ -1060,7 +1148,7 @@ File: `images/fw-sl-toes.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, head on the headrest, the ball of one foot on the footbar, the other leg lifted in tabletop. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 133. Bridge with carriage press
+## 144. Bridge with carriage press
 
 File: `images/br-press-outs.jpg`
 
@@ -1068,7 +1156,7 @@ File: `images/br-press-outs.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, arches on the footbar, hips lifted in a bridge while the legs push the carriage away. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 134. Single leg bridge, other leg TT
+## 145. Single leg bridge, other leg TT
 
 File: `images/br-sl-tt.jpg`
 
@@ -1076,7 +1164,7 @@ File: `images/br-sl-tt.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, one foot on the footbar, the other leg held up in tabletop, hips lifted in a bridge. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 135. Seated roll back with twist
+## 146. Seated roll back with twist
 
 File: `images/ab-roll-back-oblique.jpg`
 
@@ -1084,7 +1172,7 @@ File: `images/ab-roll-back-oblique.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting on the reformer carriage holding the straps, spine rolled back into a C curve and rotated to one side. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 136. Single leg teaser prep, hands in straps
+## 147. Single leg teaser prep, hands in straps
 
 File: `images/ab-sl-teaser-prep.jpg`
 
@@ -1092,7 +1180,7 @@ File: `images/ab-sl-teaser-prep.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the reformer carriage holding the straps, one knee bent with the foot down, the other leg extended at an angle, torso rolled up toward the lifted leg. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 137. Knee folds, feet on footbar
+## 148. Knee folds, feet on footbar
 
 File: `images/ab-knee-folds.jpg`
 
@@ -1100,7 +1188,7 @@ File: `images/ab-knee-folds.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, one foot on the footbar and the other knee lifted to tabletop, head resting. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 138. Stomach massage, round back
+## 149. Stomach massage, round back
 
 File: `images/ab-stomach-massage.jpg`
 
@@ -1108,7 +1196,7 @@ File: `images/ab-stomach-massage.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting on the reformer carriage facing the footbar, balls of the feet on the footbar, hands holding the frame behind, spine rounded, legs pressing out. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 139. Walking in straps
+## 150. Walking in straps
 
 File: `images/lb-walking-straps.jpg`
 
@@ -1116,7 +1204,7 @@ File: `images/lb-walking-straps.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, both feet in the straps, legs straight in a small scissor, one leg higher than the other. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 140. Side-lying footwork
+## 151. Side-lying footwork
 
 File: `images/lb-side-lying-press.jpg`
 
@@ -1124,7 +1212,7 @@ File: `images/lb-side-lying-press.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on one side on the reformer carriage, head resting on the bottom arm, bottom foot on the footbar pressing out, top leg resting long. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 141. Kneeling lunge
+## 152. Kneeling lunge
 
 File: `images/lb-kneeling-lunge.jpg`
 
@@ -1132,7 +1220,7 @@ File: `images/lb-kneeling-lunge.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is one foot standing on the reformer platform with the knee bent, the back knee kneeling on the carriage against the shoulder rest, torso tall, carriage sliding back. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 142. Scooter
+## 153. Scooter
 
 File: `images/lb-scooter.jpg`
 
@@ -1140,7 +1228,7 @@ File: `images/lb-scooter.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing beside the reformer with hands on the footbar, one knee bent on the carriage pressing back, the standing leg on the floor slightly bent, flat back. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 143. Single leg press in strap
+## 154. Single leg press in strap
 
 File: `images/lb-sl-straps.jpg`
 
@@ -1148,7 +1236,7 @@ File: `images/lb-sl-straps.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, one foot in a strap with that leg straight and pressing down, the other foot resting on the footbar. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 144. Side-lying leg in strap
+## 155. Side-lying leg in strap
 
 File: `images/lb-side-lying-strap.jpg`
 
@@ -1156,7 +1244,7 @@ File: `images/lb-side-lying-strap.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on one side on the reformer carriage with the head on the bottom arm, the top foot in a strap and that leg straight and lifting. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 145. Kneeling chest expansion
+## 156. Kneeling chest expansion
 
 File: `images/ub-kneeling-chest-exp.jpg`
 
@@ -1164,7 +1252,7 @@ File: `images/ub-kneeling-chest-exp.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is kneeling tall on the reformer carriage facing the back straps, arms straight pulled back past the hips, chest lifted. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 146. Kneeling biceps
+## 157. Kneeling biceps
 
 File: `images/ub-kneeling-biceps.jpg`
 
@@ -1172,7 +1260,7 @@ File: `images/ub-kneeling-biceps.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is kneeling tall on the reformer carriage facing the back straps, arms lifted to shoulder height with elbows bent, hands near the temples. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 147. Incline push-ups on the footbar
+## 158. Incline push-ups on the footbar
 
 File: `images/ub-incline-pushup.jpg`
 
@@ -1180,7 +1268,7 @@ File: `images/ub-incline-pushup.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing on the floor at the foot end of the reformer, hands on the footbar, body in a long straight incline line, elbows bending into a push-up. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 148. Kneeling side arm
+## 159. Kneeling side arm
 
 File: `images/sd-kneeling-side-arm.jpg`
 
@@ -1188,7 +1276,7 @@ File: `images/sd-kneeling-side-arm.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is kneeling tall on the reformer carriage sideways to the straps, one arm straight holding a strap and pulling down to the side of the body. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 149. Side sitting single arm
+## 160. Side sitting single arm
 
 File: `images/sd-side-sit-strap.jpg`
 
@@ -1196,7 +1284,7 @@ File: `images/sd-side-sit-strap.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting sideways on the reformer carriage, one hand holding a strap and pulling it across the body and up on a diagonal. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 150. Knee stretches: round back
+## 161. Knee stretches: round back
 
 File: `images/fb-knee-stretch-round.jpg`
 
@@ -1204,7 +1292,7 @@ File: `images/fb-knee-stretch-round.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is on hands and knees on the reformer carriage with hands on the footbar, back rounded, knees pushing the carriage back. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 151. Knee stretches: flat back
+## 162. Knee stretches: flat back
 
 File: `images/fb-knee-stretch-flat.jpg`
 
@@ -1212,7 +1300,7 @@ File: `images/fb-knee-stretch-flat.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is on hands and knees on the reformer carriage with hands on the footbar, back flat, knees pushing the carriage back. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 152. Reformer plank
+## 163. Reformer plank
 
 File: `images/fb-plank-platform.jpg`
 
@@ -1220,7 +1308,7 @@ File: `images/fb-plank-platform.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is plank position on the reformer with hands on the footbar and feet on the carriage against the shoulder rests, body straight from head to heels. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 153. Bird dog on the carriage
+## 164. Bird dog on the carriage
 
 File: `images/pr-bird-dog.jpg`
 
@@ -1228,7 +1316,7 @@ File: `images/pr-bird-dog.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is on hands and knees on the reformer carriage with hands on the footbar, one leg extended straight back at hip height. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 154. Kneeling hip flexor stretch
+## 165. Kneeling hip flexor stretch
 
 File: `images/st-hip-flexor-kneel.jpg`
 
@@ -1236,7 +1324,7 @@ File: `images/st-hip-flexor-kneel.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is kneeling lunge on the reformer, front foot on the platform, back knee on the carriage, hips pressed forward, torso tall. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 155. Breaststroke on the long box
+## 166. Breaststroke on the long box
 
 File: `images/bx-breaststroke.jpg`
 
@@ -1244,7 +1332,7 @@ File: `images/bx-breaststroke.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying face down on a long box placed on the reformer carriage, arms reaching straight forward past the head holding the straps, chest slightly lifted. The equipment is a Pilates reformer (a long low frame with a padded sliding carriage, shoulder rests, footbar at the foot end and two straps on ropes at the head end) with a padded rectangular box placed on top of the carriage. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 156. Short box: round back
+## 167. Short box: round back
 
 File: `images/bx-short-box-round.jpg`
 
@@ -1252,7 +1340,7 @@ File: `images/bx-short-box-round.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting on a box turned the short way on the reformer, feet hooked under the foot strap, spine rounded back in a C curve, arms reaching forward. The equipment is a Pilates reformer (a long low frame with a padded sliding carriage, shoulder rests, footbar at the foot end and two straps on ropes at the head end) with a padded rectangular box placed on top of the carriage. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 157. Short box: flat back
+## 168. Short box: flat back
 
 File: `images/bx-short-box-flat.jpg`
 
@@ -1260,7 +1348,7 @@ File: `images/bx-short-box-flat.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting on a box turned the short way on the reformer, feet under the foot strap, flat straight back hinging backward, arms overhead. The equipment is a Pilates reformer (a long low frame with a padded sliding carriage, shoulder rests, footbar at the foot end and two straps on ropes at the head end) with a padded rectangular box placed on top of the carriage. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 158. Short box: twist
+## 169. Short box: twist
 
 File: `images/bx-short-box-twist.jpg`
 
@@ -1268,7 +1356,7 @@ File: `images/bx-short-box-twist.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting tall on a box turned the short way on the reformer, feet under the foot strap, arms out in a T, torso rotated to one side. The equipment is a Pilates reformer (a long low frame with a padded sliding carriage, shoulder rests, footbar at the foot end and two straps on ropes at the head end) with a padded rectangular box placed on top of the carriage. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 159. Side-lying leg lifts on the box
+## 170. Side-lying leg lifts on the box
 
 File: `images/bx-side-lying-leg.jpg`
 
@@ -1276,7 +1364,7 @@ File: `images/bx-side-lying-leg.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on one side along a long box on the reformer, head on the bottom arm, the top leg straight and lifted. The equipment is a Pilates reformer (a long low frame with a padded sliding carriage, shoulder rests, footbar at the foot end and two straps on ropes at the head end) with a padded rectangular box placed on top of the carriage. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 160. Chair footwork: toes, parallel
+## 171. Chair footwork: toes, parallel
 
 File: `images/ch-fw-toes.jpg`
 
@@ -1284,7 +1372,7 @@ File: `images/ch-fw-toes.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting tall on top of a Pilates Wunda chair, balls of both feet on the pedal in parallel, pressing the pedal down. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 161. Chair footwork: heels
+## 172. Chair footwork: heels
 
 File: `images/ch-fw-heels.jpg`
 
@@ -1292,7 +1380,7 @@ File: `images/ch-fw-heels.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting tall on top of a Pilates Wunda chair, heels on the pedal with toes lifted, pressing the pedal down. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 162. Chair footwork: Pilates V
+## 173. Chair footwork: Pilates V
 
 File: `images/ch-fw-v.jpg`
 
@@ -1300,7 +1388,7 @@ File: `images/ch-fw-v.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting tall on top of a Pilates Wunda chair, heels together and toes apart in a V on the pedal, knees turned out. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 163. Chair footwork: wide
+## 174. Chair footwork: wide
 
 File: `images/ch-fw-wide.jpg`
 
@@ -1308,7 +1396,7 @@ File: `images/ch-fw-wide.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting tall on top of a Pilates Wunda chair, feet wide on the outer edges of the pedal, knees open. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 164. Chair footwork: heel lowers
+## 175. Chair footwork: heel lowers
 
 File: `images/ch-fw-heel-raises.jpg`
 
@@ -1316,7 +1404,7 @@ File: `images/ch-fw-heel-raises.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting tall on top of a Pilates Wunda chair, balls of the feet on the pressed down pedal, heels lowering below the pedal. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 165. Chair footwork: halfway pulses
+## 176. Chair footwork: halfway pulses
 
 File: `images/ch-fw-pulses.jpg`
 
@@ -1324,7 +1412,7 @@ File: `images/ch-fw-pulses.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting tall on top of a Pilates Wunda chair, balls of the feet on the pedal held halfway down. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 166. Chair footwork: single leg
+## 177. Chair footwork: single leg
 
 File: `images/ch-fw-sl.jpg`
 
@@ -1332,7 +1420,7 @@ File: `images/ch-fw-sl.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting tall on top of a Pilates Wunda chair, one foot on the pedal pressing down, the other leg lifted in front with knee bent. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 167. Bridge with feet on the pedal
+## 178. Bridge with feet on the pedal
 
 File: `images/ch-bridge-pedal.jpg`
 
@@ -1340,7 +1428,7 @@ File: `images/ch-bridge-pedal.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat in front of a Pilates chair, feet on the pedal, hips lifted in a bridge, arms long on the floor. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 168. Spine stretch at the pedal
+## 179. Spine stretch at the pedal
 
 File: `images/ch-spine-stretch.jpg`
 
@@ -1348,7 +1436,7 @@ File: `images/ch-spine-stretch.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting on a mat facing a Pilates chair, legs straight and wide, spine rounding forward with both hands pressing the pedal down. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 169. Chair triceps press
+## 180. Chair triceps press
 
 File: `images/ch-triceps-press.jpg`
 
@@ -1356,7 +1444,7 @@ File: `images/ch-triceps-press.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting tall on top of a Pilates Wunda chair, facing away from the pedal, hands behind on the pedal, elbows bending straight back. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 170. Standing arm press on the pedal
+## 181. Standing arm press on the pedal
 
 File: `images/ch-standing-arm-press.jpg`
 
@@ -1364,7 +1452,7 @@ File: `images/ch-standing-arm-press.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing behind a Pilates chair hinged forward with a flat back, both hands pressing the pedal down. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 171. Kneeling push down
+## 182. Kneeling push down
 
 File: `images/ch-kneeling-push.jpg`
 
@@ -1372,7 +1460,7 @@ File: `images/ch-kneeling-push.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is kneeling on a mat facing a Pilates chair, hands on the pedal, body leaning forward in a long line from knees to head, pressing the pedal down. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 172. Mermaid on the chair
+## 183. Mermaid on the chair
 
 File: `images/ch-mermaid.jpg`
 
@@ -1380,7 +1468,7 @@ File: `images/ch-mermaid.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting sideways on top of a Pilates chair, one hand pressing the pedal down, the other arm arching overhead in a side bend. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 173. Swan from the floor
+## 184. Swan from the floor
 
 File: `images/ch-swan-floor.jpg`
 
@@ -1388,7 +1476,7 @@ File: `images/ch-swan-floor.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying face down on a mat in front of a Pilates chair, hands on the pedal, chest lifted in a gentle back extension. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 174. Cat stretch at the chair
+## 185. Cat stretch at the chair
 
 File: `images/ch-cat.jpg`
 
@@ -1396,7 +1484,7 @@ File: `images/ch-cat.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is kneeling on a mat facing a Pilates chair with hands on the pedal, spine lengthening into a gentle arch. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 175. Standing single leg pumps
+## 186. Standing single leg pumps
 
 File: `images/ch-standing-pumps.jpg`
 
@@ -1404,7 +1492,7 @@ File: `images/ch-standing-pumps.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing beside a Pilates chair with one hand on the seat, one foot on the pedal pressing it down, standing leg straight and tall. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 176. Supported step up
+## 187. Supported step up
 
 File: `images/ch-step-up-supported.jpg`
 
@@ -1412,7 +1500,7 @@ File: `images/ch-step-up-supported.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing in front of a Pilates chair with one foot on the seat and one hand on a wall for support, stepping up halfway. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 177. Single leg bridge on the mat
+## 188. Single leg bridge on the mat
 
 File: `images/mt-sl-bridge.jpg`
 
@@ -1420,7 +1508,7 @@ File: `images/mt-sl-bridge.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat, one foot flat on the floor, the other leg lifted in tabletop, hips lifted in a bridge. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 178. Single leg teaser
+## 189. Single leg teaser
 
 File: `images/mt-sl-teaser.jpg`
 
@@ -1428,7 +1516,7 @@ File: `images/mt-sl-teaser.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting up on a mat with one knee bent and that foot flat, the other leg straight and lifted at an angle, arms reaching toward the lifted foot. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 179. Saw
+## 190. Saw
 
 File: `images/mt-saw.jpg`
 
@@ -1436,7 +1524,7 @@ File: `images/mt-saw.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting on a mat with legs wide, torso rotated and folding forward, one hand reaching past the opposite little toe, other arm reaching back. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 180. Single leg kick
+## 191. Single leg kick
 
 File: `images/mt-sl-kick.jpg`
 
@@ -1444,7 +1532,7 @@ File: `images/mt-sl-kick.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying face down on a mat propped on the forearms, chest lifted, one knee bent kicking the heel toward the seat. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 181. Side-lying leg series
+## 192. Side-lying leg series
 
 File: `images/mt-side-lying-series.jpg`
 
@@ -1452,7 +1540,7 @@ File: `images/mt-side-lying-series.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on one side on a mat, head on the bottom arm, legs stacked and slightly forward, the top leg straight and lifted. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 182. Clam
+## 193. Clam
 
 File: `images/mt-clam.jpg`
 
@@ -1460,7 +1548,7 @@ File: `images/mt-clam.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on one side on a mat with knees bent and feet together, top knee opening up like a clam shell. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 183. Side plank on knees
+## 194. Side plank on knees
 
 File: `images/mt-side-plank-knees.jpg`
 
@@ -1468,7 +1556,7 @@ File: `images/mt-side-plank-knees.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is side plank on a mat on the forearm and bent knees, hips lifted, top arm resting on the hip. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 184. Bird dog
+## 195. Bird dog
 
 File: `images/mt-bird-dog.jpg`
 
@@ -1476,7 +1564,7 @@ File: `images/mt-bird-dog.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is on hands and knees on a mat, one arm reaching forward and the opposite leg reaching back at hip height. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 185. Side-lying magic circle press
+## 196. Side-lying magic circle press
 
 File: `images/mt-side-lying-circle.jpg`
 
@@ -1484,7 +1572,7 @@ File: `images/mt-side-lying-circle.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on one side on a mat with a magic circle between the ankles, legs straight and lifted slightly, pressing the ring. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 186. Standing balance
+## 197. Standing balance
 
 File: `images/sd-standing-balance.jpg`
 
@@ -1492,7 +1580,7 @@ File: `images/sd-standing-balance.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing tall on one leg with the other foot lifted slightly, one hand lightly on a support. No equipment, the figure stands on a plain floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 187. Bridge with feet on the Bosu
+## 198. Bridge with feet on the Bosu
 
 File: `images/bo-bridge.jpg`
 
@@ -1500,7 +1588,7 @@ File: `images/bo-bridge.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat with both feet on top of a Bosu dome, hips lifted in a bridge. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 188. Seated roll back on the Bosu
+## 199. Seated roll back on the Bosu
 
 File: `images/bo-seated-roll-back.jpg`
 
@@ -1508,7 +1596,7 @@ File: `images/bo-seated-roll-back.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting on top of a Bosu dome with feet on the floor, spine rolling back in a C curve, arms reaching forward. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 189. Ab curl over the Bosu
+## 200. Ab curl over the Bosu
 
 File: `images/bo-ab-curl.jpg`
 
@@ -1516,7 +1604,7 @@ File: `images/bo-ab-curl.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying back over the top of a Bosu dome with feet on the floor, hands behind the head, chest curling up. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 190. Seated twist on the Bosu
+## 201. Seated twist on the Bosu
 
 File: `images/bo-seated-twist.jpg`
 
@@ -1524,7 +1612,7 @@ File: `images/bo-seated-twist.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting on a Bosu dome leaning back slightly, hands together in front of the chest, torso rotated to one side. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 191. Squat with one foot on the Bosu
+## 202. Squat with one foot on the Bosu
 
 File: `images/bo-step-squat.jpg`
 
@@ -1532,7 +1620,7 @@ File: `images/bo-step-squat.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing with one foot on a Bosu dome and the other foot on the floor, knees bent in a squat. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 192. Standing on the Bosu
+## 203. Standing on the Bosu
 
 File: `images/bo-standing-balance.jpg`
 
@@ -1540,7 +1628,7 @@ File: `images/bo-standing-balance.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing on top of a Bosu dome with both feet, knees soft, arms out to the sides for balance. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 193. Forearm plank on the Bosu
+## 204. Forearm plank on the Bosu
 
 File: `images/bo-forearm-plank.jpg`
 
@@ -1548,7 +1636,7 @@ File: `images/bo-forearm-plank.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is forearm plank with both forearms on top of a Bosu dome, body straight from head to heels. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 194. Bird dog over the Bosu
+## 205. Bird dog over the Bosu
 
 File: `images/bo-bird-dog.jpg`
 
@@ -1556,7 +1644,7 @@ File: `images/bo-bird-dog.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is belly resting over a Bosu dome on hands and knees, one arm reaching forward and the opposite leg reaching back. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 195. Side-lying lift over the Bosu
+## 206. Side-lying lift over the Bosu
 
 File: `images/bo-side-lift.jpg`
 
@@ -1564,7 +1652,7 @@ File: `images/bo-side-lift.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on one side with the hip over a Bosu dome, legs long and staggered on the floor, torso lifting sideways, hands behind the head. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 196. Single leg bridge, foot on the board
+## 207. Single leg bridge, foot on the board
 
 File: `images/sp-sl-bridge-board.jpg`
 
@@ -1572,7 +1660,7 @@ File: `images/sp-sl-bridge-board.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat in front of a wall-mounted Pilates springboard, one foot on the board and the other leg in tabletop, hips lifted in a bridge. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 197. Leg springs: walking
+## 208. Leg springs: walking
 
 File: `images/sp-leg-walking.jpg`
 
@@ -1580,7 +1668,7 @@ File: `images/sp-leg-walking.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat in front of a wall-mounted Pilates springboard, head toward the wall, feet in leg springs, legs straight in a small scissor. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 198. Roll down with twist
+## 209. Roll down with twist
 
 File: `images/sp-roll-down-oblique.jpg`
 
@@ -1588,7 +1676,7 @@ File: `images/sp-roll-down-oblique.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting on a mat facing a springboard holding the roll down bar with one hand, spine rolled back and rotated, other arm opening to the side. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 199. Lunge with chest press
+## 210. Lunge with chest press
 
 File: `images/sp-lunge-press.jpg`
 
@@ -1596,7 +1684,7 @@ File: `images/sp-lunge-press.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing with back to a wall-mounted springboard in a split stance lunge, arms pressing forward holding handles with springs. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 200. Standing side bend
+## 211. Standing side bend
 
 File: `images/sp-side-bend.jpg`
 
@@ -1604,7 +1692,7 @@ File: `images/sp-side-bend.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing sideways to a wall-mounted springboard, the outside hand holding a handle with a spring overhead, torso side bending away from the board. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 201. Standing rotation pull
+## 212. Standing rotation pull
 
 File: `images/sp-rotation-pull.jpg`
 
@@ -1612,7 +1700,7 @@ File: `images/sp-rotation-pull.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing sideways to a wall-mounted springboard, both hands holding one handle with a spring, torso rotating away from the board with arms long. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 202. Kneeling arm series
+## 213. Kneeling arm series
 
 File: `images/sp-kneeling-arms.jpg`
 
@@ -1620,7 +1708,7 @@ File: `images/sp-kneeling-arms.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is kneeling tall on a mat facing a wall-mounted springboard, arms pulled back past the hips holding handles with springs. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 203. Swan with the bar
+## 214. Swan with the bar
 
 File: `images/sp-swan.jpg`
 
@@ -1628,7 +1716,7 @@ File: `images/sp-swan.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying face down on a mat facing a wall-mounted springboard, hands on a bar with springs, arms pressing as the chest lifts into extension. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 204. Side-lying leg spring
+## 215. Side-lying leg spring
 
 File: `images/sp-side-lying-leg.jpg`
 
@@ -1636,7 +1724,7 @@ File: `images/sp-side-lying-leg.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on one side on a mat in front of a wall-mounted springboard, the top foot in a leg spring, top leg straight and lifting. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 205. Footwork with chest press
+## 216. Footwork with chest press
 
 File: `images/fw-chest-press.jpg`
 
@@ -1644,7 +1732,7 @@ File: `images/fw-chest-press.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, head on the headrest, the balls of both feet on the footbar, arms reaching up to the ceiling holding small hand weights. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 206. Footwork with arm reach overhead
+## 217. Footwork with arm reach overhead
 
 File: `images/fw-weights-overhead.jpg`
 
@@ -1652,7 +1740,7 @@ File: `images/fw-weights-overhead.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, head on the headrest, both heels on the footbar, arms reaching overhead past the ears holding small hand weights. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 207. Bridge with marching
+## 218. Bridge with marching
 
 File: `images/br-marching.jpg`
 
@@ -1660,7 +1748,7 @@ File: `images/br-marching.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, hips lifted in a bridge, one foot on the footbar and the other knee lifted to tabletop. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 208. Bridge with feet in straps
+## 219. Bridge with feet in straps
 
 File: `images/br-straps.jpg`
 
@@ -1668,7 +1756,7 @@ File: `images/br-straps.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, feet in the reformer straps, legs angled low, hips peeled up into a bridge. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 209. Hundred with legs in tabletop
+## 220. Hundred with legs in tabletop
 
 File: `images/ab-hundred-tt.jpg`
 
@@ -1676,7 +1764,7 @@ File: `images/ab-hundred-tt.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, legs lifted in tabletop, holding the straps with arms pressed down by the hips, head and shoulders curled up. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 210. Coordination
+## 221. Coordination
 
 File: `images/ab-coordination.jpg`
 
@@ -1684,7 +1772,7 @@ File: `images/ab-coordination.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, holding the straps, arms pressed down, legs extended at an angle, head and shoulders curled up. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 211. Bicycle in straps
+## 222. Bicycle in straps
 
 File: `images/lb-bicycle-straps.jpg`
 
@@ -1692,7 +1780,7 @@ File: `images/lb-bicycle-straps.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on the reformer carriage, both feet in the straps, one knee bent toward the chest and the other leg reaching long. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 212. Side skating
+## 223. Side skating
 
 File: `images/lb-skating.jpg`
 
@@ -1700,7 +1788,7 @@ File: `images/lb-skating.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing sideways on the reformer platform on one leg, the other foot on the carriage pushing it out to the side. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 213. Standing squats on the reformer
+## 224. Standing squats on the reformer
 
 File: `images/lb-standing-squat-reformer.jpg`
 
@@ -1708,7 +1796,7 @@ File: `images/lb-standing-squat-reformer.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing on the reformer with one foot on the platform and one foot on the carriage, legs wide, knees bent in a squat, arms forward. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 214. Kneeling serve a tray
+## 225. Kneeling serve a tray
 
 File: `images/ub-kneeling-serve.jpg`
 
@@ -1716,7 +1804,7 @@ File: `images/ub-kneeling-serve.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is kneeling tall on the reformer carriage with back to the straps, palms up, arms pressing straight forward at chest height. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 215. Rowing: back into the box shape
+## 226. Rowing: back into the box shape
 
 File: `images/ub-rowing-back.jpg`
 
@@ -1724,7 +1812,7 @@ File: `images/ub-rowing-back.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting on the reformer carriage facing the footbar with back to the straps, legs straight, spine rounded, arms opening out to the sides holding the straps. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 216. Side support on the reformer
+## 227. Side support on the reformer
 
 File: `images/sd-side-support.jpg`
 
@@ -1732,7 +1820,7 @@ File: `images/sd-side-support.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is side plank on the reformer with one hand on the footbar and the feet on the edge of the carriage, body in a long straight side line, top arm up. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 217. Down stretch
+## 228. Down stretch
 
 File: `images/fb-down-stretch.jpg`
 
@@ -1740,7 +1828,7 @@ File: `images/fb-down-stretch.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is kneeling on the reformer carriage with knees against the shoulder rests, hands on the footbar, chest lifted and spine arched in a long extension, carriage pushed back. The equipment is a Pilates reformer: a long low rectangular frame on the floor with a padded sliding carriage, two shoulder rests, a headrest, a padded footbar across the foot end, springs under the carriage, and two straps on ropes at the head end. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 218. Backstroke on the box
+## 229. Backstroke on the box
 
 File: `images/bx-backstroke.jpg`
 
@@ -1748,7 +1836,7 @@ File: `images/bx-backstroke.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a long box on the reformer, head and shoulders curled up, arms and legs reaching up toward the ceiling holding the straps. The equipment is a Pilates reformer (a long low frame with a padded sliding carriage, shoulder rests, footbar at the foot end and two straps on ropes at the head end) with a padded rectangular box placed on top of the carriage. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 219. Short box: side over
+## 230. Short box: side over
 
 File: `images/bx-short-box-side.jpg`
 
@@ -1756,7 +1844,7 @@ File: `images/bx-short-box-side.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting sideways on a box on the reformer with one foot hooked under the strap, torso side bending over the box with arms overhead. The equipment is a Pilates reformer (a long low frame with a padded sliding carriage, shoulder rests, footbar at the foot end and two straps on ropes at the head end) with a padded rectangular box placed on top of the carriage. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 220. Single leg bridge on the pedal
+## 231. Single leg bridge on the pedal
 
 File: `images/ch-sl-bridge-pedal.jpg`
 
@@ -1764,7 +1852,7 @@ File: `images/ch-sl-bridge-pedal.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat in front of a Pilates chair, one foot on the pedal, the other leg lifted up, hips lifted in a bridge. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 221. Seated pike press
+## 232. Seated pike press
 
 File: `images/ch-seated-pike.jpg`
 
@@ -1772,7 +1860,7 @@ File: `images/ch-seated-pike.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting tall on top of a Pilates Wunda chair, hands on the seat beside the hips, spine rounded, balls of the feet pressing the pedal down. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 222. Torso press sitting
+## 233. Torso press sitting
 
 File: `images/ch-torso-press.jpg`
 
@@ -1780,7 +1868,7 @@ File: `images/ch-torso-press.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting on a mat with back to a Pilates chair, reaching back with straight arms to press the pedal down, spine rounded forward. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 223. Swan front on the chair
+## 234. Swan front on the chair
 
 File: `images/ch-swan-front.jpg`
 
@@ -1788,7 +1876,7 @@ File: `images/ch-swan-front.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying face down across the top of a Pilates chair, hips on the seat, hands on the pedal below, chest lifted in a back extension, legs long behind. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 224. Standing hamstring pull
+## 235. Standing hamstring pull
 
 File: `images/ch-hamstring-pull.jpg`
 
@@ -1796,7 +1884,7 @@ File: `images/ch-hamstring-pull.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing beside a Pilates chair hinged forward with hands on the seat, one foot on the pedal behind, heel pulling the pedal up. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 225. Pike prep on the chair
+## 236. Pike prep on the chair
 
 File: `images/ch-pike-prep.jpg`
 
@@ -1804,7 +1892,7 @@ File: `images/ch-pike-prep.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is hands on the top of a Pilates chair seat, feet on the pedal, body in a long plank with hips starting to lift. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 226. Push-up on the pedal
+## 237. Push-up on the pedal
 
 File: `images/ch-push-up.jpg`
 
@@ -1812,7 +1900,7 @@ File: `images/ch-push-up.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is plank position with feet on the floor and hands on the pedal of a Pilates chair, elbows bending to lower the pedal. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 227. Side lunge press
+## 238. Side lunge press
 
 File: `images/ch-side-lunge.jpg`
 
@@ -1820,7 +1908,7 @@ File: `images/ch-side-lunge.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing sideways next to a Pilates chair, the inside foot on the pedal pressing it down, standing knee bent in a side lunge. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 228. Washer woman
+## 239. Washer woman
 
 File: `images/ch-washer-woman.jpg`
 
@@ -1828,7 +1916,7 @@ File: `images/ch-washer-woman.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing behind a Pilates chair folded forward from the hips, hands pressing the pedal down, spine rounded. The equipment is a Pilates Wunda chair: a padded box-shaped seat about knee height with a spring-loaded pedal bar across the front near the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 229. Hundred
+## 240. Hundred
 
 File: `images/mt-hundred.jpg`
 
@@ -1836,7 +1924,7 @@ File: `images/mt-hundred.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat, legs lifted in tabletop, head and shoulders curled up, arms reaching long beside the hips. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 230. Roll up
+## 241. Roll up
 
 File: `images/mt-roll-up.jpg`
 
@@ -1844,7 +1932,7 @@ File: `images/mt-roll-up.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting up halfway from lying on a mat, legs straight, spine curled forward, arms reaching toward the toes. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 231. Single leg stretch
+## 242. Single leg stretch
 
 File: `images/mt-single-leg-stretch.jpg`
 
@@ -1852,7 +1940,7 @@ File: `images/mt-single-leg-stretch.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat, head and shoulders curled up, one knee pulled in, the other leg extended long and lifted. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 232. Criss cross
+## 243. Criss cross
 
 File: `images/mt-criss-cross.jpg`
 
@@ -1860,7 +1948,7 @@ File: `images/mt-criss-cross.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat, hands behind the head, chest curled up and rotated toward one bent knee, the other leg extended long. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 233. Teaser
+## 244. Teaser
 
 File: `images/mt-teaser.jpg`
 
@@ -1868,7 +1956,7 @@ File: `images/mt-teaser.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is balancing on the sit bones on a mat in a V shape, legs straight and lifted, arms reaching parallel to the legs. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 234. Swan
+## 245. Swan
 
 File: `images/mt-swan.jpg`
 
@@ -1876,7 +1964,7 @@ File: `images/mt-swan.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying face down on a mat, arms pressing the chest up into a long back extension, hips on the mat. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 235. Swimming
+## 246. Swimming
 
 File: `images/mt-swimming.jpg`
 
@@ -1884,7 +1972,7 @@ File: `images/mt-swimming.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying face down on a mat, arms reaching forward and legs reaching back, opposite arm and leg lifted. The equipment is a thin exercise mat on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 236. Single leg bridge on the Bosu
+## 247. Single leg bridge on the Bosu
 
 File: `images/bo-sl-bridge.jpg`
 
@@ -1892,7 +1980,7 @@ File: `images/bo-sl-bridge.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lying on the back on a mat with one foot on a Bosu dome and the other leg lifted, hips lifted in a bridge. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 237. Squats on the Bosu
+## 248. Squats on the Bosu
 
 File: `images/bo-squat-up.jpg`
 
@@ -1900,7 +1988,7 @@ File: `images/bo-squat-up.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is standing on top of a Bosu dome in a squat, knees bent, arms reaching forward. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 238. Plank on the Bosu, bubble down
+## 249. Plank on the Bosu, bubble down
 
 File: `images/bo-plank-down.jpg`
 
@@ -1908,7 +1996,7 @@ File: `images/bo-plank-down.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is high plank with both hands gripping the edges of an upside down Bosu, flat side up, body straight. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 239. Lunge with front foot on the Bosu
+## 250. Lunge with front foot on the Bosu
 
 File: `images/bo-lunge.jpg`
 
@@ -1916,7 +2004,7 @@ File: `images/bo-lunge.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is lunge with the front foot on top of a Bosu dome, back knee bending toward the floor, torso tall. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 240. Teaser with the bar
+## 251. Teaser with the bar
 
 File: `images/sp-teaser-bar.jpg`
 
@@ -1924,7 +2012,7 @@ File: `images/sp-teaser-bar.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is balancing in a V shape on a mat facing a springboard, holding the roll down bar, legs straight and lifted. The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 241. Teaser on the box
+## 252. Teaser on the box
 
 File: `images/bx-teaser.jpg`
 
@@ -1932,7 +2020,7 @@ File: `images/bx-teaser.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is balancing on the sit bones on a long box on the reformer in a V shape, legs straight and lifted, arms reaching forward holding the straps. The equipment is a Pilates reformer (a long low frame with a padded sliding carriage, shoulder rests, footbar at the foot end and two straps on ropes at the head end) with a padded rectangular box placed on top of the carriage. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 242. Short box: tree
+## 253. Short box: tree
 
 File: `images/bx-tree.jpg`
 
@@ -1940,7 +2028,7 @@ File: `images/bx-tree.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is sitting on a box on the reformer with one foot under the strap and the other leg straight up toward the ceiling, hands holding the lifted leg, spine rolling back. The equipment is a Pilates reformer (a long low frame with a padded sliding carriage, shoulder rests, footbar at the foot end and two straps on ropes at the head end) with a padded rectangular box placed on top of the carriage. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 243. Push-up on the Bosu
+## 254. Push-up on the Bosu
 
 File: `images/bo-push-up.jpg`
 
@@ -1948,7 +2036,7 @@ File: `images/bo-push-up.jpg`
 Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist's mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details. The figure is push-up with hands gripping the edges of an upside down Bosu, flat side up, elbows bent. The equipment is a Bosu balance trainer: a half ball dome on a flat round base, sitting on the floor. The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.
 ```
 
-## 244. Teaser on the Bosu
+## 255. Teaser on the Bosu
 
 File: `images/bo-teaser.jpg`
 
