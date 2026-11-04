@@ -20,7 +20,7 @@ const EQUIP = {
   springboard: 'The equipment is a Pilates springboard: a tall flat wooden board mounted on a wall with hooks at different heights and coiled springs attached to handles or a bar, with an exercise mat on the floor in front.',
   standing: 'No equipment, the figure stands on a plain floor.'
 };
-const STYLE = 'Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist\'s mannequin, athletic and gender-neutral, with simple smooth limbs and no hair or clothing details.';
+const STYLE = 'Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist\'s mannequin, athletic and gender-neutral, with simple smooth limbs, no hair, no clothing details and no anatomical detail, like a store display mannequin.';
 const FINISH = 'The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.';
 
 function promptFor(e, extra) {
@@ -47,7 +47,8 @@ const images = order.map((e, i) => {
     status: old.status || 'pending',
     tries: old.tries || 0,
     note: old.note || '',
-    prompt: old.customPrompt ? old.customPrompt : promptFor(e),
+    // finished images keep the exact prompt they were made from
+    prompt: old.customPrompt ? old.customPrompt : (old.status && old.status !== 'pending' && old.prompt ? old.prompt : promptFor(e)),
     customPrompt: old.customPrompt || ''
   };
 });
