@@ -24,7 +24,7 @@ Status at 8:58 am. Everything is built, tested and live. Exercise images are sti
 ## Images
 
 - **138 of 255 done at 8:58 am**, including all 18 peak poses and the most used exercises. 0 need review, 0 failed so far.
-- **Still running**, one at a time as you asked. Higgsfield has been slow overnight (8 to 12 minutes per image since about 4 am), so the rest will take a while. The live site picks up new images each time they are pushed.
+- **Still running**, one at a time as you asked. Since about 4 am it has averaged 8 to 12 minutes per image. Higgsfield itself is quick; the time went to the Mac pausing (long idle gaps) and tool timeouts. Keep-awake is now on for this session, so the rest should go faster. The live site picks up new images each time they are pushed.
 - **Fixed along the way:** 3 images redone after checking (short spine, incline push-ups, openings in straps). 4 were blocked by the content filter and worked on the one allowed retry. The prompt now avoids that.
 - **Two kept but worth a glance:** side support on the reformer (hand near the shoulder rests instead of the footbar) and standing foot warm-up (deeper squat than a small plie).
 
