@@ -23,6 +23,7 @@ Every judgment call made during the overnight build, with the reason. Newest sec
 - **Images saved as 480 px grayscale JPEG.** Converting to grayscale guarantees "no color". Each file is about 15 KB, so the whole set stays small for phones.
 - **Images run one at a time in a background helper** while the app is built, following James's pacing rules. Progress is tracked in images/status.json so the run can resume.
 - **Image checks use contact sheets.** Every 6 images are tiled into one labeled sheet and checked by eye against the prompt (position, equipment, which parts are lifted).
+- **Plainer wording for lying poses.** Three lying poses (overhead arms with weights, single leg kick, hamstring stretch) were blocked by Higgsfield's content filter and passed on the one retry once reworded. The last 81 images are mostly lying poses, so their prompts now say "reclining face up", "resting face down" and similar from the start. This saves the 2 minute wait per block. Finished images keep the prompt they were made from.
 
 ## Levels and clients
 

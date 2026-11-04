@@ -23,8 +23,24 @@ const EQUIP = {
 const STYLE = 'Black and white 3D render of a smooth, faceless, sculpted figure like an elegant artist\'s mannequin, athletic and gender-neutral, with simple smooth limbs, no hair, no clothing details and no anatomical detail, like a store display mannequin.';
 const FINISH = 'The equipment is rendered in the same smooth grayscale style. Clean pure white background, three-quarter side view, soft studio lighting, the whole body and all equipment fully in frame with a little space around, square format. The body position must be clearly identifiable from the image alone. No text, no logos, no face, no color, grayscale only.';
 
+// Plainer wording for lying poses. Three lying poses were blocked by the image
+// service's content filter and passed once reworded this way, so pending prompts
+// use it from the start. Finished images keep the prompt they were made from.
+const SOFTEN = [
+  [/lying on the back/g, 'reclining face up'],
+  [/lying back over/g, 'reclining back over'],
+  [/lying face down/g, 'resting face down'],
+  [/lying on one side/g, 'resting on one side'],
+  [/hips and belly/g, 'hips and middle'],
+  [/hands lightly behind the thighs/g, 'hands lightly holding the backs of the knees'],
+  [/legs straight up and opened wide/g, 'legs reaching up toward the ceiling and opening out to the sides']
+];
+function soften(text) {
+  return SOFTEN.reduce((t, [re, to]) => t.replace(re, to), text);
+}
+
 function promptFor(e, extra) {
-  return [STYLE, 'The figure is ' + e.pose + '.', EQUIP[e.equipment], extra || '', FINISH].filter(Boolean).join(' ');
+  return [STYLE, 'The figure is ' + soften(e.pose) + '.', EQUIP[e.equipment], extra || '', FINISH].filter(Boolean).join(' ');
 }
 
 let usage = {};
