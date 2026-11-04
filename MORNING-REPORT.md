@@ -2,7 +2,7 @@
 
 **Live link (send this to Jay):** https://jamesdefrange.github.io/pilates-class-builder/
 
-Status at 8:58 am. Everything is built, tested and live. Exercise images are still being made one at a time; missing ones show a clean placeholder until they arrive.
+Status at 10:24 am. Everything is built, tested and live. The last exercise images are still being made one at a time; missing ones show a clean placeholder until they arrive.
 
 ## What got built
 
@@ -23,14 +23,15 @@ Status at 8:58 am. Everything is built, tested and live. Exercise images are sti
 
 ## Images
 
-- **138 of 255 done at 8:58 am**, including all 18 peak poses and the most used exercises. 0 need review, 0 failed so far.
+- **173 of 255 done at 10:24 am**, including all 18 peak poses and the most used exercises. 1 needs review (see below), 0 failed so far. The last 81 are generating now.
 - **Still running**, one at a time as you asked. Since about 4 am it has averaged 8 to 12 minutes per image. Higgsfield itself is quick; the time went to the Mac pausing (long idle gaps) and tool timeouts. Keep-awake is now on for this session, so the rest should go faster. The live site picks up new images each time they are pushed.
-- **Fixed along the way:** 3 images redone after checking (short spine, incline push-ups, openings in straps). 4 were blocked by the content filter and worked on the one allowed retry. The prompt now avoids that.
+- **Fixed along the way:** 4 images redone after checking (short spine, incline push-ups, openings in straps, forearm plank on the box). 7 were blocked by the content filter and worked on the one allowed retry. Most were lying poses, so the remaining prompts now use plainer wording from the start.
+- **Needs a look: chest expansion on the box.** After 3 tries the figure still faces the footbar instead of the strap end. The best try is kept. It probably needs a reference photo to get right.
 - **Two kept but worth a glance:** side support on the reformer (hand near the shoulder rests instead of the footbar) and standing foot warm-up (deeper squat than a small plie).
 
 ## Credits
 
-- **73 credits used so far** (896 at the start, 823 at 8:58 am). About 0.5 per image. The full set should land around 130 to 140.
+- **91 credits used so far** (896 at the start, 805 at 10:24 am). About 0.5 per image, plus a few redos and one duplicate job from a connection glitch. The full set should land around 135 to 140.
 
 ## Known issues
 
