@@ -2,7 +2,7 @@
 
 **Live link (send this to Jay):** https://jamesdefrange.github.io/pilates-class-builder/
 
-Status at 6:07 am. Everything is built, tested and live. Exercise images are still being made one at a time; missing ones show a clean placeholder until they arrive.
+Status at 7:13 am. Everything is built, tested and live. Exercise images are still being made one at a time; missing ones show a clean placeholder until they arrive.
 
 ## What got built
 
@@ -23,14 +23,14 @@ Status at 6:07 am. Everything is built, tested and live. Exercise images are sti
 
 ## Images
 
-- **119 of 255 done at 6:07 am**, including all 18 peak poses and the most used exercises. 0 need review, 0 failed so far.
+- **129 of 255 done at 7:13 am**, including all 18 peak poses and the most used exercises. 0 need review, 0 failed so far.
 - **Still running**, one at a time as you asked. Higgsfield has been slow overnight (about 8 minutes per image lately), so the rest will take a while. The live site picks up new images each time they are pushed.
 - **Fixed along the way:** 3 images redone after checking (short spine, incline push-ups, openings in straps). 4 were blocked by the content filter and worked on the one allowed retry. The prompt now avoids that.
 - **Two kept but worth a glance:** side support on the reformer (hand near the shoulder rests instead of the footbar) and standing foot warm-up (deeper squat than a small plie).
 
 ## Credits
 
-- **61.5 credits used so far** (896 at the start, 834.5 at 6:07 am). About 0.5 per image. The full set should land around 130 to 140.
+- **66 credits used so far** (896 at the start, 830 at 7:13 am). About 0.5 per image. The full set should land around 130 to 140.
 
 ## Known issues
 
