@@ -5,3 +5,17 @@ Images listed here were generated but did not clearly match the exercise after 3
 | Image | Exercise | Status | What is off |
 |---|---|---|---|
 | bx-seated-chest-exp.jpg | Chest expansion on the box | needs review | Figure faces the footbar with the straps coming from behind it. It should face the strap end and pull straight arms back past the hips. 3 tries, best kept. |
+
+## Kept with small imperfections
+
+These look right enough that an instructor would recognize the exercise, so no credits were spent redoing them. Worth a glance if Jay says one is confusing.
+
+| Image | Exercise | What is slightly off |
+|---|---|---|
+| sd-side-support.jpg | Side support on the reformer | Hand rests near the shoulder rests instead of on the footbar. |
+| sd-standing-foot-warmup.jpg | Standing foot warm-up | Reads as a deeper squat than a small plie. |
+| mt-clam.jpg | Clam | Top knee is only slightly open. |
+| mt-single-leg-stretch.jpg | Single leg stretch | Hands behind the head instead of on the bent knee. |
+| sp-prone-pull.jpg | Prone pull on the springboard | Arms reach toward the handles instead of pulling back to the hips. |
+| sp-side-bend.jpg | Side bend on the springboard | Spring held by the hand nearer the board. |
+| mt-roll-up.jpg | Roll up | Shown fully sitting up rather than halfway through the roll. |

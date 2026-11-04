@@ -85,7 +85,7 @@ The exercise library (255 exercises). Fields:
 | `olderNote` | Extra note shown for older clients. |
 | `intensity` | 1 easy, 2 moderate, 3 hard within its level. |
 | `family` | Similar exercises share a family, so the builder spreads them out. |
-| `pose` | Plain description of the position, used to make the image. |
+| `pose` | Plain description of the position, used to make the image. For springboard exercises, say which way the figure faces, for example "back toward the board" or "top of the head near the base of the board, feet pointing away". The image service gets this wrong otherwise. |
 | `image` | File name in /images. |
 | `source` | jay, research or assumption. |
 

@@ -2,7 +2,7 @@
 
 **Live link (send this to Jay):** https://jamesdefrange.github.io/pilates-class-builder/
 
-Status at 10:24 am. Everything is built, tested and live. The last exercise images are still being made one at a time; missing ones show a clean placeholder until they arrive.
+Status at 11:45 am. Everything is built, tested and live, including all 255 exercise images.
 
 ## What got built
 
@@ -23,19 +23,19 @@ Status at 10:24 am. Everything is built, tested and live. The last exercise imag
 
 ## Images
 
-- **173 of 255 done at 10:24 am**, including all 18 peak poses and the most used exercises. 1 needs review (see below), 0 failed so far. The last 81 are generating now.
-- **Still running**, one at a time as you asked. Since about 4 am it has averaged 8 to 12 minutes per image. Higgsfield itself is quick; the time went to the Mac pausing (long idle gaps) and tool timeouts. Keep-awake is now on for this session, so the rest should go faster. The live site picks up new images each time they are pushed.
-- **Fixed along the way:** 4 images redone after checking (short spine, incline push-ups, openings in straps, forearm plank on the box). 7 were blocked by the content filter and worked on the one allowed retry. Most were lying poses, so the remaining prompts now use plainer wording from the start.
+- **All 255 done**, made one at a time as you asked. That includes all 18 peak poses. 254 are good, 1 needs a look (below), 0 failed, no placeholders left.
+- **Why it took all morning.** Overnight it averaged 8 to 12 minutes per image. Higgsfield itself is quick; the time went to the Mac pausing (long idle gaps) and tool timeouts. Once keep-awake was on, the last 81 took about 80 minutes.
+- **Fixed along the way:** 11 images redone after checking. 10 came out right on the second try; chest expansion on the box never did. The most common mistake was a springboard figure facing the wrong way. 8 were blocked by the content filter and worked on the one allowed retry. Most were lying poses, so later prompts used plainer wording from the start.
 - **Needs a look: chest expansion on the box.** After 3 tries the figure still faces the footbar instead of the strap end. The best try is kept. It probably needs a reference photo to get right.
-- **Two kept but worth a glance:** side support on the reformer (hand near the shoulder rests instead of the footbar) and standing foot warm-up (deeper squat than a small plie).
+- **Seven kept with small imperfections**, listed in images/REVIEW.md. For example, the clam's top knee is only slightly open. An instructor would still recognize each one.
 
 ## Credits
 
-- **91 credits used so far** (896 at the start, 805 at 10:24 am). About 0.5 per image, plus a few redos and one duplicate job from a connection glitch. The full set should land around 135 to 140.
+- **134.5 credits used** (896 at the start, 761.5 left, checked at 11:45 am). The math: 255 images at 0.5 each is 127.5. Add 12 redos and 1 duplicate job from a connection glitch, 13 at 0.5, which is 6.5. That makes 134. The last 0.5 is not traced; most likely one content filter block that was not refunded.
 
 ## Known issues
 
-- **Images incomplete** until the run finishes. Placeholders cover the gaps.
+- **One image is wrong:** chest expansion on the box faces the footbar. Fix it with a reference photo, or ask Jay if he would rather drop it.
 - **iPhone printing is untested on a real phone.** Desktop Chrome prints one landscape sheet. If an iPhone shows a tall preview, Jay taps Options > Landscape (the Save as PDF steps say so).
 - **Saved classes and feedback stay in one browser.** If Jay switches devices, they do not follow him. The feedback export file is the bridge.
 - **Level 1 with no reformer usually cannot be built.** The app explains why instead of breaking a rule.

@@ -24,6 +24,8 @@ Every judgment call made during the overnight build, with the reason. Newest sec
 - **Images run one at a time in a background helper** while the app is built, following James's pacing rules. Progress is tracked in images/status.json so the run can resume.
 - **Image checks use contact sheets.** Every 6 images are tiled into one labeled sheet and checked by eye against the prompt (position, equipment, which parts are lifted).
 - **Plainer wording for lying poses.** Three lying poses (overhead arms with weights, single leg kick, hamstring stretch) were blocked by Higgsfield's content filter and passed on the one retry once reworded. The last 81 images are mostly lying poses, so their prompts now say "reclining face up", "resting face down" and similar from the start. This saves the 2 minute wait per block. Finished images keep the prompt they were made from.
+- **Springboard images say which way the figure faces.** In the last run, every "back to the board" prompt came out facing the board, and one leg spring exercise came out feet first. The fix that worked: "stands facing away from the board, its back toward it, springs run forward past the shoulders" and "top of the head near the base of the board, feet pointing away". Those prompts are saved as customPrompt in images/status.json. data/README.md now tells whoever adds a springboard exercise to describe the direction this way.
+- **Small imperfections kept.** Seven images are close but not exact (listed in images/REVIEW.md). Redoing them would cost credits for little gain, so they stay unless Jay finds one confusing.
 
 ## Levels and clients
 
