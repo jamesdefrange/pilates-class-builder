@@ -53,7 +53,7 @@ test('data: every timing template adds up to the class length', () => {
 
 test('data: no em dashes or en dashes in any data text', () => {
   const text = JSON.stringify(data);
-  assert.ok(!/[–—]/.test(text));
+  assert.ok(!/[\u2013\u2014]/.test(text));
 });
 
 /* ---------- Hard rules: builds never break them ---------- */
@@ -260,7 +260,7 @@ test('peak pose: lands last in full body integration, and steps down to a safe v
       const first = ctx.byId[peak.versions[0]];
       if (cls.peak.exerciseId !== first.id) {
         assert.ok(r.messages.some(m => m.includes('closest safe version')), 'message for ' + peakId);
-        assert.ok(!r.messages.some(m => /[–—]/.test(m)));
+        assert.ok(!r.messages.some(m => /[\u2013\u2014]/.test(m)));
       }
     }
   }
