@@ -354,7 +354,7 @@
     var mac = /Macintosh/.test(ua) && !iOS;
     var safari = /Safari/.test(ua) && !/Chrome|CriOS|Edg/.test(ua);
     var steps;
-    if (iOS) steps = ['Tap <b>Open the print screen</b> below.', 'On the preview, spread two fingers apart (zoom out gesture) to open it as a PDF.', 'Tap the <b>Share</b> button, then <b>Save to Files</b>.'];
+    if (iOS) steps = ['Tap <b>Open the print screen</b> below.', 'If the preview looks tall and thin, tap <b>Options</b> and choose <b>Landscape</b>.', 'Spread two fingers apart on the preview to open it as a PDF.', 'Tap the <b>Share</b> button, then <b>Save to Files</b>.'];
     else if (mac && safari) steps = ['Click <b>Open the print screen</b> below.', 'At the bottom left, open the <b>PDF</b> menu.', 'Choose <b>Save as PDF</b>.'];
     else steps = ['Click <b>Open the print screen</b> below.', 'Set <b>Destination</b> (or Printer) to <b>Save as PDF</b>.', 'Make sure the layout is <b>Landscape</b>, then click <b>Save</b>.'];
     modal('<h2>Save as PDF</h2><ol>' + steps.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ol>' +
