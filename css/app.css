@@ -103,6 +103,8 @@ h3 { font-size: 18px; margin: 0; }
 .btn-primary:hover { background: #244a3e; border-color: #244a3e; }
 .btn-big { min-height: 64px; font-size: 20px; padding: 0 30px; border-radius: 16px; width: 100%; }
 .btn-small { min-height: 44px; padding: 0 14px; font-size: 15px; border-radius: 10px; }
+.btn:disabled, .btn[disabled] { opacity: .45; cursor: not-allowed; transform: none; }
+.btn-primary:disabled:hover { background: var(--accent); border-color: var(--accent); }
 .btn-quiet { border-color: transparent; background: transparent; color: var(--ink-2); }
 .btn-quiet:hover { background: var(--line); border-color: transparent; }
 .btn-danger { color: var(--danger); }
@@ -271,7 +273,7 @@ details.more[open] > summary svg { transform: rotate(90deg); }
 .empty svg { width: 54px; height: 54px; margin: 0 auto 10px; color: var(--line-2); }
 
 /* timing screen */
-.total-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; border-radius: 12px; font-weight: 700; margin: 14px 0; }
+.total-bar { display: flex; align-items: center; justify-content: flex-start; gap: 12px; padding: 16px 18px; border-radius: 12px; font-weight: 700; margin: 14px 0; }
 .total-bar.good { background: var(--accent-soft); color: var(--accent); }
 .total-bar.bad { background: var(--warn-soft); color: var(--warn); }
 .total-bar svg { width: 24px; height: 24px; }
@@ -326,7 +328,6 @@ table.rules-table { border-collapse: collapse; width: 100%; font-size: 14px; }
   .type-grid { grid-template-columns: repeat(2, 1fr); }
   .type-grid .type-card:first-child { grid-column: 1 / -1; }
   .action-bar { grid-template-columns: repeat(2, 1fr); }
-  .nav a span { display: none; }
   .nav a { padding: 0 12px; }
 }
 @media (max-width: 560px) {
@@ -340,7 +341,14 @@ table.rules-table { border-collapse: collapse; width: 100%; font-size: 14px; }
   .ex { grid-template-columns: 84px 1fr; gap: 12px; padding: 14px; }
   .ex-img { width: 84px; height: 84px; }
   .brand span { display: none; }
+  .topbar-inner { padding: 6px 10px; gap: 4px; }
+  .nav { gap: 2px; }
+  .nav a { flex-direction: column; gap: 2px; min-height: 52px; padding: 4px 10px; border-radius: 12px; font-size: 12px; justify-content: center; }
+  .nav a svg { width: 20px; height: 20px; }
+  .section-head { flex-direction: column; align-items: flex-start; gap: 2px; }
   .tiles { grid-template-columns: 1fr 1fr; }
+  .action-bar .btn { padding: 0 10px; font-size: 16px; gap: 8px; }
+  .action-bar .btn svg { width: 20px; height: 20px; }
   .tile { font-size: 15px; gap: 8px; padding: 10px; }
   .tile svg { width: 28px; height: 28px; }
 }
