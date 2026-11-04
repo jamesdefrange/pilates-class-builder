@@ -1,0 +1,56 @@
+{
+  "about": "Class types and their blocks. Only Flow is switched on. Block order never changes. Block minutes come from timing templates and must add up to the class length.",
+  "classTypes": [
+    {
+      "id": "flow",
+      "label": "Flow",
+      "enabled": true,
+      "description": "Ten blocks, same order every time. The exercises change.",
+      "minutes": { "value": 50, "source": "jay", "note": "Always 50 minutes." },
+      "peakBlock": { "value": "full", "source": "jay", "note": "The peak pose goes near the end of full body integration." },
+      "blocks": [
+        { "id": "footwork", "label": "Footwork", "minutes": 6, "source": "jay", "purpose": "Warm up legs and feet. Reformer or chair. Heels, arches, toes, close or wide, parallel or turned out, full range, halfway, pulses." },
+        { "id": "bridging", "label": "Bridging", "minutes": 4, "source": "jay", "purpose": "Hinge or articulated bridges. Flows straight on from reformer footwork." },
+        { "id": "abs", "label": "Abs", "minutes": 5, "source": "jay", "purpose": "Abdominal work. Spring drop for strap abs is fine." },
+        { "id": "lower", "label": "Lower body", "minutes": 6, "source": "jay", "note": "Minutes are an assumption.", "purpose": "Legs and hips." },
+        { "id": "upper", "label": "Upper body", "minutes": 6, "source": "jay", "note": "Minutes are an assumption.", "purpose": "Arms, shoulders, upper back. Plenty of options beyond straps." },
+        { "id": "side", "label": "Side and lateral work", "minutes": 4, "source": "assumption", "purpose": "Side bending, side-lying and outer hip work. Added block, Jay to confirm." },
+        { "id": "full", "label": "Full body integration", "minutes": 7, "source": "jay", "note": "Minutes are an assumption.", "purpose": "Whole body work. The peak pose lands here, near the end." },
+        { "id": "prone", "label": "Prone work for the spine", "minutes": 4, "source": "jay", "note": "Minutes are an assumption.", "purpose": "Lying face down or kneeling back extension." },
+        { "id": "stretch", "label": "Stretch", "minutes": 4, "source": "assumption", "purpose": "Release what was worked. Added block, Jay to confirm." },
+        { "id": "winddown", "label": "Closing pull down and wind down", "minutes": 4, "source": "jay", "note": "Minutes are an assumption.", "purpose": "Finish standing or seated, calm and tall." }
+      ],
+      "timingTemplates": [
+        {
+          "id": "standard",
+          "name": "Standard",
+          "source": "assumption",
+          "note": "Footwork, bridging and abs minutes from Jay. The rest split evenly to total 50.",
+          "minutes": { "footwork": 6, "bridging": 4, "abs": 5, "lower": 6, "upper": 6, "side": 4, "full": 7, "prone": 4, "stretch": 4, "winddown": 4 }
+        },
+        {
+          "id": "gentle",
+          "name": "Gentle pace (older clients)",
+          "source": "assumption",
+          "note": "Longer warm-up and wind-down for older clients, as Jay asked.",
+          "minutes": { "footwork": 7, "bridging": 4, "abs": 4, "lower": 6, "upper": 5, "side": 4, "full": 6, "prone": 4, "stretch": 5, "winddown": 5 }
+        },
+        {
+          "id": "long-warmup",
+          "name": "Long warm-up",
+          "source": "jay",
+          "note": "Jay's example of a 15 minute warm-up.",
+          "minutes": { "footwork": 15, "bridging": 4, "abs": 4, "lower": 5, "upper": 5, "side": 3, "full": 5, "prone": 3, "stretch": 3, "winddown": 3 }
+        }
+      ]
+    },
+    { "id": "cardio", "label": "Cardio", "enabled": false, "description": "Coming soon." },
+    { "id": "circuit", "label": "Circuit", "enabled": false, "description": "Coming soon." },
+    { "id": "center-balance", "label": "Center and Balance", "enabled": false, "description": "Coming soon." },
+    { "id": "suspend", "label": "Suspend (TRX)", "enabled": false, "description": "Coming soon." }
+  ],
+  "blockLimits": {
+    "minMinutes": { "value": 2, "source": "assumption", "note": "Smallest a block can be on the timing screen." },
+    "maxMinutes": { "value": 20, "source": "assumption", "note": "Largest a block can be on the timing screen." }
+  }
+}

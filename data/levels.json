@@ -1,0 +1,71 @@
+{
+  "about": "Class levels. Each rule has a value, a source (jay, research or assumption) and a plain note. The generator never uses an exercise above the class level.",
+  "definitions": {
+    "bodyPartsLifted": {
+      "text": "Counts each leg held in the air with nothing under it, plus one if the whole torso is held up with nothing under it (like a teaser). Legs resting in straps, arms in straps, and a small head and shoulders curl (HNS) are not counted.",
+      "source": "assumption"
+    },
+    "unilateral": {
+      "text": "One arm or one leg works on its own, or one leg carries the body weight. Doing a stretch one side at a time is not counted.",
+      "source": "assumption"
+    }
+  },
+  "levels": [
+    {
+      "id": "1",
+      "rank": 1,
+      "label": "Level 1",
+      "summary": { "value": "Foundations. Everything stays supported, both sides work together, no chair.", "source": "jay" },
+      "rules": {
+        "maxBodyPartsLifted": { "value": 0, "source": "jay", "note": "Some body part always on the ground. Nothing lifts." },
+        "allowUnilateral": { "value": false, "source": "jay", "note": "Nothing unilateral." },
+        "maxChairMinutes": { "value": 0, "source": "jay", "note": "No chair at Level 1." },
+        "allowInversions": { "value": false, "source": "assumption", "note": "Kept out to stay gentle." },
+        "allowLowerLevel": { "value": true, "source": "jay", "note": "Exercises at the class level or below, never above." }
+      }
+    },
+    {
+      "id": "1.5",
+      "rank": 1.5,
+      "label": "Level 1.5",
+      "summary": { "value": "One body part can lift. Single leg and single arm work allowed. A little chair.", "source": "jay" },
+      "rules": {
+        "maxBodyPartsLifted": { "value": 1, "source": "jay", "note": "One body part can lift, like one leg in tabletop." },
+        "allowUnilateral": { "value": true, "source": "jay", "note": "Unilateral allowed." },
+        "maxChairMinutes": { "value": 12, "source": "assumption", "note": "Jay said limited chair. Read as up to 12 minutes and Level 1.5 chair exercises only." },
+        "allowInversions": { "value": false, "source": "assumption", "note": "Kept out to stay gentle." },
+        "allowLowerLevel": { "value": true, "source": "jay", "note": "Exercises at the class level or below, never above." }
+      }
+    },
+    {
+      "id": "2",
+      "rank": 2,
+      "label": "Level 2",
+      "summary": { "value": "Everything can lift. Full chair. Classic intermediate repertoire.", "source": "jay" },
+      "rules": {
+        "maxBodyPartsLifted": { "value": 99, "source": "jay", "note": "Everything can lift." },
+        "allowUnilateral": { "value": true, "source": "jay", "note": "Unilateral allowed." },
+        "maxChairMinutes": { "value": null, "source": "jay", "note": "Advanced chair allowed. No time limit." },
+        "allowInversions": { "value": true, "source": "research", "note": "Short spine and similar are standard at this level. Older clients still never get them." },
+        "allowLowerLevel": { "value": true, "source": "jay", "note": "Exercises at the class level or below, never above." }
+      }
+    },
+    {
+      "id": "2.5",
+      "rank": 2.5,
+      "label": "Level 2.5",
+      "summary": { "value": "Strong intermediate. Everything can lift. Longer holds and harder variations.", "source": "jay" },
+      "rules": {
+        "maxBodyPartsLifted": { "value": 99, "source": "jay", "note": "Everything can lift." },
+        "allowUnilateral": { "value": true, "source": "jay", "note": "Unilateral allowed." },
+        "maxChairMinutes": { "value": null, "source": "jay", "note": "Advanced chair allowed. No time limit." },
+        "allowInversions": { "value": true, "source": "research", "note": "Older clients still never get them." },
+        "allowLowerLevel": { "value": true, "source": "jay", "note": "Exercises at the class level or below, never above." }
+      }
+    }
+  ],
+  "gentlerNote": {
+    "value": "Levels follow common contemporary studio standards, then each exercise was placed half a level higher when in doubt, because Jay's clients skew older.",
+    "source": "assumption"
+  }
+}

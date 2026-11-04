@@ -1,0 +1,485 @@
+{
+  "about": "Peak poses. versions runs from the full pose to the gentlest stand-in. The app uses the first version allowed for the level, client group, equipment and Jay's feedback. buildUp lists exercises that lead toward the peak. requires lists the movement patterns the class warms up first. Jay can add his own peaks in the app; they are saved in his browser.",
+  "peaks": [
+    {
+      "id": "teaser",
+      "name": "Teaser",
+      "image": "ab-teaser-reformer.jpg",
+      "requiresText": "Strong abs and hip flexors to curl up and hold, smooth spine articulation, enough hamstring length to keep the legs long, balance on the sit bones.",
+      "requires": [
+        "hip-flexor-strength",
+        "spinal-flexion",
+        "spinal-articulation",
+        "hamstring-length",
+        "balance"
+      ],
+      "versions": [
+        "ab-teaser-reformer",
+        "mt-teaser",
+        "sp-teaser-bar",
+        "bx-teaser",
+        "ab-sl-teaser-prep",
+        "mt-sl-teaser",
+        "ab-roll-back-straps",
+        "mt-half-roll-back",
+        "sp-roll-down-bar",
+        "bo-seated-roll-back"
+      ],
+      "buildUp": [
+        "br-articulated-fb",
+        "ab-chest-lift-fb",
+        "ab-roll-back-straps",
+        "lb-leg-lowers-straps",
+        "ab-sl-teaser-prep"
+      ],
+      "source": "jay"
+    },
+    {
+      "id": "short-spine",
+      "name": "Short spine",
+      "image": "ab-short-spine.jpg",
+      "requiresText": "Spine that rolls one bone at a time, long hamstrings, abs that control the roll down. It goes upside down, so it is never used for older clients.",
+      "requires": [
+        "spinal-articulation",
+        "hamstring-length",
+        "spinal-flexion",
+        "core-stability"
+      ],
+      "versions": [
+        "ab-short-spine",
+        "br-straps",
+        "br-articulated-fb",
+        "mt-bridge",
+        "sp-bridge-board",
+        "ch-bridge-pedal"
+      ],
+      "buildUp": [
+        "br-articulated-fb",
+        "lb-leg-lowers-straps",
+        "lb-circles-straps",
+        "ab-frog-curl"
+      ],
+      "source": "jay"
+    },
+    {
+      "id": "elephant",
+      "name": "Elephant",
+      "image": "fb-elephant.jpg",
+      "requiresText": "Long hamstrings and calves, stable shoulders over the hands, abs that lift the hips while the legs move the carriage.",
+      "requires": [
+        "hamstring-length",
+        "shoulder-stability",
+        "core-stability"
+      ],
+      "versions": [
+        "fb-elephant",
+        "ch-washer-woman",
+        "fb-standing-hinge",
+        "sp-standing-hinge",
+        "ch-standing-arm-press"
+      ],
+      "buildUp": [
+        "fw-calf-stretch",
+        "fw-heel-raises",
+        "ub-incline-pushup",
+        "fb-standing-hinge"
+      ],
+      "source": "jay"
+    },
+    {
+      "id": "side-plank",
+      "name": "Side plank",
+      "image": "mt-side-plank.jpg",
+      "requiresText": "Strong side body and outer hip, a stable shoulder carrying weight, and balance on one side.",
+      "requires": [
+        "lateral-flexion",
+        "shoulder-stability",
+        "core-stability",
+        "hip-abduction"
+      ],
+      "versions": [
+        "mt-side-plank",
+        "sd-side-support",
+        "mt-side-plank-knees",
+        "bo-side-lift",
+        "sd-mermaid",
+        "mt-mermaid",
+        "ch-mermaid",
+        "sd-standing-side-reach"
+      ],
+      "buildUp": [
+        "sd-mermaid",
+        "lb-side-lying-strap",
+        "mt-clam",
+        "fb-plank-platform"
+      ],
+      "source": "jay"
+    },
+    {
+      "id": "swan",
+      "name": "Swan",
+      "image": "bx-swan.jpg",
+      "requiresText": "Back extension through the whole spine, open chest, and shoulders that press without shrugging.",
+      "requires": [
+        "spinal-extension",
+        "shoulder-stability",
+        "chest-opening"
+      ],
+      "versions": [
+        "bx-swan",
+        "mt-swan",
+        "ch-swan-front",
+        "sp-swan",
+        "ch-swan-floor",
+        "pr-swan-carriage",
+        "bx-pulling-straps",
+        "mt-swan-prep",
+        "bo-swan"
+      ],
+      "buildUp": [
+        "ub-seated-chest-exp",
+        "ub-seated-rows",
+        "bx-pulling-straps-t",
+        "pr-swan-carriage"
+      ],
+      "source": "jay"
+    },
+    {
+      "id": "long-stretch",
+      "name": "Long stretch",
+      "image": "fb-long-stretch.jpg",
+      "requiresText": "A plank that holds its line while the carriage moves: strong abs, stable shoulders, comfortable wrists.",
+      "requires": [
+        "core-stability",
+        "shoulder-stability",
+        "wrist-loading"
+      ],
+      "versions": [
+        "fb-long-stretch",
+        "fb-plank-platform",
+        "bx-forearm-plank",
+        "mt-plank",
+        "fb-quadruped-hold"
+      ],
+      "buildUp": [
+        "ub-incline-pushup",
+        "ub-weights-chest-press",
+        "fb-quadruped-hold",
+        "fb-plank-platform"
+      ],
+      "source": "jay"
+    },
+    {
+      "id": "star",
+      "name": "Star",
+      "image": "sd-star.jpg",
+      "requiresText": "A side plank on a moving carriage with the top leg lifted: shoulder stability, side body strength, outer hip, balance.",
+      "requires": [
+        "lateral-flexion",
+        "shoulder-stability",
+        "balance",
+        "hip-abduction",
+        "wrist-loading"
+      ],
+      "versions": [
+        "sd-star",
+        "sd-side-support",
+        "mt-side-plank",
+        "mt-side-plank-knees",
+        "sd-mermaid",
+        "mt-mermaid"
+      ],
+      "buildUp": [
+        "lb-side-lying-strap",
+        "sd-mermaid",
+        "fb-plank-platform"
+      ],
+      "source": "jay"
+    },
+    {
+      "id": "knee-stretches",
+      "name": "Knee stretches",
+      "image": "fb-knee-stretch-off.jpg",
+      "requiresText": "Abs that hold the shape while the legs push, stable shoulders over the footbar, hip extension.",
+      "requires": [
+        "core-stability",
+        "shoulder-stability",
+        "spinal-flexion",
+        "hip-extension"
+      ],
+      "versions": [
+        "fb-knee-stretch-off",
+        "fb-knee-stretch-round",
+        "fb-knee-stretch-flat",
+        "fb-quadruped-hold",
+        "mt-cat-cow",
+        "pr-cat-cow"
+      ],
+      "buildUp": [
+        "br-hinge-fb",
+        "ab-chest-lift-fb",
+        "fb-quadruped-hold"
+      ],
+      "source": "jay"
+    },
+    {
+      "id": "single-leg-bridge",
+      "name": "Single leg bridge",
+      "image": "br-sl-reach.jpg",
+      "requiresText": "Strong glutes and hamstrings, a level pelvis on one leg, and a spine that rolls smoothly.",
+      "requires": [
+        "hip-extension",
+        "pelvic-stability",
+        "spinal-articulation"
+      ],
+      "versions": [
+        "br-sl-reach",
+        "br-sl-tt",
+        "mt-sl-bridge",
+        "sp-sl-bridge-board",
+        "ch-sl-bridge-pedal",
+        "bo-sl-bridge",
+        "br-articulated-fb",
+        "mt-bridge",
+        "sp-bridge-board"
+      ],
+      "buildUp": [
+        "br-articulated-fb",
+        "ab-knee-folds",
+        "lb-sl-straps"
+      ],
+      "source": "jay"
+    },
+    {
+      "id": "mermaid",
+      "name": "Mermaid",
+      "image": "sd-mermaid-twist.jpg",
+      "requiresText": "Side bending through the whole spine, open shoulders, and a little rotation.",
+      "requires": [
+        "lateral-flexion",
+        "shoulder-mobility",
+        "spinal-rotation"
+      ],
+      "versions": [
+        "sd-mermaid-twist",
+        "sd-mermaid",
+        "ch-mermaid",
+        "mt-mermaid",
+        "bx-side-reach",
+        "sd-standing-side-reach"
+      ],
+      "buildUp": [
+        "ub-supine-circles",
+        "ab-oblique-lift-fb",
+        "sd-circle-side-reach"
+      ],
+      "source": "jay"
+    },
+    {
+      "id": "up-stretch",
+      "name": "Up stretch",
+      "image": "fb-up-stretch.jpg",
+      "requiresText": "Moving from pike to plank and back: strong abs, stable shoulders, hamstring length, wrists that take weight.",
+      "requires": [
+        "core-stability",
+        "shoulder-stability",
+        "hamstring-length",
+        "wrist-loading"
+      ],
+      "versions": [
+        "fb-up-stretch",
+        "fb-elephant",
+        "ch-pike-prep",
+        "fb-plank-platform",
+        "fb-standing-hinge"
+      ],
+      "buildUp": [
+        "fw-calf-stretch",
+        "ub-incline-pushup",
+        "fb-plank-platform"
+      ],
+      "source": "research"
+    },
+    {
+      "id": "going-up-front",
+      "name": "Going up front",
+      "image": "ch-going-up-front.jpg",
+      "requiresText": "Standing strength on one leg, a level pelvis, and balance while stepping up.",
+      "requires": [
+        "balance",
+        "pelvic-stability",
+        "knee-extension",
+        "hip-extension"
+      ],
+      "versions": [
+        "ch-going-up-front",
+        "ch-step-up-supported",
+        "ch-standing-pumps",
+        "lb-scooter",
+        "sd-standing-squat"
+      ],
+      "buildUp": [
+        "ch-fw-sl",
+        "br-sl-tt",
+        "sd-standing-balance"
+      ],
+      "source": "research"
+    },
+    {
+      "id": "chair-pike",
+      "name": "Pike on the chair",
+      "image": "ch-pike.jpg",
+      "requiresText": "Strong abs that lift the hips over the hands, stable shoulders, long hamstrings.",
+      "requires": [
+        "core-stability",
+        "shoulder-stability",
+        "hamstring-length",
+        "wrist-loading",
+        "spinal-flexion"
+      ],
+      "versions": [
+        "ch-pike",
+        "ch-pike-prep",
+        "fb-elephant",
+        "ch-standing-arm-press",
+        "fb-standing-hinge"
+      ],
+      "buildUp": [
+        "ch-seated-pike",
+        "ch-standing-arm-press",
+        "ch-kneeling-push"
+      ],
+      "source": "research"
+    },
+    {
+      "id": "side-splits",
+      "name": "Side splits",
+      "image": "lb-side-splits.jpg",
+      "requiresText": "Strong inner and outer thighs, balance while standing on a moving carriage, a tall steady trunk.",
+      "requires": [
+        "hip-adduction",
+        "balance",
+        "core-stability"
+      ],
+      "versions": [
+        "lb-side-splits",
+        "ch-side-lunge",
+        "lb-skating",
+        "bo-step-squat",
+        "sd-standing-plie-weights",
+        "lb-openings-straps",
+        "sd-standing-squat"
+      ],
+      "buildUp": [
+        "fw-heels-wide-er",
+        "br-circle",
+        "lb-openings-straps"
+      ],
+      "source": "research"
+    },
+    {
+      "id": "front-splits",
+      "name": "Front splits",
+      "image": "lb-front-splits.jpg",
+      "requiresText": "Hip flexor length in the back leg, strong front leg, balance and a square pelvis.",
+      "requires": [
+        "hip-flexor-length",
+        "balance",
+        "pelvic-stability",
+        "knee-extension"
+      ],
+      "versions": [
+        "lb-front-splits",
+        "lb-kneeling-lunge",
+        "bo-lunge",
+        "sp-lunge-press",
+        "st-hip-flexor-kneel",
+        "sd-standing-squat"
+      ],
+      "buildUp": [
+        "fw-sl-heel",
+        "br-sl-tt",
+        "lb-scooter"
+      ],
+      "source": "research"
+    },
+    {
+      "id": "swimming",
+      "name": "Swimming",
+      "image": "bx-swimming.jpg",
+      "requiresText": "Back extension while the arms and legs move, a still pelvis, steady breath.",
+      "requires": [
+        "spinal-extension",
+        "core-stability",
+        "pelvic-stability"
+      ],
+      "versions": [
+        "bx-swimming",
+        "mt-swimming",
+        "pr-bird-dog",
+        "mt-bird-dog",
+        "bo-bird-dog",
+        "bx-pulling-straps",
+        "pr-cat-cow",
+        "mt-swan-prep"
+      ],
+      "buildUp": [
+        "ab-knee-folds",
+        "bx-pulling-straps",
+        "pr-swan-carriage"
+      ],
+      "source": "research"
+    },
+    {
+      "id": "push-up",
+      "name": "Push-up",
+      "image": "mt-push-up.jpg",
+      "requiresText": "Strong chest and arms, a plank that does not sag, wrists that take weight.",
+      "requires": [
+        "shoulder-stability",
+        "core-stability",
+        "wrist-loading"
+      ],
+      "versions": [
+        "mt-push-up",
+        "ch-push-up",
+        "ub-incline-pushup",
+        "ch-kneeling-push",
+        "bx-forearm-plank",
+        "mt-plank",
+        "ub-weights-chest-press"
+      ],
+      "buildUp": [
+        "ub-weights-chest-press",
+        "ub-circle-chest-press",
+        "fb-quadruped-hold"
+      ],
+      "source": "research"
+    },
+    {
+      "id": "side-kick-kneeling",
+      "name": "Side kick kneeling",
+      "image": "mt-side-kick-kneeling.jpg",
+      "requiresText": "Balance on one knee and one hand, strong outer hip, a long side body.",
+      "requires": [
+        "balance",
+        "hip-abduction",
+        "shoulder-stability",
+        "lateral-flexion"
+      ],
+      "versions": [
+        "mt-side-kick-kneeling",
+        "mt-side-plank-knees",
+        "mt-side-lying-series",
+        "lb-side-lying-strap",
+        "sd-mermaid"
+      ],
+      "buildUp": [
+        "mt-clam",
+        "mt-side-lying-series",
+        "mt-mermaid"
+      ],
+      "source": "research"
+    }
+  ]
+}

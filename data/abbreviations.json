@@ -1,0 +1,40 @@
+{
+  "about": "Shorthand used in cues. The cue card key shows only the ones used in that class.",
+  "abbreviations": [
+    { "short": "TT", "long": "Tabletop, legs at 90 degrees", "source": "jay" },
+    { "short": "HNS", "long": "Head and shoulders lifted", "source": "jay" },
+    { "short": "FB", "long": "Footbar", "source": "research" },
+    { "short": "HR", "long": "Headrest", "source": "research" },
+    { "short": "SR", "long": "Shoulder rests", "source": "research" },
+    { "short": "carr", "long": "Carriage", "source": "research" },
+    { "short": "plat", "long": "Platform", "source": "research" },
+    { "short": "par", "long": "Parallel legs", "source": "research" },
+    { "short": "V", "long": "Pilates V, heels together, toes apart", "source": "research" },
+    { "short": "ER", "long": "External rotation, turned out", "source": "research" },
+    { "short": "neut", "long": "Neutral pelvis and spine", "source": "research" },
+    { "short": "imp", "long": "Imprint, low back gently toward the mat", "source": "research" },
+    { "short": "SL", "long": "Single leg", "source": "research" },
+    { "short": "SA", "long": "Single arm", "source": "research" },
+    { "short": "ea", "long": "Each side", "source": "research" },
+    { "short": "x", "long": "Repetitions, so x8 means 8 times", "source": "research" },
+    { "short": "Inh", "long": "Inhale", "source": "research" },
+    { "short": "Exh", "long": "Exhale", "source": "research" },
+    { "short": "scaps", "long": "Shoulder blades", "source": "research" },
+    { "short": "sit bns", "long": "Sit bones", "source": "research" },
+    { "short": "LB", "long": "Long box", "source": "research" },
+    { "short": "SB", "long": "Short box (box turned the short way)", "source": "research" },
+    { "short": "ext", "long": "Extension, lengthen or arch", "source": "research" },
+    { "short": "flex", "long": "Flexion, bend or curl", "source": "research" },
+    { "short": "rot", "long": "Rotation", "source": "research" },
+    { "short": "w/", "long": "With", "source": "research" },
+    { "short": "hip wd", "long": "Hip width apart", "source": "research" },
+    { "short": "art", "long": "Articulate, one bone at a time", "source": "research" },
+    { "short": "sec", "long": "Seconds", "source": "research" },
+    { "short": "wts", "long": "Light weights", "source": "research" },
+    { "short": "MC", "long": "Magic circle", "source": "research" }
+  ],
+  "springKey": {
+    "value": "Springs: red heavy, blue medium, yellow light. Older clients start lighter.",
+    "source": "assumption"
+  }
+}

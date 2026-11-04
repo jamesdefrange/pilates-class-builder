@@ -1,0 +1,12 @@
+{
+  "name": "pilates-class-builder",
+  "version": "1.0.0",
+  "description": "Builds varied 50 minute Pilates flow classes and prints a fold-in-half cue card.",
+  "private": true,
+  "scripts": {
+    "build-data": "node scripts/build-data.js",
+    "test": "node scripts/build-data.js && node --test tests/",
+    "samples": "node scripts/make-samples.js"
+  },
+  "license": "UNLICENSED"
+}

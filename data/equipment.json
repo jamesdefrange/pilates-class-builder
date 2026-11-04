@@ -1,0 +1,373 @@
+{
+  "about": "Equipment, spring settings and flow rules. A station is where the client works. Spring colors follow the Balanced Body color code and are an assumption until Jay confirms his studio's springs.",
+  "stations": [
+    {
+      "id": "reformer",
+      "label": "Reformer",
+      "checkbox": "reformer",
+      "floor": false,
+      "typicalShare": {
+        "value": 70,
+        "source": "jay",
+        "note": "About 70 percent of classes."
+      },
+      "springs": [
+        {
+          "id": "heavy",
+          "label": "Heavy",
+          "weight": 6,
+          "colors": "3 red",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "medium-heavy",
+          "label": "Medium heavy",
+          "weight": 5,
+          "colors": "2 red + 1 blue",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "medium",
+          "label": "Medium",
+          "weight": 4,
+          "colors": "2 red",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "medium-light",
+          "label": "Medium light",
+          "weight": 3,
+          "colors": "1 red + 1 blue",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "light",
+          "label": "Light",
+          "weight": 2,
+          "colors": "1 red",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "very-light",
+          "label": "Very light",
+          "weight": 1,
+          "colors": "1 blue",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "extra-light",
+          "label": "Extra light",
+          "weight": 0.5,
+          "colors": "1 yellow",
+          "colorSource": "assumption"
+        }
+      ]
+    },
+    {
+      "id": "box",
+      "label": "Reformer + long box",
+      "checkbox": "box",
+      "needs": "reformer",
+      "floor": false,
+      "minMinutes": {
+        "value": 10,
+        "source": "jay",
+        "note": "Once the box is placed it stays at least 10 minutes."
+      },
+      "springs": [
+        {
+          "id": "heavy",
+          "label": "Heavy",
+          "weight": 6,
+          "colors": "3 red",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "medium",
+          "label": "Medium",
+          "weight": 4,
+          "colors": "2 red",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "medium-light",
+          "label": "Medium light",
+          "weight": 3,
+          "colors": "1 red + 1 blue",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "light",
+          "label": "Light",
+          "weight": 2,
+          "colors": "1 red",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "very-light",
+          "label": "Very light",
+          "weight": 1,
+          "colors": "1 blue",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "extra-light",
+          "label": "Extra light",
+          "weight": 0.5,
+          "colors": "1 yellow",
+          "colorSource": "assumption"
+        }
+      ]
+    },
+    {
+      "id": "chair",
+      "label": "Chair",
+      "checkbox": "chair",
+      "floor": false,
+      "favorite": {
+        "value": true,
+        "source": "jay",
+        "note": "Jay's favorite."
+      },
+      "springs": [
+        {
+          "id": "chair-heavy",
+          "label": "Heavy",
+          "weight": 3,
+          "colors": "2 springs, heavier setting",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "chair-medium",
+          "label": "Medium",
+          "weight": 2,
+          "colors": "1 heavier + 1 lighter",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "chair-light",
+          "label": "Light",
+          "weight": 1,
+          "colors": "1 spring, lighter setting",
+          "colorSource": "assumption"
+        }
+      ]
+    },
+    {
+      "id": "mat",
+      "label": "Mat",
+      "checkbox": "mat",
+      "floor": true,
+      "typicalShare": {
+        "value": 10,
+        "source": "jay",
+        "note": "Classic, but clients find it boring. Use sparingly."
+      },
+      "springs": [
+        {
+          "id": "none",
+          "label": "No springs",
+          "weight": 0,
+          "colors": "",
+          "colorSource": "assumption"
+        }
+      ]
+    },
+    {
+      "id": "bosu",
+      "label": "Bosu",
+      "checkbox": "bosu",
+      "floor": false,
+      "note": {
+        "value": "On the ground, bubble up or bubble down.",
+        "source": "jay"
+      },
+      "springs": [
+        {
+          "id": "bubble-up",
+          "label": "Bubble up",
+          "weight": 0,
+          "colors": "Dome up",
+          "colorSource": "jay"
+        },
+        {
+          "id": "bubble-down",
+          "label": "Bubble down",
+          "weight": 0,
+          "colors": "Flat side up",
+          "colorSource": "jay"
+        }
+      ]
+    },
+    {
+      "id": "springboard",
+      "label": "Springboard",
+      "checkbox": "springboard",
+      "floor": false,
+      "note": {
+        "value": "Upper and lower body. Bridging with feet on the board. Springs top and bottom.",
+        "source": "jay"
+      },
+      "springs": [
+        {
+          "id": "sb-top-light",
+          "label": "Top, light",
+          "weight": 1,
+          "colors": "Springs hooked high, yellow",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "sb-top-medium",
+          "label": "Top, medium",
+          "weight": 2,
+          "colors": "Springs hooked high, blue",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "sb-middle-light",
+          "label": "Middle, light",
+          "weight": 1,
+          "colors": "Springs hooked at chest height, yellow",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "sb-middle-medium",
+          "label": "Middle, medium",
+          "weight": 2,
+          "colors": "Springs hooked at chest height, blue",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "sb-bottom-light",
+          "label": "Bottom, light",
+          "weight": 1,
+          "colors": "Springs hooked low, yellow",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "sb-bottom-medium",
+          "label": "Bottom, medium",
+          "weight": 2,
+          "colors": "Springs hooked low, blue",
+          "colorSource": "assumption"
+        },
+        {
+          "id": "sb-none",
+          "label": "No springs",
+          "weight": 0,
+          "colors": "Feet on the board",
+          "colorSource": "assumption"
+        }
+      ]
+    },
+    {
+      "id": "standing",
+      "label": "Standing (no equipment)",
+      "checkbox": null,
+      "floor": false,
+      "always": {
+        "value": true,
+        "source": "assumption",
+        "note": "Standing work beside any equipment. Not counted as an equipment change."
+      },
+      "springs": [
+        {
+          "id": "none",
+          "label": "No springs",
+          "weight": 0,
+          "colors": "",
+          "colorSource": "assumption"
+        }
+      ]
+    }
+  ],
+  "checkboxes": [
+    {
+      "id": "reformer",
+      "label": "Reformer",
+      "default": true,
+      "source": "jay"
+    },
+    {
+      "id": "mat",
+      "label": "Mat",
+      "default": true,
+      "source": "jay"
+    },
+    {
+      "id": "chair",
+      "label": "Chair",
+      "default": true,
+      "source": "jay"
+    },
+    {
+      "id": "bosu",
+      "label": "Bosu",
+      "default": false,
+      "source": "assumption"
+    },
+    {
+      "id": "springboard",
+      "label": "Springboard",
+      "default": false,
+      "source": "assumption"
+    },
+    {
+      "id": "box",
+      "label": "Long box",
+      "default": true,
+      "source": "jay"
+    },
+    {
+      "id": "props",
+      "label": "Small props (light weights, magic circle)",
+      "default": true,
+      "source": "jay"
+    }
+  ],
+  "props": [
+    {
+      "id": "weights",
+      "label": "Light weights",
+      "source": "jay"
+    },
+    {
+      "id": "circle",
+      "label": "Magic circle",
+      "source": "jay"
+    }
+  ],
+  "flowRules": {
+    "minSegmentMinutes": {
+      "value": 8,
+      "source": "assumption",
+      "note": "No short hops. Time spent on one piece of equipment should be at least this long. Jay's example of a hop: 2 minutes on springboard then back to reformer."
+    },
+    "boxMinMinutes": {
+      "value": 10,
+      "source": "jay",
+      "note": "Long box stays 10 minutes or more once placed."
+    },
+    "springDropCost": {
+      "value": 0.5,
+      "source": "jay",
+      "note": "Dropping to a lighter spring (like for strap abs) is acceptable, so it counts half."
+    },
+    "standingHopCost": {
+      "value": 0.3,
+      "source": "assumption",
+      "note": "Stepping off to stand is small but not free."
+    },
+    "defaultShares": {
+      "value": {
+        "reformer": 70,
+        "chair": 15,
+        "springboard": 10,
+        "mat": 5,
+        "bosu": 0
+      },
+      "source": "jay",
+      "note": "Percent of class time when that equipment is ticked. Reformer includes time on the long box. Reformer about 70 percent and chair is Jay's favorite (jay). The rest are assumptions. Mat sparingly."
+    }
+  }
+}

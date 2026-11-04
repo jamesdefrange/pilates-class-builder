@@ -1,0 +1,48 @@
+{
+  "about": "Client groups tune a class within its level. Rules marked hard are never broken. Soft settings nudge the choices.",
+  "defaultGroup": { "value": "older", "source": "jay", "note": "Most of Jay's clients are older." },
+  "groups": [
+    {
+      "id": "older",
+      "label": "Older",
+      "summary": { "value": "Gentler versions, more support, slower changes, lighter loads, longer warm-up and wind-down.", "source": "jay" },
+      "rules": {
+        "allowInversions": { "value": false, "hard": true, "source": "jay", "note": "Avoid inversions." },
+        "maxSpinalFlexion": { "value": "light", "hard": true, "source": "jay", "note": "Avoid deep loaded spinal flexion. A small curl (HNS) is fine." },
+        "maxFloorVisits": { "value": 1, "hard": true, "source": "jay", "note": "Minimize getting up and down from the floor. At most one stretch of floor work per class." },
+        "paceFactor": { "value": 1.2, "hard": false, "source": "jay", "note": "Slower transitions, so each exercise gets about 20 percent more time and the class has fewer exercises." },
+        "challengeBias": { "value": -1, "hard": false, "source": "assumption", "note": "Prefers the easier exercises allowed at the level." },
+        "springAdvice": { "value": "Start at the lighter load. Add spring only if form stays clean.", "hard": false, "source": "jay", "note": "Lighter loads. Shown on the cue card key." },
+        "timingTemplate": { "value": "gentle", "hard": false, "source": "jay", "note": "Longer warm-up and wind-down." }
+      }
+    },
+    {
+      "id": "middle",
+      "label": "Middle-aged",
+      "summary": { "value": "The standard version of each level.", "source": "jay" },
+      "rules": {
+        "allowInversions": { "value": true, "hard": true, "source": "research", "note": "Allowed when the level allows them." },
+        "maxSpinalFlexion": { "value": "deep", "hard": true, "source": "research", "note": "Standard." },
+        "maxFloorVisits": { "value": 2, "hard": true, "source": "assumption", "note": "Still keeps getting up and down low." },
+        "paceFactor": { "value": 1.0, "hard": false, "source": "assumption", "note": "Standard pace." },
+        "challengeBias": { "value": 0, "hard": false, "source": "assumption", "note": "No lean either way." },
+        "springAdvice": { "value": "Springs as listed.", "hard": false, "source": "assumption", "note": "" },
+        "timingTemplate": { "value": "standard", "hard": false, "source": "assumption", "note": "" }
+      }
+    },
+    {
+      "id": "younger",
+      "label": "Younger",
+      "summary": { "value": "More challenging variations within the level and faster pacing.", "source": "jay" },
+      "rules": {
+        "allowInversions": { "value": true, "hard": true, "source": "research", "note": "Allowed when the level allows them." },
+        "maxSpinalFlexion": { "value": "deep", "hard": true, "source": "research", "note": "Standard." },
+        "maxFloorVisits": { "value": 3, "hard": true, "source": "assumption", "note": "" },
+        "paceFactor": { "value": 0.85, "hard": false, "source": "jay", "note": "Faster pacing, so more exercises fit in each block." },
+        "challengeBias": { "value": 1, "hard": false, "source": "jay", "note": "Prefers the harder exercises allowed at the level." },
+        "springAdvice": { "value": "Springs as listed. Go heavier or lighter to add challenge.", "hard": false, "source": "assumption", "note": "" },
+        "timingTemplate": { "value": "standard", "hard": false, "source": "assumption", "note": "" }
+      }
+    }
+  ]
+}
