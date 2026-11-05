@@ -2,7 +2,7 @@
 
 **Live link (send this to Jay):** https://jamesdefrange.github.io/pilates-class-builder/
 
-Updated November 5 at 11:45 am. Jay's real Flow structure is built, tested and live. 321 of 323 exercise pictures are done.
+Updated November 5 at 11:45 am. Jay's real Flow structure is built, tested and live. 322 of 323 exercise pictures are done.
 
 ## What changed for Jay's Flow structure (November 5)
 
@@ -40,16 +40,17 @@ Updated November 5 at 11:45 am. Jay's real Flow structure is built, tested and l
 - **Diamond press has no picture.** The content filter blocked it twice, so the placeholder shows. It is listed in images/REVIEW.md.
 - **8 redos.** Most were seated strap work where the figure faced the footbar instead of the straps. Describing a camera view from behind the figure fixed it, and using that wording up front got four more right first time.
 - **6 more kept with small imperfections,** so images/REVIEW.md lists 13. For example, on two box exercises the hands are not holding the straps.
-- **From the first run:** chest expansion on the box still faces the wrong way after 3 tries.
+- **Chest expansion on the box is fixed.** It faced the wrong way after 3 tries in the first run. A fourth try with the camera behind the figure got it right.
 
 ## Credits
 
 - **This update: 37.5 credits** (761.5 before, 724 after, checked at 11:45 am). The math: 67 pictures plus 8 redos is 75 jobs, at 0.5 each that is 37.5. The 3 jobs the filter blocked were not charged, so it matches exactly.
+- **Chest expansion redo: 0.5 credits** (724 to 723.5, checked after the job).
 - **First run: 134.5 credits** (896 to 761.5).
 
 ## Known issues
 
-- **Two pictures need help:** chest expansion on the box faces the footbar, and the diamond press has none. Both probably need a reference photo, or Jay may prefer to drop them.
+- **The diamond press has no picture.** The content filter blocked it twice. It stays a placeholder with its review note, and no more credits go to it.
 - **Level 1 needs the mat or the long box.** Jay's Level 1 planks are only on the mat or the box, so a reformer-only room cannot build Level 1. The app says "Tick the Mat or Long box."
 - **A mat-only room cannot build Level 1 for middle-aged or younger clients.** Plank and full body compete for the same three mat planks. Club Pilates rooms have reformers, so I left it. The app asks for more equipment.
 - **iPhone printing is untested on a real phone.** If an iPhone shows a tall preview, Jay taps Options > Landscape.
@@ -68,5 +69,6 @@ Updated November 5 at 11:45 am. Jay's real Flow structure is built, tested and l
 
 - DECISIONS.md: every judgment call and why. The newest section is "Jay's Flow structure (November 5)".
 - images/REVIEW.md: pictures that need a human look.
+- .claude/agents/picture-helper.md: the picture helper's instructions for the next picture run.
 - IDEAS.md: extras left out on purpose.
 - DEPLOY.md: how updates go live.

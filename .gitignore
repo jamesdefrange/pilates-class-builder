@@ -1,4 +1,6 @@
 .DS_Store
 node_modules/
 *.log
-.claude/
+# Local Claude settings stay private; the picture helper instructions are shared.
+.claude/*
+!.claude/agents/

@@ -39,8 +39,26 @@ function soften(text) {
   return SOFTEN.reduce((t, [re, to]) => t.replace(re, to), text);
 }
 
+// Camera behind the figure. When the figure faces the straps (or the springboard, or away
+// from the viewer), the default front three-quarter view kept turning it to face the camera
+// and the footbar instead. Describing a camera behind and to one side fixed every one of those
+// on the first or second try (November 5), so pending prompts get it by default.
+const STRAP_END = 'The strap end is the head end of the reformer, the end with the two tall strap posts and pulleys.';
+const CAMERA_BEHIND = {
+  straps: STRAP_END + ' The camera looks from behind and to one side of the figure, so the figure\'s back is toward the camera, the footbar is in the near foreground behind the figure, and the strap posts are farther away in front of the figure.',
+  board: 'The camera looks from behind and to one side of the figure, so the figure\'s back is toward the camera and the wall-mounted board is farther away in front of the figure.',
+  away: 'The camera looks from behind and to one side of the figure, so the figure\'s back is toward the camera.'
+};
+function cameraFor(e) {
+  const pose = e.pose;
+  if ((e.equipment === 'reformer' || e.equipment === 'box') && /facing the (strap end|back straps|head end)/i.test(pose)) return CAMERA_BEHIND.straps;
+  if (e.equipment === 'springboard' && /facing (the board|a (wall-mounted )?(pilates )?springboard)/i.test(pose)) return CAMERA_BEHIND.board;
+  if (/(facing away from|back to|back toward) the (viewer|camera)/i.test(pose)) return CAMERA_BEHIND.away;
+  return '';
+}
+
 function promptFor(e, extra) {
-  return [STYLE, 'The figure is ' + soften(e.pose) + '.', EQUIP[e.equipment], extra || '', FINISH].filter(Boolean).join(' ');
+  return [STYLE, 'The figure is ' + soften(e.pose) + '.', cameraFor(e), EQUIP[e.equipment], extra || '', FINISH].filter(Boolean).join(' ');
 }
 
 let usage = {};
