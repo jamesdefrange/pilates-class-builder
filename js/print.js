@@ -23,6 +23,13 @@
 
   function stationLabel(ctx, id) { return ctx.stations[id] ? ctx.stations[id].label : id; }
 
+  /* The section a block belongs to (Warm up, Strength and tone, ...), or null for old classes. */
+  function sectionOf(ctx, cls, blockId) {
+    var ct = ctx.classTypes[(cls.settings && cls.settings.classType) || 'flow'];
+    var list = (ct && ct.sections) || [];
+    return list.filter(function (s) { return s.blocks.indexOf(blockId) >= 0; })[0] || null;
+  }
+
   /* Split blocks so the left half is about the first half of class. */
   function splitIndex(cls) {
     var mins = cls.blocks.map(function (b) { return b.items.reduce(function (a, it) { return a + it.minutes; }, 0); });
@@ -32,6 +39,7 @@
       run += mins[k - 1];
       var rowsL = 0, rowsR = 0;
       cls.blocks.forEach(function (b, i) { if (i < k) rowsL += b.items.length + 1; else rowsR += b.items.length + 1; });
+      rowsL += 2; rowsR += 2; // section headers, roughly two per half
       var diff = Math.abs(run - total / 2) + Math.abs(rowsL - (rowsR + 3)) * 0.4;
       if (diff < bestDiff) { bestDiff = diff; best = k; }
     }
@@ -58,9 +66,21 @@
     var k = splitIndex(cls);
     var minuteAt = 0;
     var blockStart = cls.blocks.map(function (b) { var s = minuteAt; minuteAt += b.minutes; return s; });
+    var secs = cls.blocks.map(function (b) { return sectionOf(ctx, cls, b.id); });
+    // old classes from before the four sections have blocks that are not in any section
+    if (secs.some(function (x) { return !x; })) secs = cls.blocks.map(function () { return null; });
 
-    function blockHTML(b, bi) {
-      var h = '<div class="card-block"><div class="card-bh"><span>' + (bi + 1) + '. ' + esc(b.label) + '</span><span>' +
+    function sectionHTML(bi, colStart) {
+      var sec = secs[bi];
+      if (!sec) return '';
+      var isNew = bi === 0 || secs[bi - 1] !== sec;
+      if (!isNew && !colStart) return '';
+      var mins = cls.blocks.reduce(function (a, b, i) { return a + (secs[i] === sec ? b.minutes : 0); }, 0);
+      return '<div class="card-sec"><span>' + esc(sec.label) + (isNew ? '' : ', continued') + '</span><span>' + esc(fmtMin(mins)) + '</span></div>';
+    }
+
+    function blockHTML(b, bi, colStart) {
+      var h = sectionHTML(bi, colStart) + '<div class="card-block"><div class="card-bh"><span>' + (bi + 1) + '. ' + esc(b.label) + '</span><span>' +
         esc(fmtMin(b.minutes)) + ', ' + esc(stationLabel(ctx, b.station)) + '</span></div>';
       b.items.forEach(function (it) {
         var e = ctx.byId[it.id];
@@ -84,11 +104,11 @@
     var title = info.name ? esc(info.name) : 'Flow class';
     var left = '<div class="card-head"><div class="card-title">' + title + '</div><div class="card-sub">' +
       esc(level.label) + ', ' + esc(group.label.toLowerCase()) + ' clients, 50 min' + (peakLine ? '. ' + peakLine : '') + '</div></div>';
-    cls.blocks.slice(0, k).forEach(function (b, i) { left += blockHTML(b, i); });
+    cls.blocks.slice(0, k).forEach(function (b, i) { left += blockHTML(b, i, i === 0); });
 
     var right = '<div class="card-head"><div class="card-title">Second half</div><div class="card-sub">From minute ' +
       blockStart[k] + '. ' + (cls.stats ? cls.stats.equipmentChanges + ' equipment changes, ' + cls.stats.springChanges + ' spring changes' : '') + '</div></div>';
-    cls.blocks.slice(k).forEach(function (b, i) { right += blockHTML(b, i + k); });
+    cls.blocks.slice(k).forEach(function (b, i) { right += blockHTML(b, i + k, i === 0); });
 
     var abbr = usedAbbreviations(ctx, cls);
     var springKey = ctx.data.abbreviations.springKey.value;
@@ -121,5 +141,5 @@
     return fit(rootEl);
   }
 
-  return { cardHTML: cardHTML, fit: fit, render: render, splitIndex: splitIndex, usedAbbreviations: usedAbbreviations, springText: springText, fmtMin: fmtMin, esc: esc };
+  return { sectionOf: sectionOf, cardHTML: cardHTML, fit: fit, render: render, splitIndex: splitIndex, usedAbbreviations: usedAbbreviations, springText: springText, fmtMin: fmtMin, esc: esc };
 });

@@ -1,7 +1,11 @@
 // Unit tests for every hard rule. Run with: npm test
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { G, ctx, data, LEVELS, GROUPS, RANK, build, items, spread } = require('./helpers');
+const { G, ctx, data, LEVELS, GROUPS, RANK, build, items, spread, EQUIP_SETS } = require('./helpers');
+const Print = require('../js/print.js');
+const FLOW = data['class-types'].classTypes[0];
+const blockIndex = id => FLOW.blocks.findIndex(b => b.id === id);
+const JAY_OVERUSED = FLOW.overusedByJay.value;
 
 const FLEX = { none: 0, light: 1, deep: 2 };
 const SAMPLE = spread(72).map((s, i) => ({ s, cls: build(s, 100 + i) }));
@@ -42,13 +46,48 @@ test('data: peak poses reference real exercises and there are at least 15', () =
   }
 });
 
-test('data: every timing template adds up to the class length', () => {
-  const flow = data['class-types'].classTypes[0];
+test('data: every timing template adds up to the class length and keeps each section in range', () => {
+  const flow = FLOW;
   for (const t of flow.timingTemplates) {
     const total = Object.values(t.minutes).reduce((a, b) => a + b, 0);
     assert.equal(total, flow.minutes.value, t.id);
     assert.deepEqual(Object.keys(t.minutes), flow.blocks.map(b => b.id), t.id + ' block order');
+    for (const sec of flow.sections) {
+      const m = sec.blocks.reduce((a, b) => a + t.minutes[b], 0);
+      assert.ok(m >= sec.range.min && m <= sec.range.max, t.id + ' ' + sec.id + ' ' + m);
+    }
   }
+});
+
+test('data: Jay\'s four sections hold the eleven blocks in order', () => {
+  assert.deepEqual(FLOW.sections.map(s => s.label), ['Warm up', 'Strength and tone', 'Functional', 'Lengthening']);
+  assert.deepEqual(FLOW.sections.flatMap(s => s.blocks), FLOW.blocks.map(b => b.id));
+  assert.deepEqual(FLOW.blocks.map(b => b.id), ['footwork', 'bridging', 'abs', 'plank', 'lower', 'upperback', 'upperfront', 'side', 'full', 'prone', 'stretch']);
+  assert.deepEqual(FLOW.sections.map(s => [s.minutes.value, s.range.min, s.range.max]), [[15, 15, 15], [18, 15, 20], [12, 10, 15], [5, 5, 5]]);
+  FLOW.sections.forEach(s => assert.equal(s.range.source, 'jay'));
+  // full body and back extension appear only in Functional
+  assert.deepEqual(FLOW.sections.find(s => s.id === 'functional').blocks, ['full', 'prone']);
+});
+
+test('data: plank, side body, upper back and upper front have plenty of Level 1 and 1.5 options', () => {
+  const thin = ['plank', 'side', 'upperback', 'upperfront'];
+  for (const [level, min, stations] of [['1', 6, 2], ['1.5', 12, 4]]) {
+    const st = G.normalize(ctx, { level, group: 'older' });
+    const R = G.rulesFor(ctx, st);
+    for (const b of thin) {
+      const list = ctx.exercises.filter(e => e.blocks.includes(b) && !G.hardCheck(ctx, st, R, e));
+      assert.ok(list.length >= min, b + ' has ' + list.length + ' options at Level ' + level);
+      assert.ok(new Set(list.map(e => e.equipment)).size >= stations, b + ' spans equipment at Level ' + level);
+    }
+  }
+});
+
+test('data: Level 1 plank is only on the mat or the long box (Jay)', () => {
+  const st = G.normalize(ctx, { level: '1', group: 'middle' });
+  const R = G.rulesFor(ctx, st);
+  const l1 = ctx.exercises.filter(e => e.blocks.includes('plank') && !G.hardCheck(ctx, st, R, e));
+  assert.ok(l1.length >= 4);
+  l1.forEach(e => assert.ok(['mat', 'box'].includes(e.equipment), e.id));
 });
 
 test('data: no em dashes or en dashes in any data text', () => {
@@ -102,8 +141,8 @@ test('hard rule: block order and block timings follow the template', () => {
     assert.deepEqual(cls.blocks.map(b => b.id), flow.blocks.map(b => b.id));
     for (const b of cls.blocks) assert.equal(b.items.reduce((a, it) => a + it.minutes, 0), st.timing[b.id], b.id);
   }
-  // a custom template with a 15 minute warm-up
-  const custom = { footwork: 15, bridging: 4, abs: 4, lower: 5, upper: 5, side: 3, full: 5, prone: 3, stretch: 3, winddown: 3 };
+  // a custom template with Strength and tone at its top of 20 minutes
+  const custom = { footwork: 6, bridging: 4, abs: 5, plank: 4, lower: 4, upperback: 4, upperfront: 4, side: 4, full: 6, prone: 4, stretch: 5 };
   for (let i = 0; i < 8; i++) {
     const cls = build({ level: LEVELS[i % 4], group: 'older', timing: custom }, 900 + i);
     cls.blocks.forEach(b => assert.equal(b.items.reduce((a, it) => a + it.minutes, 0), custom[b.id]));
@@ -240,9 +279,27 @@ test('validator catches: chair at Level 1', () => {
 });
 test('validator catches: too many floor visits for older clients', () => {
   const cls = oneClass();
-  cls.blocks[2].station = 'mat'; cls.blocks[2].items = [{ id: 'mt-chest-lift', minutes: cls.blocks[2].minutes }];
-  cls.blocks[8].station = 'mat'; cls.blocks[8].items = [{ id: 'mt-hamstring-stretch', minutes: cls.blocks[8].minutes }];
+  const ab = cls.blocks[blockIndex('abs')], st = cls.blocks[blockIndex('stretch')];
+  ab.station = 'mat'; ab.items = [{ id: 'mt-chest-lift', minutes: ab.minutes }];
+  st.station = 'mat'; st.items = [{ id: 'mt-hamstring-stretch', minutes: st.minutes }];
+  const mid = cls.blocks[blockIndex('upperback')];
+  mid.station = 'reformer'; mid.items = [{ id: 'ub-seated-rows', minutes: mid.minutes }];
   assert.ok(rulesHit(cls).includes('floor-visits'));
+});
+test('validator catches: a section outside Jay\'s range', () => {
+  const cls = oneClass();
+  // move a minute from Functional into Strength and tone beyond its 20 minute top
+  const s2 = { level: '1', group: 'older', timing: { footwork: 6, bridging: 4, abs: 5, plank: 3, lower: 4, upperback: 4, upperfront: 4, side: 3, full: 7, prone: 5, stretch: 5 } };
+  const lower = cls.blocks[blockIndex('lower')];
+  lower.items[0].minutes += 5;
+  lower.minutes += 5;
+  assert.ok(rulesHit(cls, s2).includes('section-timing'));
+});
+test('validator catches: coordination or balance work at Level 1', () => {
+  const cls = oneClass();
+  const fw = cls.blocks[blockIndex('footwork')];
+  fw.items[0].id = 'fb-footwork-arms';
+  assert.ok(rulesHit(cls).includes('level-skill'));
 });
 
 /* ---------- Peak pose ---------- */
@@ -280,7 +337,7 @@ test('peak pose: earlier blocks prepare the muscles and patterns the peak needs'
       const r = G.buildClass(ctx, { level: LEVELS[i], group: GROUPS[i % 3], peakId }, { seed: 40 + i });
       const req = ctx.peakById[peakId].requires;
       const covered = new Set();
-      items(r.class).filter(x => x.bi < 6).forEach(x => x.ex.prepares.forEach(t => covered.add(t)));
+      items(r.class).filter(x => x.bi < blockIndex('full')).forEach(x => x.ex.prepares.forEach(t => covered.add(t)));
       const share = req.filter(t => covered.has(t)).length / req.length;
       assert.ok(share >= 0.5, peakId + ' prep coverage ' + share);
     }
@@ -309,11 +366,12 @@ test('swap: offers up to 3 alternatives that each pass every rule', () => {
 test('lock: rebuilding keeps locked blocks exactly', () => {
   const s = { level: '2', group: 'middle', peakId: 'elephant' };
   const cls = build(s, 31);
-  const locked = { abs: cls.blocks[2], prone: cls.blocks[7] };
+  const a = blockIndex('abs'), p = blockIndex('prone');
+  const locked = { abs: cls.blocks[a], prone: cls.blocks[p] };
   for (let i = 0; i < 6; i++) {
     const next = G.buildClass(ctx, s, { seed: 60 + i, locked }).class;
-    assert.deepEqual(next.blocks[2].items, cls.blocks[2].items);
-    assert.deepEqual(next.blocks[7].items, cls.blocks[7].items);
+    assert.deepEqual(next.blocks[a].items, cls.blocks[a].items);
+    assert.deepEqual(next.blocks[p].items, cls.blocks[p].items);
     assert.deepEqual(G.validate(ctx, s, next), []);
   }
 });
@@ -329,9 +387,99 @@ test('variety: Build another gives a clearly different class', () => {
 });
 
 test('timing: a template that does not total 50 gives a friendly message', () => {
-  const r = G.buildClass(ctx, { level: '1', group: 'older', timing: { footwork: 10, bridging: 4, abs: 5, lower: 6, upper: 6, side: 4, full: 7, prone: 4, stretch: 4, winddown: 4 } }, { seed: 1 });
+  const r = G.buildClass(ctx, { level: '1', group: 'older', timing: { footwork: 10, bridging: 4, abs: 5, plank: 3, lower: 4, upperback: 4, upperfront: 4, side: 3, full: 7, prone: 5, stretch: 5 } }, { seed: 1 });
   assert.equal(r.ok, false);
   assert.match(r.errors[0], /add up to 54 minutes/);
+});
+
+test('timing: a section outside Jay\'s range gives a friendly message', () => {
+  const r = G.buildClass(ctx, { level: '1', group: 'older', timing: { footwork: 6, bridging: 4, abs: 5, plank: 3, lower: 4, upperback: 4, upperfront: 4, side: 3, full: 4, prone: 4, stretch: 9 } }, { seed: 1 });
+  assert.equal(r.ok, false);
+  assert.ok(r.errors.includes('Functional has 8 minutes. It needs 10 to 15 minutes.'), r.errors.join(' '));
+  assert.ok(r.errors.includes('Lengthening has 9 minutes. It needs 5 minutes.'));
+});
+
+test('timing: timings saved for the old 10 block layout fall back to the clients\' template', () => {
+  const old = { footwork: 6, bridging: 4, abs: 5, lower: 6, upper: 6, side: 4, full: 7, prone: 4, stretch: 4, winddown: 4 };
+  const cls = build({ level: '1', group: 'older', timing: old }, 5);
+  assert.deepEqual(G.validate(ctx, { level: '1', group: 'older' }, cls), []);
+  assert.equal(G.timingFits(ctx, 'flow', old), false);
+});
+
+/* ---------- Jay's Flow structure ---------- */
+test('levels: Level 1 never uses coordination or balance work; Level 1.5 leans into it', () => {
+  let l1 = 0, l15 = 0;
+  for (let i = 0; i < 16; i++) {
+    const a = items(build({ level: '1', group: GROUPS[i % 3] }, 1200 + i));
+    a.forEach(x => assert.ok(!(x.ex.tags || []).some(t => t === 'coordination' || t === 'balance'), x.ex.id + ' at Level 1'));
+    l1 += a.filter(x => (x.ex.tags || []).length && !(x.ex.tags.length === 1 && x.ex.tags[0] === 'supine-arms')).length;
+    const b = items(build({ level: '1.5', group: GROUPS[i % 3] }, 1200 + i));
+    l15 += b.filter(x => (x.ex.tags || []).some(t => ['coordination', 'balance', 'stability'].includes(t))).length;
+  }
+  assert.ok(l15 > l1 * 1.5, 'skill work at 1.5 (' + l15 + ') vs 1 (' + l1 + ')');
+});
+
+test('levels: Level 1 keeps clients in fewer positions than Level 1.5', () => {
+  const changes = level => {
+    let n = 0;
+    for (let i = 0; i < 16; i++) {
+      let prev = null;
+      items(build({ level, group: GROUPS[i % 3] }, 1300 + i)).forEach(x => { if (prev && prev !== x.ex.position) n++; prev = x.ex.position; });
+    }
+    return n / 16;
+  };
+  const a = changes('1'), b = changes('1.5');
+  assert.ok(a < b, 'Level 1 ' + a + ' vs Level 1.5 ' + b);
+});
+
+test('plank: Level 1 plank is on the mat or the long box, and a reformer-only room says what to tick', () => {
+  for (const { s, cls } of SAMPLE) {
+    if (s.level !== '1') continue;
+    assert.ok(['mat', 'box'].includes(cls.blocks[blockIndex('plank')].station), JSON.stringify(s));
+  }
+  const r = G.buildClass(ctx, { level: '1', group: 'older', equipment: EQUIP_SETS[1] }, { seed: 1 });
+  assert.equal(r.ok, false);
+  assert.equal(r.errors[0], 'Nothing fits the plank block with this equipment at Level 1 for older clients. Tick the Mat or Long box.');
+});
+
+test('supine arms: the abs block usually includes one, and Jay\'s overused four are weighted down hard', () => {
+  let withSupine = 0, two = 0, overused = 0, n = 0;
+  for (const { cls } of SAMPLE) {
+    n++;
+    const abs = cls.blocks[blockIndex('abs')].items.map(it => ctx.byId[it.id]);
+    const sup = abs.filter(e => (e.tags || []).includes('supine-arms')).length;
+    if (sup) withSupine++;
+    if (sup > 1) two++;
+    items(cls).forEach(x => { if (JAY_OVERUSED.includes(x.ex.id)) overused++; });
+  }
+  assert.ok(withSupine / n >= 0.7, 'supine arms in ' + withSupine + ' of ' + n);
+  assert.ok(two / n <= 0.1, 'two supine arms exercises in ' + two + ' of ' + n + ' abs blocks (soft rule: usually one)');
+  assert.ok(overused <= 2, 'overused supine arms used ' + overused + ' times in ' + n + ' classes');
+});
+
+test('supine arms: Jay\'s overused four are still possible when nothing fresher fits', () => {
+  const st = G.normalize(ctx, { level: '1', group: 'older' });
+  const R = G.rulesFor(ctx, st);
+  JAY_OVERUSED.forEach(id => assert.equal(G.hardCheck(ctx, st, R, ctx.byId[id]), null, id + ' is allowed'));
+  // flag every other abs option on the reformer as unsafe: the overused ones fill the block
+  const feedback = ctx.exercises.filter(e => e.blocks.includes('abs') && !JAY_OVERUSED.includes(e.id)).map(e => ({ exerciseId: e.id, reason: 'unsafe', level: '1', group: 'older' }));
+  const cls = build({ level: '1', group: 'older', feedback, equipment: { reformer: true, mat: true, box: true, chair: false, bosu: false, springboard: false, props: false } }, 9);
+  const abs = cls.blocks[blockIndex('abs')].items.map(it => it.id);
+  assert.ok(abs.every(id => JAY_OVERUSED.includes(id)), abs.join(', '));
+});
+
+test('cue card: shows the four section headers in order and keeps the first half of class on the left', () => {
+  for (const [i, s] of [{ level: '1', group: 'older', peakId: 'teaser' }, { level: '1.5', group: 'middle' }, { level: '2', group: 'younger', peakId: 'elephant' }].entries()) {
+    const cls = build(s, 1400 + i);
+    const html = Print.cardHTML(ctx, cls, {});
+    const heads = (html.match(/<div class="card-sec"><span>([^<]+)<\/span>/g) || []).map(h => h.replace(/.*<span>/, '').replace(/<\/span>/, '').replace(', continued', ''));
+    assert.deepEqual([...new Set(heads)], ['Warm up', 'Strength and tone', 'Functional', 'Lengthening']);
+    const k = Print.splitIndex(cls);
+    const left = cls.blocks.slice(0, k).reduce((a, b) => a + b.minutes, 0);
+    assert.ok(left >= 18 && left <= 32, 'left half covers ' + left + ' minutes');
+    const [l, r] = html.split('card-fold');
+    assert.ok(l.includes('1. Footwork') && r.includes('11. Stretch'), 'first half left, second half right');
+  }
 });
 
 test('equipment percentages: asking for more springboard time gets it', () => {
@@ -343,10 +491,14 @@ test('equipment percentages: asking for more springboard time gets it', () => {
   assert.ok(withBoard >= 9, 'springboard used in ' + withBoard + ' of 12');
 });
 
-test('equipment: older Level 1 with no reformer explains the floor limit', () => {
-  const r = G.buildClass(ctx, { level: '1', group: 'older', equipment: { reformer: false, mat: true, chair: true, bosu: true, springboard: true, box: false, props: true } }, { seed: 1 });
+test('equipment: older clients with no reformer either stay to one floor trip or explain the floor limit', () => {
+  const eq = { reformer: false, mat: true, chair: true, bosu: true, springboard: true, box: false, props: true };
+  const r = G.buildClass(ctx, { level: '1.5', group: 'older', peakId: 'elephant', equipment: eq }, { seed: 7 });
   assert.equal(r.ok, false);
   assert.match(r.errors[0], /floor more than once/);
+  const ok = G.buildClass(ctx, { level: '1', group: 'older', equipment: eq }, { seed: 1 });
+  if (ok.ok) assert.deepEqual(G.validate(ctx, { level: '1', group: 'older', equipment: eq }, ok.class), []);
+  else assert.match(ok.errors[0], /floor more than once/);
 });
 
 test('equipment: impossible setups explain themselves', () => {

@@ -45,7 +45,20 @@
   function saveSettings() { S.setSettings(state.settings); }
 
   function builtinTemplates() { return flow.timingTemplates.map(function (t) { return { id: t.id, name: t.name, minutes: t.minutes, custom: false, note: t.note }; }); }
-  function allTemplates() { return builtinTemplates().concat(S.getTemplates()); }
+  // timings saved before the four-section layout no longer fit, so they are set aside
+  function customTemplates() { return S.getTemplates().filter(function (t) { return G.timingFits(ctx, 'flow', t.minutes); }); }
+  function oldTemplateCount() { return S.getTemplates().length - customTemplates().length; }
+  function allTemplates() { return builtinTemplates().concat(customTemplates()); }
+  var sections = G.sectionsFor(ctx, 'flow');
+  function sectionMinutes(minutes, sec) { return sec.blocks.reduce(function (a, b) { return a + Number(minutes[b] || 0); }, 0); }
+  function sectionsSummary(minutes) {
+    return sections.map(function (sec) { return sec.label + ' ' + sectionMinutes(minutes, sec); }).join(', ') + ' minutes';
+  }
+  function isOldLayout(cls) {
+    var ids = flow.blocks.map(function (b) { return b.id; });
+    return !cls || cls.blocks.length !== ids.length || cls.blocks.some(function (b, i) { return b.id !== ids[i]; });
+  }
+  var HIGHER_LEVELS = ['2', '2.5'];
   function findTemplate(id) { return allTemplates().filter(function (t) { return t.id === id; })[0] || null; }
   function groupTemplateId(groupId) { return ctx.groups[groupId].rules.timingTemplate.value; }
   function resolveTemplate(settings) {
@@ -159,11 +172,12 @@
     h += '</div></section>';
 
     // level
-    h += '<section class="section"><div class="section-head"><h2><span class="step-num">2</span>Level</h2></div><div class="choices cols-4">';
-    ctx.levelList.forEach(function (l) {
+    var higher = HIGHER_LEVELS.indexOf(s.level) >= 0;
+    h += '<section class="section"><div class="section-head"><h2><span class="step-num">2</span>Level</h2></div><div class="choices cols-2">';
+    ctx.levelList.filter(function (l) { return HIGHER_LEVELS.indexOf(l.id) < 0; }).forEach(function (l) {
       h += '<button type="button" class="choice" aria-pressed="' + (s.level === l.id) + '" data-action="set" data-key="level" data-value="' + l.id + '">' + esc(l.label) + '</button>';
     });
-    h += '</div><p class="choice-note">' + esc(lvl.summary.value) + '</p></section>';
+    h += '</div><p class="choice-note">' + (higher ? '<b>' + esc(lvl.label) + ' is chosen</b> under More options. ' : '') + esc(lvl.guidance ? lvl.guidance.value : lvl.summary.value) + '</p></section>';
 
     // clients
     h += '<section class="section"><div class="section-head"><h2><span class="step-num">3</span>Clients</h2></div><div class="choices cols-3">';
@@ -210,7 +224,11 @@
 
     // more options
     var shares = s.shares || D.equipment.flowRules.defaultShares.value;
-    h += '<details class="more"' + (state.ui.moreOpen ? ' open' : '') + ' data-more><summary>' + icon('chevron') + 'More options</summary>';
+    h += '<details class="more"' + (state.ui.moreOpen || higher ? ' open' : '') + ' data-more><summary>' + icon('chevron') + 'More options</summary>';
+    h += '<div class="option-block"><h3>Higher levels</h3><div class="choices cols-2">' +
+      ctx.levelList.filter(function (l) { return HIGHER_LEVELS.indexOf(l.id) >= 0; }).map(function (l) {
+        return '<button type="button" class="choice" aria-pressed="' + (s.level === l.id) + '" data-action="set" data-key="level" data-value="' + l.id + '">' + esc(l.label) + '</button>';
+      }).join('') + '</div>' + (higher ? '<button type="button" class="btn btn-small btn-quiet" data-action="set" data-key="level" data-value="1">' + icon('back') + 'Back to Level 1</button>' : '<p class="hint">For strong intermediate clients.</p>') + '</div>';
     h += '<div class="option-block"><h3>Time on each piece of equipment</h3><p class="hint">Targets, not promises. The builder gets close while keeping equipment changes low.</p>';
     SHARE_KEYS.forEach(function (k) {
       if (!s.equipment[k]) return;
@@ -222,11 +240,11 @@
     });
     h += (s.shares ? '<button type="button" class="btn btn-small btn-quiet" data-action="reset-shares">' + icon('refresh') + 'Back to the usual mix</button>' : '') + '</div>';
     h += '<div class="option-block"><label class="toggle"><input type="checkbox" data-action="toggle-lower"' + (s.allowLower ? ' checked' : '') + '><span>Allow easier exercises from lower levels</span></label>' +
-      '<p class="hint">When off, blocks use exercises at this level, except footwork, stretch and wind-down.</p></div>';
+      '<p class="hint">When off, blocks use exercises at this level, except footwork and stretch.</p></div>';
     h += '<div class="option-block"><h3>Block timings</h3><div class="field"><select class="select" data-action="timing-select" aria-label="Block timings">' +
       '<option value="auto"' + (s.timingId === 'auto' ? ' selected' : '') + '>Match the clients (' + esc(resolveTemplate(Object.assign({}, s, { timingId: 'auto' })).name) + ')</option>' +
       allTemplates().map(function (tp) { return '<option value="' + esc(tp.id) + '"' + (s.timingId === tp.id ? ' selected' : '') + '>' + esc(tp.name) + '</option>'; }).join('') +
-      '</select></div><p class="hint">Using: ' + esc(t.name) + '. Footwork ' + t.minutes.footwork + ' min, wind-down ' + t.minutes.winddown + ' min.</p>' +
+      '</select></div><p class="hint">Using: ' + esc(t.name) + '. ' + esc(sectionsSummary(t.minutes)) + '.</p>' +
       '<a class="btn btn-small" href="#/timings">' + icon('timer') + 'Edit timings</a></div>';
     h += '</details></section>';
 
@@ -282,13 +300,22 @@
       '<button type="button" class="btn" data-action="print">' + icon('print') + 'Print</button>' +
       '<button type="button" class="btn" data-action="pdf">' + icon('pdf') + 'Save as PDF</button>' +
       '<button type="button" class="btn" data-action="save-class">' + icon('save') + 'Save class</button></div>';
+    var old = isOldLayout(cls);
+    if (old) h += '<div class="notice">' + icon('info') + '<div>This class was built with the old 10 block layout, before Jay\'s four sections. You can still print it. Press Build another for the new layout.</div></div>';
     var locked = cls.blocks.filter(function (b) { return b.locked; }).length;
-    if (locked) h += '<div class="notice ok">' + icon('lock') + '<div>' + locked + ' locked ' + (locked === 1 ? 'block stays' : 'blocks stay') + ' the same when you press Build another.</div></div>';
+    if (locked && !old) h += '<div class="notice ok">' + icon('lock') + '<div>' + locked + ' locked ' + (locked === 1 ? 'block stays' : 'blocks stay') + ' the same when you press Build another.</div></div>';
 
+    var lastSec = null;
     cls.blocks.forEach(function (b, bi) {
-      h += '<section class="block' + (b.locked ? ' is-locked' : '') + '"><div class="block-head"><span class="block-num">' + (bi + 1) + '</span><div class="block-title"><h2>' + esc(b.label) + '</h2><div class="meta">' +
+      var sec = old ? null : G.sectionOf(ctx, 'flow', b.id);
+      if (sec && sec !== lastSec) {
+        var secMin = cls.blocks.filter(function (x) { return sec.blocks.indexOf(x.id) >= 0; }).reduce(function (a, x) { return a + x.minutes; }, 0);
+        h += '<div class="sec-head"><h2>' + esc(sec.label) + '</h2><span>' + esc(fmtMin(secMin)) + '</span></div>';
+      }
+      lastSec = sec;
+      h += '<section class="block' + (b.locked ? ' is-locked' : '') + '"><div class="block-head"><span class="block-num">' + (bi + 1) + '</span><div class="block-title"><h3>' + esc(b.label) + '</h3><div class="meta">' +
         esc(fmtMin(b.minutes)) + ', ' + esc(stationLabel(b.station)) + '</div></div>' +
-        '<button type="button" class="btn btn-small lock-btn" aria-pressed="' + !!b.locked + '" data-action="lock" data-bi="' + bi + '">' + icon(b.locked ? 'lock' : 'unlock') + (b.locked ? 'Locked' : 'Lock') + '</button></div>';
+        (old ? '' : '<button type="button" class="btn btn-small lock-btn" aria-pressed="' + !!b.locked + '" data-action="lock" data-bi="' + bi + '">' + icon(b.locked ? 'lock' : 'unlock') + (b.locked ? 'Locked' : 'Lock') + '</button>') + '</div>';
       b.items.forEach(function (it, ii) {
         var e = ctx.byId[it.id];
         if (!e) return;
@@ -302,7 +329,7 @@
           (e.props.length ? '<span>' + icon('props') + esc(e.props.map(function (p) { return p === 'weights' ? 'Light weights' : 'Magic circle'; }).join(', ')) + '</span>' : '') +
           '</div><ul class="ex-cues">' + e.cues.map(function (c) { return '<li>' + esc(c) + '</li>'; }).join('') + '</ul>' +
           (st.group === 'older' && e.olderNote ? '<p class="ex-note">Older clients: ' + esc(e.olderNote) + '</p>' : '') +
-          '<div class="ex-actions"><button type="button" class="btn btn-small" data-action="open-swap" data-bi="' + bi + '" data-ii="' + ii + '">' + icon('swap') + 'Swap</button>' +
+          '<div class="ex-actions">' + (old ? '' : '<button type="button" class="btn btn-small" data-action="open-swap" data-bi="' + bi + '" data-ii="' + ii + '">' + icon('swap') + 'Swap</button>') +
           '<button type="button" class="btn btn-small btn-quiet" data-action="open-flag" data-bi="' + bi + '" data-ii="' + ii + '">' + icon('flag') + 'Not right</button></div></div>';
         var pnl = state.ui.panel;
         if (pnl && pnl.bi === bi && pnl.ii === ii) h += panelHTML(pnl, e, it);
@@ -372,6 +399,7 @@
       var c = s.cls;
       var bits = [levelLabel(c.settings.level), groupLabel(c.settings.group).toLowerCase() + ' clients'];
       if (c.peak && c.peak.name) bits.push('peak: ' + c.peak.name);
+      if (isOldLayout(c)) bits.push('old 10 block layout');
       h += '<div class="row-card"><div class="grow"><h3>' + esc(s.name) + '</h3><div class="meta">' + esc(bits.join(', ')) + '. Saved ' + esc(fmtDate(s.savedAt)) + '.</div></div>' +
         '<button type="button" class="btn btn-primary btn-small" data-action="open-saved" data-id="' + esc(s.id) + '">Open</button>' +
         '<button type="button" class="btn btn-small" data-action="rename-saved" data-id="' + esc(s.id) + '">' + icon('pencil') + 'Rename</button>' +
@@ -393,21 +421,38 @@
     var saved = findTemplate(timingWork.id);
     var changed = !saved || flow.blocks.some(function (b) { return saved.minutes[b.id] !== timingWork.minutes[b.id]; });
     var def = S.getDefaultTemplate();
-    var h = '<div class="narrow"><h1>Block timings</h1><p class="lede">Minutes for each of the ' + flow.blocks.length + ' blocks. They must add up to ' + target + '.</p>';
+    var h = '<div class="narrow"><h1>Block timings</h1><p class="lede">Minutes for each of the ' + flow.blocks.length + ' blocks, in Jay\'s four sections. Each section stays inside its range and the class adds up to ' + target + '.</p>';
+    var oldCount = oldTemplateCount();
+    if (oldCount) h += '<div class="notice">' + icon('info') + '<div>' + oldCount + ' saved ' + (oldCount === 1 ? 'timing was' : 'timings were') + ' made for the old 10 block layout, so ' + (oldCount === 1 ? 'it is' : 'they are') + ' set aside. Make a new one below.</div></div>';
     h += '<section class="section"><div class="field"><label for="tpl">Timing template</label><select id="tpl" class="select" data-action="tpl-pick">' +
       allTemplates().map(function (tp) { return '<option value="' + esc(tp.id) + '"' + (tp.id === timingWork.id ? ' selected' : '') + '>' + esc(tp.name) + (tp.id === def ? ' (my default)' : '') + '</option>'; }).join('') +
       '</select></div>';
-    flow.blocks.forEach(function (b) {
-      var v = Number(timingWork.minutes[b.id]);
-      h += '<div class="stepper-row"><span><b>' + esc(b.label) + '</b></span><span class="stepper">' +
-        '<button type="button" data-action="tmin" data-id="' + b.id + '" data-step="-1" aria-label="One minute less for ' + esc(b.label) + '"' + (v <= BLOCK_MIN ? ' disabled' : '') + '>' + icon('minus') + '</button>' +
-        '<output>' + v + ' min</output>' +
-        '<button type="button" data-action="tmin" data-id="' + b.id + '" data-step="1" aria-label="One minute more for ' + esc(b.label) + '"' + (v >= BLOCK_MAX ? ' disabled' : '') + '>' + icon('plus') + '</button></span></div>';
+    var secIssues = [];
+    sections.forEach(function (sec) {
+      var m = sectionMinutes(timingWork.minutes, sec);
+      var lo = sec.range.min, hi = sec.range.max;
+      var inRange = m >= lo && m <= hi;
+      if (!inRange) secIssues.push(sec.label + ' is ' + m + ' minutes. ' + (m > hi ? 'Take ' + (m - hi) + ' off it.' : 'Add ' + (lo - m) + ' to it.'));
+      h += '<div class="tsec"><div class="tsec-head"><h2>' + esc(sec.label) + '</h2><span class="range' + (inRange ? '' : ' bad') + '">' + m + ' min, ' +
+        (lo === hi ? 'always ' + lo : lo + ' to ' + hi) + '</span></div>';
+      sec.blocks.forEach(function (bid) {
+        var b = flow.blocks.filter(function (x) { return x.id === bid; })[0];
+        var v = Number(timingWork.minutes[b.id]);
+        var lockedSec = lo === hi && sec.blocks.length === 1;
+        h += '<div class="stepper-row"><span><b>' + esc(b.label) + '</b></span>' + (lockedSec ? '<span class="hint">' + v + ' min, set by Jay</span>' : '<span class="stepper">' +
+          '<button type="button" data-action="tmin" data-id="' + b.id + '" data-step="-1" aria-label="One minute less for ' + esc(b.label) + '"' + (v <= BLOCK_MIN ? ' disabled' : '') + '>' + icon('minus') + '</button>' +
+          '<output>' + v + ' min</output>' +
+          '<button type="button" data-action="tmin" data-id="' + b.id + '" data-step="1" aria-label="One minute more for ' + esc(b.label) + '"' + (v >= BLOCK_MAX ? ' disabled' : '') + '>' + icon('plus') + '</button></span>') + '</div>';
+      });
+      h += '</div>';
     });
     var diff = total - target;
-    h += '<div class="total-bar ' + (diff === 0 ? 'good' : 'bad') + '" role="status">' + icon(diff === 0 ? 'check' : 'warn') + '<span>' +
-      (diff === 0 ? total + ' of ' + target + ' minutes. Ready to use.' : total + ' minutes. ' + (diff > 0 ? 'Take ' + diff + ' ' + (diff === 1 ? 'minute' : 'minutes') + ' off somewhere.' : 'Add ' + (-diff) + ' ' + (diff === -1 ? 'minute' : 'minutes') + ' somewhere.')) + '</span></div>';
-    var ok = diff === 0;
+    var ok = diff === 0 && !secIssues.length;
+    var msg;
+    if (ok) msg = total + ' of ' + target + ' minutes, every section in range. Ready to use.';
+    else if (secIssues.length) msg = secIssues.join(' ');
+    else msg = total + ' minutes. ' + (diff > 0 ? 'Take ' + diff + ' ' + (diff === 1 ? 'minute' : 'minutes') + ' off somewhere.' : 'Add ' + (-diff) + ' ' + (diff === -1 ? 'minute' : 'minutes') + ' somewhere.');
+    h += '<div class="total-bar ' + (ok ? 'good' : 'bad') + '" role="status">' + icon(ok ? 'check' : 'warn') + '<span>' + esc(msg) + '</span></div>';
     h += '<div class="btn-row">';
     h += '<button type="button" class="btn btn-primary" data-action="tpl-use"' + (ok ? '' : ' disabled') + '>' + icon('check') + 'Use for my classes</button>';
     if (timingWork.custom && changed) h += '<button type="button" class="btn" data-action="tpl-update"' + (ok ? '' : ' disabled') + '>' + icon('save') + 'Save changes</button>';
@@ -478,7 +523,8 @@
     var lrows = [];
     ctx.levelList.forEach(function (l) {
       lrows.push(['<b>' + esc(l.label) + '</b>', 'Summary', esc(l.summary.value), src(l.summary)]);
-      Object.keys(l.rules).forEach(function (k) { var r = l.rules[k]; lrows.push(['', esc(k), esc(String(r.value)) + (r.note ? ': ' + esc(r.note) : ''), src(r)]); });
+      if (l.guidance) lrows.push(['', 'Guidance', esc(l.guidance.value), src(l.guidance)]);
+      Object.keys(l.rules).forEach(function (k) { var r = l.rules[k]; var v = Array.isArray(r.value) ? (r.value.join(', ') || 'none') : String(r.value); lrows.push(['', esc(k), esc(v) + (r.note ? ': ' + esc(r.note) : ''), src(r)]); });
     });
     h += table(['Level', 'Rule', 'Value', 'Source'], lrows);
     var defs = D.levels.definitions;
@@ -492,8 +538,17 @@
     });
     h += table(['Group', 'Rule', 'Value', 'Type', 'Source'], grows);
 
-    h += '<h2>Flow blocks and timings <small class="hint">class-types.json</small></h2>';
-    h += table(['#', 'Block', 'Standard minutes', 'Purpose', 'Source'], flow.blocks.map(function (b, i) { return [String(i + 1), '<b>' + esc(b.label) + '</b>', String(b.minutes), esc(b.purpose) + (b.note ? ' ' + esc(b.note) : ''), src(b)]; }));
+    h += '<h2>Flow sections, blocks and timings <small class="hint">class-types.json</small></h2>';
+    h += table(['Section', 'Blocks', 'Usual minutes', 'Range', 'Source'], sections.map(function (sec) {
+      return ['<b>' + esc(sec.label) + '</b>', esc(sec.blocks.map(function (bid) { return flow.blocks.filter(function (b) { return b.id === bid; })[0].label; }).join(', ')), String(sec.minutes.value),
+        esc(sec.range.min === sec.range.max ? 'Always ' + sec.range.min : sec.range.min + ' to ' + sec.range.max), src(sec.range)];
+    }));
+    h += table(['#', 'Block', 'Section', 'Standard minutes', 'Purpose', 'Source'], flow.blocks.map(function (b, i) {
+      var sec = G.sectionOf(ctx, 'flow', b.id);
+      return [String(i + 1), '<b>' + esc(b.label) + '</b>', esc(sec ? sec.label : ''), String(b.minutes), esc(b.purpose) + (b.note ? ' ' + esc(b.note) : ''), src(b)];
+    }));
+    var ov = flow.overusedByJay;
+    if (ov) h += table(['Rule', 'Exercises', 'Note', 'Source'], [['Overused, weighted down hard', esc(ov.value.map(function (id) { return ctx.byId[id] ? ctx.byId[id].name : id; }).join(', ')), esc(ov.note || ''), src(ov)]]);
     h += table(['Template'].concat(flow.blocks.map(function (b) { return b.label; })).concat(['Source']), flow.timingTemplates.map(function (t) { return ['<b>' + esc(t.name) + '</b>'].concat(flow.blocks.map(function (b) { return String(t.minutes[b.id]); })).concat([src(t)]); }));
     var sc = flow.scoring;
     h += '<p class="hint">Soft rule weights (all ' + src('assumption') + '): ' + esc(Object.keys(sc).filter(function (k) { return typeof sc[k] === 'number'; }).map(function (k) { return k + ' ' + sc[k]; }).join(', ')) + '.</p>';
@@ -515,8 +570,10 @@
     h += '<h2>Exercises <small class="hint">exercises.json, ' + ctx.exercises.length + ' exercises</small></h2><div class="rules-filter"><span>Show:</span>' +
       ['all', 'jay', 'research', 'assumption'].map(function (f) { return '<button type="button" class="btn btn-small' + (filter === f ? ' btn-primary' : '') + '" data-action="rules-filter" data-f="' + f + '">' + (f === 'all' ? 'All' : f) + '</button>'; }).join('') + '</div>';
     var exs = ctx.exercises.filter(function (e) { return filter === 'all' || e.source === filter; });
-    h += table(['Exercise', 'Equipment', 'Blocks', 'Min level', 'Groups', 'Unilateral', 'Lifted', 'Springs', 'Muscles', 'Prepares', 'Reps', 'Cues', 'Source'], exs.map(function (e) {
-      return ['<b>' + esc(e.name) + '</b>', esc(stationLabel(e.equipment)), esc(e.blocks.join(', ')), String(e.minLevel), esc(e.groups.join(', ')), e.unilateral ? 'Yes' : 'No', String(e.bodyPartsLifted),
+    var blockLabel = function (id) { var b = flow.blocks.filter(function (x) { return x.id === id; })[0]; return b ? b.label : id; };
+    h += table(['Exercise', 'Equipment', 'Blocks', 'Min level', 'Groups', 'Unilateral', 'Lifted', 'Skills', 'Springs', 'Muscles', 'Prepares', 'Reps', 'Cues', 'Source'], exs.map(function (e) {
+      return ['<b>' + esc(e.name) + '</b>', esc(stationLabel(e.equipment)), esc(e.blocks.map(blockLabel).join(', ')), String(e.minLevel), esc(e.groups.join(', ')), e.unilateral ? 'Yes' : 'No', String(e.bodyPartsLifted),
+        esc((e.tags || []).join(', ') || 'None'),
         esc(Print.springText(ctx, e) || 'None'), esc(e.primary.join(', ')), esc(e.prepares.join(', ')), esc(e.reps), esc(e.cues.join('; ')), src(e)];
     }));
 
@@ -620,7 +677,7 @@
       }
       case 'rebuild': {
         var locked = {};
-        state.cls.blocks.forEach(function (b) { if (b.locked) locked[b.id] = b; });
+        if (!isOldLayout(state.cls)) state.cls.blocks.forEach(function (b) { if (b.locked) locked[b.id] = b; });
         var prevName = state.cls.ui && state.cls.ui.name;
         var r = doBuild({ settings: classSettings(), locked: locked });
         if (!r.ok) { toast(r.errors.join(' ')); return; }
@@ -752,7 +809,7 @@
       }
       case 'tpl-update': S.updateTemplate(timingWork.id, Object.assign({}, timingWork.minutes)); toast('Saved.'); renderTimings(); break;
       case 'tpl-saveas': {
-        var back4 = modal('<h2>Save timings</h2><div class="field"><label for="tn">Name</label><input id="tn" type="text" placeholder="For example, Long warm-up"></div><div class="btn-row"><button type="button" class="btn btn-primary" id="tn-ok">' + icon('save') + 'Save</button><button type="button" class="btn btn-quiet" data-action="close-modal">Cancel</button></div>');
+        var back4 = modal('<h2>Save timings</h2><div class="field"><label for="tn">Name</label><input id="tn" type="text" placeholder="For example, Strength day"></div><div class="btn-row"><button type="button" class="btn btn-primary" id="tn-ok">' + icon('save') + 'Save</button><button type="button" class="btn btn-quiet" data-action="close-modal">Cancel</button></div>');
         var tn = back4.querySelector('#tn');
         var doSave = function () {
           var nt2 = S.saveTemplate(tn.value.trim() || 'My timings', Object.assign({}, timingWork.minutes));

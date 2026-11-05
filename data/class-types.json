@@ -5,7 +5,7 @@
       "id": "flow",
       "label": "Flow",
       "enabled": true,
-      "description": "Ten blocks, same order every time. The exercises change.",
+      "description": "Eleven blocks in four sections, same order every time. The exercises change.",
       "minutes": {
         "value": 50,
         "source": "jay",
@@ -14,143 +14,185 @@
       "peakBlock": {
         "value": "full",
         "source": "jay",
-        "note": "The peak pose goes near the end of full body integration."
+        "note": "The peak pose goes near the end of the full body block, in Functional."
       },
       "blocks": [
         {
           "id": "footwork",
           "label": "Footwork",
+          "section": "warmup",
           "minutes": 6,
           "source": "jay",
-          "purpose": "Warm up legs and feet. Reformer or chair. Heels, arches, toes, close or wide, parallel or turned out, full range, halfway, pulses."
+          "purpose": "Warm up legs and feet. Heels, arches, toes, close or wide, parallel or turned out, full range, halfway, pulses."
         },
         {
           "id": "bridging",
-          "label": "Bridging",
+          "label": "Bridge",
+          "section": "warmup",
           "minutes": 4,
           "source": "jay",
-          "purpose": "Hinge or articulated bridges. Flows straight on from reformer footwork."
+          "purpose": "Back body. Hinge or articulated bridges. Flows straight on from reformer footwork."
         },
         {
           "id": "abs",
-          "label": "Abs",
+          "label": "Abs and supine arms",
+          "section": "warmup",
           "minutes": 5,
           "source": "jay",
-          "purpose": "Abdominal work. Spring drop for strap abs is fine."
+          "purpose": "Abdominal work, and supine arms (lying on the back, arms in the straps or with light weights)."
+        },
+        {
+          "id": "plank",
+          "label": "Plank",
+          "section": "strength",
+          "minutes": 3,
+          "source": "jay",
+          "note": "Block names and order from Jay. Minutes inside the section are an assumption.",
+          "purpose": "Plank holds and plank variations. Level 1 on the mat or forearms on the box, Level 1.5 adds the reformer."
         },
         {
           "id": "lower",
           "label": "Lower body",
-          "minutes": 6,
+          "section": "strength",
+          "minutes": 4,
           "source": "jay",
-          "note": "Minutes are an assumption.",
+          "note": "Block names and order from Jay. Minutes inside the section are an assumption.",
           "purpose": "Legs and hips."
         },
         {
-          "id": "upper",
-          "label": "Upper body",
-          "minutes": 6,
+          "id": "upperback",
+          "label": "Upper back",
+          "section": "strength",
+          "minutes": 4,
           "source": "jay",
-          "note": "Minutes are an assumption.",
-          "purpose": "Arms, shoulders, upper back. Plenty of options beyond straps."
+          "note": "Block names and order from Jay. Minutes inside the section are an assumption.",
+          "purpose": "Pulling work: chest expansion, biceps, rows."
+        },
+        {
+          "id": "upperfront",
+          "label": "Upper front",
+          "section": "strength",
+          "minutes": 4,
+          "source": "jay",
+          "note": "Block names and order from Jay. Minutes inside the section are an assumption.",
+          "purpose": "Pressing and front of the shoulders: serve a tray, presentation, hug a tree, salute."
         },
         {
           "id": "side",
-          "label": "Side and lateral work",
-          "minutes": 4,
-          "source": "assumption",
-          "purpose": "Side bending, side-lying and outer hip work. Added block, Jay to confirm."
+          "label": "Side body and rotation",
+          "section": "strength",
+          "minutes": 3,
+          "source": "jay",
+          "note": "Block names and order from Jay. Minutes inside the section are an assumption.",
+          "purpose": "Side bending, side-lying work and rotation."
         },
         {
           "id": "full",
-          "label": "Full body integration",
+          "label": "Full body",
+          "section": "functional",
           "minutes": 7,
           "source": "jay",
-          "note": "Minutes are an assumption.",
+          "note": "Block names and order from Jay. Minutes inside the section are an assumption.",
           "purpose": "Whole body work. The peak pose lands here, near the end."
         },
         {
           "id": "prone",
-          "label": "Prone work for the spine",
-          "minutes": 4,
+          "label": "Back extension",
+          "section": "functional",
+          "minutes": 5,
           "source": "jay",
-          "note": "Minutes are an assumption.",
+          "note": "Block names and order from Jay. Minutes inside the section are an assumption.",
           "purpose": "Lying face down or kneeling back extension."
         },
         {
           "id": "stretch",
           "label": "Stretch",
-          "minutes": 4,
-          "source": "assumption",
-          "purpose": "Release what was worked. Added block, Jay to confirm."
-        },
-        {
-          "id": "winddown",
-          "label": "Closing pull down and wind down",
-          "minutes": 4,
+          "section": "lengthening",
+          "minutes": 5,
           "source": "jay",
-          "note": "Minutes are an assumption.",
-          "purpose": "Finish standing or seated, calm and tall."
+          "purpose": "Release what was worked and finish calm and tall."
         }
       ],
       "timingTemplates": [
         {
           "id": "standard",
           "name": "Standard",
-          "source": "assumption",
-          "note": "Footwork, bridging and abs minutes from Jay. The rest split evenly to total 50.",
+          "source": "jay",
+          "note": "Section minutes from Jay (15, 18, 12, 5). Footwork, bridge and abs from Jay. The split inside Strength and tone and Functional is an assumption.",
           "minutes": {
             "footwork": 6,
             "bridging": 4,
             "abs": 5,
-            "lower": 6,
-            "upper": 6,
-            "side": 4,
+            "plank": 3,
+            "lower": 4,
+            "upperback": 4,
+            "upperfront": 4,
+            "side": 3,
             "full": 7,
-            "prone": 4,
-            "stretch": 4,
-            "winddown": 4
+            "prone": 5,
+            "stretch": 5
           }
         },
         {
           "id": "gentle",
           "name": "Gentle pace (older clients)",
           "source": "assumption",
-          "note": "Longer warm-up and wind-down for older clients, as Jay asked.",
+          "note": "Longer footwork and a little more strength work, less full body. Sections stay inside Jay's ranges.",
           "minutes": {
             "footwork": 7,
             "bridging": 4,
             "abs": 4,
-            "lower": 6,
-            "upper": 5,
-            "side": 4,
+            "plank": 3,
+            "lower": 5,
+            "upperback": 4,
+            "upperfront": 4,
+            "side": 3,
             "full": 6,
-            "prone": 4,
-            "stretch": 5,
-            "winddown": 5
+            "prone": 5,
+            "stretch": 5
           }
         },
         {
-          "id": "long-warmup",
-          "name": "Long warm-up",
-          "source": "jay",
-          "note": "Jay's example of a 15 minute warm-up.",
+          "id": "more-strength",
+          "name": "More strength and tone",
+          "source": "assumption",
+          "note": "Strength and tone at Jay's top of 20, Functional at 10.",
           "minutes": {
-            "footwork": 15,
+            "footwork": 6,
             "bridging": 4,
-            "abs": 4,
-            "lower": 5,
-            "upper": 5,
+            "abs": 5,
+            "plank": 4,
+            "lower": 4,
+            "upperback": 4,
+            "upperfront": 4,
+            "side": 4,
+            "full": 6,
+            "prone": 4,
+            "stretch": 5
+          }
+        },
+        {
+          "id": "more-functional",
+          "name": "More full body",
+          "source": "assumption",
+          "note": "Functional at Jay's top of 15, Strength and tone at 15.",
+          "minutes": {
+            "footwork": 6,
+            "bridging": 4,
+            "abs": 5,
+            "plank": 3,
+            "lower": 3,
+            "upperback": 3,
+            "upperfront": 3,
             "side": 3,
-            "full": 5,
-            "prone": 3,
-            "stretch": 3,
-            "winddown": 3
+            "full": 9,
+            "prone": 6,
+            "stretch": 5
           }
         }
       ],
       "scoring": {
-        "about": "Soft rule weights. Higher means the generator cares more. All are assumptions to tune with Jay. Equipment change cost is multiplied by the client group's pace factor, so older classes change equipment less.",
+        "about": "Soft rule weights. Higher means the generator cares more. All are assumptions to tune with Jay. Equipment change cost is multiplied by the client group's pace factor, so older classes change equipment less. jayOverused weighs down the exercises Jay called overused. supineArms nudges one supine arms exercise into the abs block. positionChange is the cost of moving the client to a new position, scaled per level. skillBonus favors the coordination, balance and stability work Jay wants at Level 1.5.",
         "source": "assumption",
         "equipmentChange": 4,
         "standingHop": 4,
@@ -178,7 +220,98 @@
         "maxSegments": 5,
         "boxSetupChange": 3,
         "planNoise": 4,
-        "shareTolerance": 0.03
+        "shareTolerance": 0.03,
+        "jayOverused": 8,
+        "supineArms": 3,
+        "positionChange": 1.2,
+        "skillBonus": 1.5
+      },
+      "sections": [
+        {
+          "id": "warmup",
+          "label": "Warm up",
+          "blocks": [
+            "footwork",
+            "bridging",
+            "abs"
+          ],
+          "minutes": {
+            "value": 15,
+            "source": "jay"
+          },
+          "range": {
+            "min": 15,
+            "max": 15,
+            "source": "jay",
+            "note": "Always 15 minutes."
+          }
+        },
+        {
+          "id": "strength",
+          "label": "Strength and tone",
+          "blocks": [
+            "plank",
+            "lower",
+            "upperback",
+            "upperfront",
+            "side"
+          ],
+          "minutes": {
+            "value": 18,
+            "source": "jay"
+          },
+          "range": {
+            "min": 15,
+            "max": 20,
+            "source": "jay",
+            "note": "15 to 20 minutes."
+          }
+        },
+        {
+          "id": "functional",
+          "label": "Functional",
+          "blocks": [
+            "full",
+            "prone"
+          ],
+          "minutes": {
+            "value": 12,
+            "source": "jay"
+          },
+          "range": {
+            "min": 10,
+            "max": 15,
+            "source": "jay",
+            "note": "10 to 15 minutes. Full body and back extension appear only here."
+          }
+        },
+        {
+          "id": "lengthening",
+          "label": "Lengthening",
+          "blocks": [
+            "stretch"
+          ],
+          "minutes": {
+            "value": 5,
+            "source": "jay"
+          },
+          "range": {
+            "min": 5,
+            "max": 5,
+            "source": "jay",
+            "note": "Always 5 minutes."
+          }
+        }
+      ],
+      "overusedByJay": {
+        "value": [
+          "ub-supine-press-down",
+          "ub-supine-triceps",
+          "ub-supine-t",
+          "ub-supine-circles"
+        ],
+        "source": "jay",
+        "note": "Supine arms lower and lift, triceps press, abduction and arm circles. Weighted down hard but still possible. Prefer fresh supine arms options."
       }
     },
     {

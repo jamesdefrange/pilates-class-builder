@@ -8,6 +8,10 @@
     "unilateral": {
       "text": "One arm or one leg works on its own, or one leg carries the body weight. Doing a stretch one side at a time is not counted.",
       "source": "assumption"
+    },
+    "skills": {
+      "text": "Exercises can carry the tags coordination (arms and legs doing different things, or a tricky pattern), balance (an unstable surface, one leg, or balancing on the sit bones) and stability (holding the body still against a load, like planks and kneeling on the carriage).",
+      "source": "assumption"
     }
   },
   "levels": [
@@ -15,52 +19,227 @@
       "id": "1",
       "rank": 1,
       "label": "Level 1",
-      "summary": { "value": "Foundations. Everything stays supported, both sides work together, no chair.", "source": "jay" },
+      "summary": {
+        "value": "Foundations. Everything stays supported, both sides work together, no chair.",
+        "source": "jay"
+      },
       "rules": {
-        "maxBodyPartsLifted": { "value": 0, "source": "jay", "note": "Some body part always on the ground. Nothing lifts." },
-        "allowUnilateral": { "value": false, "source": "jay", "note": "Nothing unilateral." },
-        "maxChairMinutes": { "value": 0, "source": "jay", "note": "No chair at Level 1." },
-        "allowInversions": { "value": false, "source": "assumption", "note": "Kept out to stay gentle." },
-        "allowLowerLevel": { "value": true, "source": "jay", "note": "Exercises at the class level or below, never above." }
+        "maxBodyPartsLifted": {
+          "value": 0,
+          "source": "jay",
+          "note": "Some body part always on the ground. Nothing lifts."
+        },
+        "allowUnilateral": {
+          "value": false,
+          "source": "jay",
+          "note": "Nothing unilateral."
+        },
+        "maxChairMinutes": {
+          "value": 0,
+          "source": "jay",
+          "note": "No chair at Level 1."
+        },
+        "allowInversions": {
+          "value": false,
+          "source": "assumption",
+          "note": "Kept out to stay gentle."
+        },
+        "allowLowerLevel": {
+          "value": true,
+          "source": "jay",
+          "note": "Exercises at the class level or below, never above."
+        },
+        "avoidSkills": {
+          "value": [
+            "coordination",
+            "balance"
+          ],
+          "source": "jay",
+          "note": "No tricky moves at Level 1. Exercises tagged coordination or balance are never used."
+        },
+        "preferSkills": {
+          "value": [],
+          "source": "jay",
+          "note": ""
+        },
+        "transitionFactor": {
+          "value": 1.5,
+          "source": "assumption",
+          "note": "Follows Jay: no tricky transitions at Level 1, so the builder works hard to keep clients in one position."
+        }
+      },
+      "guidance": {
+        "value": "Foundation work. Build the challenge through reps, range, springs, positioning and sequencing, not tricky moves or transitions.",
+        "source": "jay"
       }
     },
     {
       "id": "1.5",
       "rank": 1.5,
       "label": "Level 1.5",
-      "summary": { "value": "One body part can lift. Single leg and single arm work allowed. A little chair.", "source": "jay" },
+      "summary": {
+        "value": "One body part can lift. Single leg and single arm work allowed. A little chair.",
+        "source": "jay"
+      },
       "rules": {
-        "maxBodyPartsLifted": { "value": 1, "source": "jay", "note": "One body part can lift, like one leg in tabletop." },
-        "allowUnilateral": { "value": true, "source": "jay", "note": "Unilateral allowed." },
-        "maxChairMinutes": { "value": 12, "source": "assumption", "note": "Jay said limited chair. Read as up to 12 minutes and Level 1.5 chair exercises only." },
-        "allowInversions": { "value": false, "source": "assumption", "note": "Kept out to stay gentle." },
-        "allowLowerLevel": { "value": true, "source": "jay", "note": "Exercises at the class level or below, never above." }
+        "maxBodyPartsLifted": {
+          "value": 1,
+          "source": "jay",
+          "note": "One body part can lift, like one leg in tabletop."
+        },
+        "allowUnilateral": {
+          "value": true,
+          "source": "jay",
+          "note": "Unilateral allowed."
+        },
+        "maxChairMinutes": {
+          "value": 12,
+          "source": "assumption",
+          "note": "Jay said limited chair. Read as up to 12 minutes and Level 1.5 chair exercises only."
+        },
+        "allowInversions": {
+          "value": false,
+          "source": "assumption",
+          "note": "Kept out to stay gentle."
+        },
+        "allowLowerLevel": {
+          "value": true,
+          "source": "jay",
+          "note": "Exercises at the class level or below, never above."
+        },
+        "avoidSkills": {
+          "value": [],
+          "source": "jay",
+          "note": ""
+        },
+        "preferSkills": {
+          "value": [
+            "coordination",
+            "balance",
+            "stability"
+          ],
+          "source": "jay",
+          "note": "Level 1.5 adds coordination, balance and stability challenges, so the builder leans toward them."
+        },
+        "transitionFactor": {
+          "value": 0.4,
+          "source": "assumption",
+          "note": "Follows Jay: more interesting transitions at Level 1.5, so position changes cost little."
+        }
+      },
+      "guidance": {
+        "value": "Adds coordination, balance and stability challenges, intermediate progressions and more interesting transitions.",
+        "source": "jay"
       }
     },
     {
       "id": "2",
       "rank": 2,
       "label": "Level 2",
-      "summary": { "value": "Everything can lift. Full chair. Classic intermediate repertoire.", "source": "jay" },
+      "summary": {
+        "value": "Everything can lift. Full chair. Classic intermediate repertoire.",
+        "source": "jay"
+      },
       "rules": {
-        "maxBodyPartsLifted": { "value": 99, "source": "jay", "note": "Everything can lift." },
-        "allowUnilateral": { "value": true, "source": "jay", "note": "Unilateral allowed." },
-        "maxChairMinutes": { "value": null, "source": "jay", "note": "Advanced chair allowed. No time limit." },
-        "allowInversions": { "value": true, "source": "research", "note": "Short spine and similar are standard at this level. Older clients still never get them." },
-        "allowLowerLevel": { "value": true, "source": "jay", "note": "Exercises at the class level or below, never above." }
+        "maxBodyPartsLifted": {
+          "value": 99,
+          "source": "jay",
+          "note": "Everything can lift."
+        },
+        "allowUnilateral": {
+          "value": true,
+          "source": "jay",
+          "note": "Unilateral allowed."
+        },
+        "maxChairMinutes": {
+          "value": null,
+          "source": "jay",
+          "note": "Advanced chair allowed. No time limit."
+        },
+        "allowInversions": {
+          "value": true,
+          "source": "research",
+          "note": "Short spine and similar are standard at this level. Older clients still never get them."
+        },
+        "allowLowerLevel": {
+          "value": true,
+          "source": "jay",
+          "note": "Exercises at the class level or below, never above."
+        },
+        "avoidSkills": {
+          "value": [],
+          "source": "assumption",
+          "note": ""
+        },
+        "preferSkills": {
+          "value": [],
+          "source": "assumption",
+          "note": ""
+        },
+        "transitionFactor": {
+          "value": 0.6,
+          "source": "assumption",
+          "note": ""
+        }
+      },
+      "guidance": {
+        "value": "Classic intermediate repertoire. Everything can lift.",
+        "source": "assumption"
       }
     },
     {
       "id": "2.5",
       "rank": 2.5,
       "label": "Level 2.5",
-      "summary": { "value": "Strong intermediate. Everything can lift. Longer holds and harder variations.", "source": "jay" },
+      "summary": {
+        "value": "Strong intermediate. Everything can lift. Longer holds and harder variations.",
+        "source": "jay"
+      },
       "rules": {
-        "maxBodyPartsLifted": { "value": 99, "source": "jay", "note": "Everything can lift." },
-        "allowUnilateral": { "value": true, "source": "jay", "note": "Unilateral allowed." },
-        "maxChairMinutes": { "value": null, "source": "jay", "note": "Advanced chair allowed. No time limit." },
-        "allowInversions": { "value": true, "source": "research", "note": "Older clients still never get them." },
-        "allowLowerLevel": { "value": true, "source": "jay", "note": "Exercises at the class level or below, never above." }
+        "maxBodyPartsLifted": {
+          "value": 99,
+          "source": "jay",
+          "note": "Everything can lift."
+        },
+        "allowUnilateral": {
+          "value": true,
+          "source": "jay",
+          "note": "Unilateral allowed."
+        },
+        "maxChairMinutes": {
+          "value": null,
+          "source": "jay",
+          "note": "Advanced chair allowed. No time limit."
+        },
+        "allowInversions": {
+          "value": true,
+          "source": "research",
+          "note": "Older clients still never get them."
+        },
+        "allowLowerLevel": {
+          "value": true,
+          "source": "jay",
+          "note": "Exercises at the class level or below, never above."
+        },
+        "avoidSkills": {
+          "value": [],
+          "source": "assumption",
+          "note": ""
+        },
+        "preferSkills": {
+          "value": [],
+          "source": "assumption",
+          "note": ""
+        },
+        "transitionFactor": {
+          "value": 0.6,
+          "source": "assumption",
+          "note": ""
+        }
+      },
+      "guidance": {
+        "value": "Strong intermediate. Longer holds and harder variations.",
+        "source": "assumption"
       }
     }
   ],

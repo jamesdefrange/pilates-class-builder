@@ -9,7 +9,10 @@
   'use strict';
 
   var FLEX_ORDER = { none: 0, light: 1, deep: 2 };
-  var EXEMPT_LOWER = ['footwork', 'stretch', 'winddown'];
+  var EXEMPT_LOWER = ['footwork', 'stretch'];
+  // blocks with real working exercises; the peak block may borrow from these, never from warm-ups or stretches
+  var WORKING = ['abs', 'plank', 'lower', 'upperback', 'upperfront', 'side', 'prone', 'full'];
+  var CLASS_VERSION = 2;
 
   function val(rule) {
     return rule && typeof rule === 'object' && Object.prototype.hasOwnProperty.call(rule, 'value') ? rule.value : rule;
@@ -27,6 +30,10 @@
   function round05(x) { return Math.round(x * 2) / 2; }
   function sum(arr) { var s = 0; for (var i = 0; i < arr.length; i++) s += arr[i]; return s; }
   function levelLabel(rank) { return 'Level ' + rank; }
+  function joinAnd(list, word) {
+    word = word || 'and';
+    return list.length <= 1 ? (list[0] || '') : list.slice(0, -1).join(', ') + ' ' + word + ' ' + list[list.length - 1];
+  }
 
   /* ---------- context ---------- */
   function prepare(data) {
@@ -69,12 +76,27 @@
     return t;
   }
 
+  /* Sections of a class type, each with its blocks and minute range. */
+  function sectionsFor(ctx, classTypeId) {
+    var ct = ctx.classTypes[classTypeId || 'flow'];
+    return (ct && ct.sections) || [];
+  }
+  function sectionOf(ctx, classTypeId, blockId) {
+    return sectionsFor(ctx, classTypeId).filter(function (s) { return s.blocks.indexOf(blockId) >= 0; })[0] || null;
+  }
+  /* True when a timing object has a number for every block of the class type. */
+  function timingFits(ctx, classTypeId, timing) {
+    var ct = ctx.classTypes[classTypeId || 'flow'];
+    return !!timing && ct.blocks.every(function (b) { return timing[b.id] !== undefined && timing[b.id] !== null && !isNaN(Number(timing[b.id])); });
+  }
+
   function normalize(ctx, s) {
     s = s || {};
     var classType = ctx.classTypes[s.classType || 'flow'];
     var level = ctx.levels[String(s.level || '1')];
     var group = ctx.groups[s.group || val(ctx.data['client-groups'].defaultGroup)];
-    var timing = s.timing || templateFor(ctx, classType.id, group.id).minutes;
+    // timings saved before a block layout change are replaced by the clients' template
+    var timing = timingFits(ctx, classType.id, s.timing) ? s.timing : templateFor(ctx, classType.id, group.id).minutes;
     var equipment = Object.assign(defaultEquipment(ctx), s.equipment || {});
     return {
       classType: classType.id,
@@ -94,9 +116,14 @@
   function rulesFor(ctx, st) {
     var L = ctx.levels[st.level].rules;
     var G = ctx.groups[st.group].rules;
-    var W = ctx.classTypes[st.classType].scoring;
+    var ct = ctx.classTypes[st.classType];
+    var W = ct.scoring;
     return {
       levelRank: ctx.levels[st.level].rank,
+      avoidSkills: val(L.avoidSkills) || [],
+      preferSkills: val(L.preferSkills) || [],
+      transition: val(L.transitionFactor) === undefined ? 1 : val(L.transitionFactor),
+      jayOverused: new Set(val(ct.overusedByJay) || []),
       maxLifted: val(L.maxBodyPartsLifted),
       allowUni: val(L.allowUnilateral),
       maxChair: val(L.maxChairMinutes),
@@ -147,6 +174,8 @@
     if (ex.groups.indexOf(st.group) < 0) return 'It is not suited to ' + ctx.groups[st.group].label.toLowerCase() + ' clients';
     if (ex.bodyPartsLifted > R.maxLifted) return 'It lifts more of the body than ' + levelLabel(R.levelRank) + ' allows';
     if (ex.unilateral && !R.allowUni) return 'Single leg or single arm work is not used at ' + levelLabel(R.levelRank);
+    var skill = skillClash(R, ex);
+    if (skill) return 'It needs ' + skill + ', which ' + levelLabel(R.levelRank) + ' leaves out';
     if (ex.equipment === 'chair' && R.maxChair === 0) return 'There is no chair at ' + levelLabel(R.levelRank);
     if (ex.inversion && !R.allowInv) return 'It goes upside down';
     if (FLEX_ORDER[ex.spinalFlexion] > R.maxFlex) return 'It is a deep loaded curl';
@@ -154,6 +183,13 @@
     if (ex.props.length && !st.equipment.props) return 'It needs small props';
     var fb = feedbackBlock(ctx, st, ex);
     if (fb) return fb;
+    return null;
+  }
+
+  /* The first skill tag the level leaves out, or null. */
+  function skillClash(R, ex) {
+    var tags = ex.tags || [];
+    for (var i = 0; i < tags.length; i++) if (R.avoidSkills.indexOf(tags[i]) >= 0) return tags[i];
     return null;
   }
 
@@ -219,6 +255,7 @@
     if (Math.abs(t - env.total) > 1e-9) {
       env.errors.push('The block timings add up to ' + t + ' minutes. They need to add up to ' + env.total + '.');
     }
+    sectionProblems(ctx, st).forEach(function (p) { env.errors.push(p); });
     env.peakBlockIndex = ct.blocks.map(function (b) { return b.id; }).indexOf(val(ct.peakBlock));
     var pr = resolvePeak(ctx, st, R, findPeak(ctx, st), opts.peakSkip || 0);
     env.peakExhausted = !!(pr.peak && !pr.exercise && (opts.peakSkip || 0) > 0);
@@ -294,11 +331,26 @@
     return env;
   }
 
+  /* Plain messages for any section whose minutes fall outside its range. */
+  function sectionProblems(ctx, st) {
+    var out = [];
+    sectionsFor(ctx, st.classType).forEach(function (s) {
+      var m = sum(s.blocks.map(function (b) { return Number(st.timing[b]) || 0; }));
+      var lo = val(s.range.min), hi = val(s.range.max);
+      if (m < lo - 1e-9 || m > hi + 1e-9) {
+        out.push(s.label + ' has ' + m + ' minutes. It needs ' + (lo === hi ? lo : lo + ' to ' + hi) + ' minutes.');
+      }
+    });
+    return out;
+  }
+
   function isPeakPrep(env, blockId, e) {
     if (!env.peak || !env.peakEx || blockId !== val(env.ct.peakBlock) || e.equipment !== env.peakEx.equipment) return false;
     // only borrow working exercises, not warm-ups, bridges or stretches
-    var working = ['abs', 'lower', 'upper', 'side', 'prone', 'full'];
-    if (!e.blocks.some(function (b) { return working.indexOf(b) >= 0; })) return false;
+    // borrow only from working blocks that come before the peak, so later blocks keep their options
+    var order = env.blocks.map(function (b) { return b.id; });
+    if (!e.blocks.some(function (b) { var i = order.indexOf(b); return WORKING.indexOf(b) >= 0 && i >= 0 && i <= env.peakBlockIndex; })) return false;
+    if ((e.tags || []).indexOf('supine-arms') >= 0) return false;
     var req = env.peak.requires || [];
     return e.prepares.some(function (t) { return req.indexOf(t) >= 0; });
   }
@@ -397,8 +449,9 @@
   function enumeratePlans(env) {
     var feas = feasibleStations(env);
     var empty = [];
-    feas.forEach(function (f, i) { if (!f.length) empty.push(env.blocks[i].label); });
-    if (empty.length) return { plans: [], empty: empty };
+    var emptyIds = [];
+    feas.forEach(function (f, i) { if (!f.length) { empty.push(env.blocks[i].label); emptyIds.push(env.blocks[i].id); } });
+    if (empty.length) return { plans: [], empty: empty, emptyIds: emptyIds };
     var maxSeg = env.W.maxSegments || 5;
     var plans = [];
     var cur = [];
@@ -469,8 +522,18 @@
     s += R.bias * ((ex.intensity || 1) - 1.5) * W.challenge;
     s -= W.dislike * (env.soft.dislike[ex.id] || 0);
     s -= W.overused * (env.soft.overused[ex.id] || 0);
+    if (R.jayOverused.has(ex.id)) s -= W.jayOverused || 0;
     if (env.recent.has(ex.id)) s -= W.recent;
     if (ex.usesStraps && state.straps >= W.strapLimit) s -= W.strapOver;
+    // Jay's level guidance: fewer position changes at Level 1, more skill work at Level 1.5
+    if (last && last.position !== ex.position) s -= (W.positionChange || 0) * R.transition;
+    var tags = ex.tags || [];
+    if (R.preferSkills.length && tags.some(function (t) { return R.preferSkills.indexOf(t) >= 0; })) s += W.skillBonus || 0;
+    // the abs block includes one supine arms exercise
+    if (env.blocks[bi] && env.blocks[bi].id === 'abs' && tags.indexOf('supine-arms') >= 0) {
+      var have = chosen.some(function (c) { return (c.tags || []).indexOf('supine-arms') >= 0; });
+      s += (have ? -1 : 1) * (W.supineArms || 0);
+    }
     return s;
   }
 
@@ -505,7 +568,49 @@
     return Math.abs(total - M) < 1e-9 ? mins : null;
   }
 
+  /* Cost of running a block in this order: floor trips, spring changes and position changes. */
+  function orderCost(env, list, prevItem) {
+    var W = env.W, c = 0, prev = prevItem;
+    for (var i = 0; i < list.length; i++) {
+      var e = list[i];
+      if (prev) {
+        if (!!prev.floor !== !!e.floor) c += 10;
+        if (prev.equipment === e.equipment && prev.springs !== e.springs) {
+          c += W.springChange * (springWeight(env, e) < springWeight(env, prev) ? W.springDropFactor : 1);
+        }
+        if (prev.position !== e.position) c += (W.positionChange || 0) * env.R.transition;
+      }
+      prev = e;
+    }
+    return c;
+  }
+
+  function permutations(list) {
+    if (list.length <= 1) return [list.slice()];
+    var out = [];
+    list.forEach(function (x, i) {
+      permutations(list.slice(0, i).concat(list.slice(i + 1))).forEach(function (p) { out.push([x].concat(p)); });
+    });
+    return out;
+  }
+
   function orderBlock(env, items, prevItem, peakEx) {
+    var peak = peakEx && items.indexOf(peakEx) >= 0 ? peakEx : null;
+    var rest = items.filter(function (e) { return e !== peak; });
+    // small blocks: try every order and keep the smoothest (peak always last)
+    if (rest.length <= 6) {
+      var best = null, bestCost = Infinity;
+      permutations(rest).forEach(function (p) {
+        var full = peak ? p.concat([peak]) : p;
+        var cost = orderCost(env, full, prevItem);
+        if (cost < bestCost - 1e-9) { bestCost = cost; best = full; }
+      });
+      return best;
+    }
+    return orderBlockSorted(env, items, prevItem, peakEx);
+  }
+
+  function orderBlockSorted(env, items, prevItem, peakEx) {
     var prevFloor = !!(prevItem && prevItem.floor);
     var peak = peakEx && items.indexOf(peakEx) >= 0 ? peakEx : null;
     var rest = items.filter(function (e) { return e !== peak; });
@@ -659,7 +764,7 @@
     var flat = flatItems(ctx, cls);
     var plan = cls.blocks.map(function (b) { return b.station; });
     var s = planScore(env, plan, shareTargets(env));
-    var last = null;
+    var last = null, prevPos = null;
     flat.forEach(function (f) {
       var e = f.ex;
       if (e.equipment !== 'standing') {
@@ -668,7 +773,10 @@
         }
         last = e;
       }
+      if (prevPos && prevPos !== e.position) s += (W.positionChange || 0) * env.R.transition;
+      prevPos = e.position;
       s += W.dislike * (env.soft.dislike[e.id] || 0) + W.overused * (env.soft.overused[e.id] || 0);
+      if (env.R.jayOverused.has(e.id)) s += W.jayOverused || 0;
       if (env.recent.has(e.id)) s += W.recent;
     });
     var fam = {};
@@ -706,6 +814,10 @@
     });
     var total = sum(cls.blocks.map(function (b) { return sum(b.items.map(function (it) { return it.minutes; })); }));
     if (Math.abs(total - val(ct.minutes)) > 1e-9) add('total-minutes', 'Class is ' + total + ' minutes, needs ' + val(ct.minutes));
+    // section minutes, measured from what is actually in the class
+    var actual = {};
+    cls.blocks.forEach(function (b) { actual[b.id] = sum(b.items.map(function (it) { return it.minutes; })); });
+    sectionProblems(ctx, { classType: st.classType, timing: actual }).forEach(function (p) { add('section-timing', p); });
     var flat = flatItems(ctx, cls);
     var seen = {};
     var chairMinutes = 0;
@@ -722,6 +834,7 @@
       if (FLEX_ORDER[e.spinalFlexion] > R.maxFlex) add('client-group', e.name + ' is a deep loaded curl');
       if (e.bodyPartsLifted > R.maxLifted) add('body-contact', e.name + ' lifts too much for the level');
       if (e.unilateral && !R.allowUni) add('unilateral', e.name + ' is unilateral');
+      if (skillClash(R, e)) add('level-skill', e.name + ' needs ' + skillClash(R, e) + ', which the level leaves out');
       if (!stationAvailable(st, e.equipment)) add('equipment', e.name + ' needs unticked equipment');
       if (e.props.length && !st.equipment.props) add('equipment', e.name + ' needs props');
       if (e.equipment === 'chair') chairMinutes += f.item.minutes;
@@ -753,12 +866,30 @@
       if (peakItems.length !== 1) add('peak', 'Peak pose missing');
       else {
         var p = peakItems[0];
-        if (p.block.id !== val(ct.peakBlock)) add('peak', 'Peak is not in full body integration');
+        if (p.block.id !== val(ct.peakBlock)) add('peak', 'Peak is not in the full body block');
         if (p.ii !== p.block.items.length - 1) add('peak', 'Peak is not at the end of its block');
         if (p.item.id !== cls.peak.exerciseId) add('peak', 'Peak exercise mismatch');
       }
     }
     return problems;
+  }
+
+  /* Which unticked equipment would give these blocks something to use, in plain words. */
+  function equipmentHint(env, blockIds) {
+    var ctx = env.ctx;
+    var all = Object.assign({}, env.st, { equipment: {} });
+    ctx.checkboxes.forEach(function (c) { all.equipment[c.id] = true; });
+    var want = {};
+    ctx.exercises.forEach(function (e) {
+      if (!e.blocks.some(function (b) { return blockIds.indexOf(b) >= 0; })) return;
+      if (stationAvailable(env.st, e.equipment) || hardCheck(ctx, all, env.R, e)) return;
+      var ids = e.equipment === 'box' ? ['box'].concat(env.st.equipment.reformer ? [] : ['reformer']) : [e.equipment];
+      if (e.props.length && !env.st.equipment.props) ids.push('props');
+      ids.forEach(function (id) { want[id] = true; });
+    });
+    var labels = ctx.checkboxes.filter(function (c) { return want[c.id]; }).map(function (c) { return c.id === 'props' ? 'Small props' : c.label; });
+    if (!labels.length) return 'Try ticking more equipment or choosing a different level.';
+    return 'Tick the ' + joinAnd(labels, 'or') + '.';
   }
 
   function layoutMessage(env, why) {
@@ -793,7 +924,7 @@
     var res = enumeratePlans(env);
     if (!res.plans.length) {
       var why = res.empty.length
-        ? 'Nothing fits the ' + res.empty.map(function (x) { return x.toLowerCase(); }).join(', ') + ' block with this equipment at ' + levelLabel(env.R.levelRank) + ' for ' + ctx.groups[env.st.group].label.toLowerCase() + ' clients. Try ticking more equipment, like the Reformer.'
+        ? 'Nothing fits the ' + joinAnd(res.empty.map(function (x) { return x.toLowerCase(); })) + (res.empty.length > 1 ? ' blocks' : ' block') + ' with this equipment at ' + levelLabel(env.R.levelRank) + ' for ' + ctx.groups[env.st.group].label.toLowerCase() + ' clients. ' + equipmentHint(env, res.emptyIds)
         : 'No way to lay out the equipment that keeps the long box at least ' + env.R.boxMin + ' minutes and follows the level limits. Try ticking more equipment.';
       return { ok: false, errors: [why], messages: env.messages, peakTried: !!env.peakEx };
     }
@@ -820,7 +951,7 @@
         var blocks = fillPlan(env, pk.p);
         if (!blocks) { debug.fillFailed++; continue; }
         var cls = {
-          version: 1,
+          version: CLASS_VERSION,
           settings: env.st,
           createdAt: new Date().toISOString(),
           peak: env.peakRequested ? { id: env.peakRequested.id, name: env.peakRequested.name, exerciseId: env.peakEx ? env.peakEx.id : null, stepDown: env.peakEx && env.peakRequested.versions[0] !== env.peakEx.id } : null,
@@ -833,11 +964,13 @@
       }
     });
     if (!candidates.length) {
-      for (var q = 0; q < scored.length && q < 60 && !candidates.length; q++) {
+      // tight setups: give each of the best plans several more tries before giving up
+      for (var q = 0, attempt = 0; q < scored.length && q < 60 && !candidates.length; attempt++) {
+        if (attempt >= (q < 5 ? 8 : 1)) { q++; attempt = -1; continue; }
         var blocks2 = fillPlan(env, scored[q].p);
         if (!blocks2) { debug.fillFailed++; continue; }
         var cls2 = {
-          version: 1, settings: env.st, createdAt: new Date().toISOString(),
+          version: CLASS_VERSION, settings: env.st, createdAt: new Date().toISOString(),
           peak: env.peakRequested ? { id: env.peakRequested.id, name: env.peakRequested.name, exerciseId: env.peakEx ? env.peakEx.id : null, stepDown: env.peakEx && env.peakRequested.versions[0] !== env.peakEx.id } : null,
           blocks: blocks2, messages: env.messages.slice()
         };
@@ -926,8 +1059,13 @@
     swapOptions: swapOptions,
     applySwap: applySwap,
     templateFor: templateFor,
+    sectionsFor: sectionsFor,
+    sectionOf: sectionOf,
+    timingFits: timingFits,
+    sectionProblems: sectionProblems,
+    CLASS_VERSION: CLASS_VERSION,
     defaultEquipment: defaultEquipment,
     stationAvailable: stationAvailable,
-    _internal: { makeEnv: makeEnv, enumeratePlans: enumeratePlans, planScore: planScore, allocate: allocate, floorRuns: floorRuns }
+    _internal: { makeEnv: makeEnv, fillPlan: fillPlan, enumeratePlans: enumeratePlans, planScore: planScore, allocate: allocate, floorRuns: floorRuns }
   };
 });

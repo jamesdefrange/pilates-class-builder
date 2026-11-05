@@ -17,6 +17,12 @@
 .card-head { border-bottom: 2px solid #000; padding-bottom: calc(3pt * var(--s)); margin-bottom: calc(4pt * var(--s)); }
 .card-title { font-size: calc(12pt * var(--s)); font-weight: 800; }
 .card-sub { font-size: calc(8pt * var(--s)); }
+.card-sec {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 6pt;
+  font-weight: 800; font-size: calc(10pt * var(--s)); letter-spacing: .02em;
+  border-bottom: 1.5pt solid #000; padding-bottom: calc(1pt * var(--s)); margin: calc(3pt * var(--s)) 0 calc(3pt * var(--s));
+}
+.card-sec span:last-child { font-size: calc(8.4pt * var(--s)); font-weight: 700; white-space: nowrap; }
 .card-block { margin-bottom: calc(4pt * var(--s)); break-inside: avoid; }
 .card-bh {
   display: flex; justify-content: space-between; gap: 6pt; align-items: baseline;

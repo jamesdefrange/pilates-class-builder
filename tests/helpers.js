@@ -40,8 +40,9 @@ const EQUIP_SETS = [
 const PEAKS = [null, 'teaser', 'elephant', 'swan', 'long-stretch', 'side-plank', 'mermaid', 'single-leg-bridge', 'knee-stretches', 'short-spine', 'star', 'going-up-front'];
 
 /* Without a reformer, bridging and prone work all happen on the floor, so older clients (one floor
-   visit) and Level 1 (no chair) often cannot be built. Those pairings are tested separately (they must
-   fail with a clear message) and moved here to Level 1.5 middle-aged. */
+   visit) and Level 1 (no chair) often cannot be built. At Level 1, plank is only on the mat or the long
+   box (Jay), so a reformer-only room cannot be Level 1 either. Those pairings are tested separately (they
+   must fail with a clear message) and moved here to Level 1.5 middle-aged. */
 function spread(n) {
   const list = [];
   for (let i = 0; i < n; i++) {
@@ -52,6 +53,7 @@ function spread(n) {
       equipment: EQUIP_SETS[Math.floor(i / 3) % EQUIP_SETS.length] || undefined
     };
     if (s.equipment && !s.equipment.reformer && s.level === '1') s.level = '1.5';
+    if (s.equipment && s.level === '1' && !s.equipment.mat && !s.equipment.box) s.level = '1.5';
     if (s.equipment && !s.equipment.reformer && s.group === 'older') s.group = 'middle';
     list.push(s);
   }
