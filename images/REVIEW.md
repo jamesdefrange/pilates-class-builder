@@ -4,8 +4,9 @@ Images listed here were generated but did not clearly match the exercise after 3
 
 | Image | Exercise | Status | What is off |
 |---|---|---|---|
-| bx-seated-chest-exp.jpg | Chest expansion on the box | needs review | Figure faces the footbar with the straps coming from behind it. It should face the strap end and pull straight arms back past the hips. 3 tries, best kept. |
 | mt-diamond-press.jpg | Diamond press | failed | Blocked by the image content filter twice, once with the original wording and once with plainer wording. No image made, the placeholder shows. Lying face down poses sometimes trip the filter. |
+
+Fixed later: chest expansion on the box (try 4, November 5) came out right once the prompt put the camera behind the figure.
 
 ## Kept with small imperfections
 
