@@ -114,6 +114,7 @@ h3 { font-size: 18px; margin: 0; }
 .choices { display: grid; gap: 10px; }
 .choices.cols-4 { grid-template-columns: repeat(4, 1fr); }
 .choices.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.choices.cols-2 { grid-template-columns: repeat(2, 1fr); }
 .choice {
   position: relative; min-height: 64px; padding: 12px 14px; border-radius: 12px;
   border: 2px solid var(--line-2); background: var(--card); cursor: pointer; text-align: center;

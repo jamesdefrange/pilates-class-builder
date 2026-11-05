@@ -36,13 +36,13 @@ Every judgment call made during the overnight build, with the reason. Newest sec
 - **"Limited chair" at Level 1.5 = up to 12 minutes, Level 1.5 chair exercises only.** Simple and easy to change in levels.json.
 - **No inversions below Level 2 for anyone, never for older clients.** Safer reading.
 - **Older clients: one trip to the floor per class, hard rule.** "Minimize getting up and down" is enforced, not just nudged. Middle-aged 2, younger 3 (assumptions).
-- **Older clients get about 20 percent more time per exercise** (slower transitions) and the gentle timing template (7 minute footwork, 5 minute stretch, 5 minute wind-down).
+- **Older clients get about 20 percent more time per exercise** (slower transitions) and the gentle timing template. (Since November 5: 7 minute footwork inside the 15 minute warm up, a little more strength work and less full body, all inside Jay's section ranges.)
 - **Exercise levels were placed half a level higher when in doubt**, to dial everything slightly gentler.
 
 ## Blocks and timings
 
-- **The two added blocks are "Side and lateral work" (after upper body) and "Stretch" (before the closing pull down).** Both marked assumption. Standard timings: 6, 4, 5, 6, 6, 4, 7, 4, 4, 4 = 50.
-- **Built-in templates: Standard, Gentle pace (older clients), Long warm-up (Jay's 15 minute example).** Jay can save his own and set a default. When no default is set, the template follows the client group.
+- **Replaced on November 5 by Jay's real Flow structure** (see the last section). Originally: two added blocks, "Side and lateral work" and "Stretch", and 10 blocks timed 6, 4, 5, 6, 6, 4, 7, 4, 4, 4.
+- **Built-in templates (since November 5): Standard, Gentle pace (older clients), More strength and tone, More full body.** Jay can save his own and set a default. When no default is set, the template follows the client group.
 - **Exercise times are in half-minute steps** so every block lands exactly on its minutes.
 
 ## Equipment and flow
@@ -57,11 +57,11 @@ Every judgment call made during the overnight build, with the reason. Newest sec
 
 ## Generator
 
-- **How it works:** it lists every sensible way to lay out equipment across the 10 blocks (up to 5 stretches of equipment), scores each layout (equipment changes, short hops, equipment percentages, long box minimum, chair limit, floor visits), samples a few good ones, fills each block with exercises (spring changes, variety, peak preparation, level fit, Jay's feedback, recent classes), checks every hard rule, and returns one of the best. Randomness plus a penalty for exercises used in the last two builds gives real variety on Build another.
+- **How it works:** it lists every sensible way to lay out equipment across the blocks (up to 5 stretches of equipment), scores each layout (equipment changes, short hops, equipment percentages, long box minimum, chair limit, floor visits), samples a few good ones, fills each block with exercises (spring changes, variety, peak preparation, level fit, Jay's feedback, recent classes), checks every hard rule, and returns one of the best. Randomness plus a penalty for exercises used in the last two builds gives real variety on Build another.
 - **No repeats within a class is enforced as a hard rule** (the brief listed it as soft). It is never worth breaking.
 - **Jay's feedback:** Unsafe removes an exercise everywhere. Wrong level removes it at that level and below. Too hard removes it for that client group at that level and below. Don't like it and Overused are strong nudges, not bans.
-- **"Allow lower-level exercises" off** means blocks use only exercises at the class level, except footwork, stretch and wind-down, which always allow basics. If a block cannot be filled that way, easier ones come back for that block and the class says so.
-- **Peak pose goes last in the full body integration block.** The builder tries the peak's versions in order and uses the first that is allowed and can actually be built with the ticked equipment. The message names the reason in plain words.
+- **"Allow lower-level exercises" off** means blocks use only exercises at the class level, except footwork and stretch, which always allow basics. If a block cannot be filled that way, easier ones come back for that block and the class says so.
+- **Peak pose goes last in the full body block** (full body integration before November 5). The builder tries the peak's versions in order and uses the first that is allowed and can actually be built with the ticked equipment. The message names the reason in plain words.
 - **The peak block may borrow working exercises from other blocks** when they are on the peak's equipment and prepare the peak (for example pulling straps before swan on the box). Without this, some peaks on the box or mat could not be built.
 - **Earlier blocks lean toward exercises that prepare what the peak needs,** more strongly as the class gets closer to the peak, with a bonus for the peak's build-up exercises in order. Across all 18 peaks, the first 6 blocks cover 71 to 98 percent of what the peak needs on average.
 - **Strap work is capped softly at 5 exercises a class** because Jay's old routines lean on straps.
@@ -85,3 +85,30 @@ Every judgment call made during the overnight build, with the reason. Newest sec
 - **Content filter blocks are treated like errors.** In the first image run, 4 lying or open-leg poses came back blocked. Each followed James's rule (wait 2 minutes, retry once) with clearer wording and "no anatomical detail", and all 4 worked. The base prompt now includes "no anatomical detail, like a store display mannequin" so later images avoid the block.
 - **Images run in batches of about 85 to 90** per helper so each helper's notes stay manageable. Progress lives in images/status.json, so a new helper picks up exactly where the last stopped.
 - **Keep-awake turned on for the image run.** The helper found the slowdown came from the Mac pausing and tool timeouts, not Higgsfield. The app's keep-awake request stops idle sleep only, for this session, and changes no settings.
+
+## Jay's Flow structure (November 5)
+
+Jay sent his real Club Pilates Flow structure. James asked for it to be applied autonomously, so the brief was treated as the passed gates again. Everything Jay gave is marked jay in the data.
+
+- **Four sections, eleven blocks, in Jay's order.** Warm up (Footwork, Bridge, Abs and supine arms), Strength and tone (Plank, Lower body, Upper back, Upper front, Side body and rotation), Functional (Full body, Back extension), Lengthening (Stretch). Full body and back extension appear only in Functional.
+- **Section ranges are hard rules.** Warm up exactly 15, Strength and tone 15 to 20, Functional 10 to 15, Lengthening exactly 5, and the class still totals 50. The builder refuses a timing outside a range with a plain message, the validator checks it, and the timing screen only lets Jay save timings that fit.
+- **Block minutes inside a section are my guess.** Standard: plank 3, lower body 4, upper back 4, upper front 4, side body 3; full body 7, back extension 5. Footwork 6, bridge 4 and abs 5 came from Jay before. Question for Jay.
+- **Block ids kept where the meaning did not change** (bridging, prone and so on), so saved feedback still points at the right exercises. New ids: plank, upperback, upperfront. Upper body was split into the two; wind down was folded into stretch.
+- **Old timings and classes are handled, not deleted.** Timings saved for the 10 block layout are set aside on the timing screen. Old saved classes still open and print, with a note, but swap and lock are off for them.
+- **Upper body split by movement.** Pulling work (chest expansion, biceps, rows, reverse fly) is upper back. Pressing and front of shoulders (serve a tray, presentation, hug a tree, salute, push-ups, chest press) is upper front. Seated arm series with weights fits both.
+- **Supine arms moved into the abs block** and tagged supine-arms. The builder nudges one supine arms exercise into most abs blocks and discourages a second. Question for Jay whether every class should have one.
+- **Jay's four overused supine arms (lower and lift, triceps press, abduction, arm circles) are weighted down hard.** Weight 8, the same strength as an exercise Jay disliked once. In 300 test builds they never came up, because fresher options always fit. A test proves they still appear when nothing fresher fits.
+- **68 exercises added** so plank, side body and rotation, upper back, upper front and supine arms have plenty of Level 1 and 1.5 options across equipment, plus a few Level 1 back extension moves that testing showed were short. All marked research.
+- **Level 1 plank is only on the mat or with forearms or hands on the long box,** as Jay said. A reformer-only room cannot build a Level 1 class now; the app says "Tick the Mat or Long box." I did not add a Level 1 reformer plank, because Jay named the places.
+- **No springboard plank.** Planks on the springboard are not standard work, so the plank block uses the mat, box, reformer, chair and Bosu.
+- **Jay's level guidance is encoded with skill tags.** Every exercise can carry coordination, balance or stability. Level 1 never uses coordination or balance work (hard rule, Jay: no tricky moves). Two existing Level 1 exercises that combine arm presses with footwork moved to Level 1.5 so the data reads true. Level 1.5 gets a bonus for coordination, balance and stability work.
+- **Transitions follow Jay too.** Each change of position (lying, seated, kneeling, standing) costs points, three times as much at Level 1 as at Level 1.5. In 300 test builds, Level 1 classes averaged about 8 position changes and Level 1.5 about 14.
+- **Blocks are ordered for smoothness.** Inside each block, the builder now tries every order (blocks have 2 to 6 exercises) and keeps the one with the fewest floor trips, spring changes and position changes, with the peak last.
+- **The peak block only borrows from blocks before it.** Borrowing from back extension or stretch was starving those later blocks in tight setups.
+- **Tight setups get more tries.** When the first round of plans cannot be filled, each of the best 5 plans gets up to 8 more tries before the app gives up.
+- **When a block has nothing to use, the message names the equipment to tick,** worked out from the library (for example "Tick the Mat or Long box").
+- **Levels 2 and 2.5 moved under More options**, as Jay asked. Level 1 and 1.5 are the two big buttons and Level 1 is the default. The level note on the setup screen now shows Jay's guidance.
+- **Cue card keeps the same fold:** first half of class on the left, second half on the right. Section headers print above their blocks. When the fold lands inside a section, the right half repeats the header with "continued".
+- **Two questions retired, four added.** The closing pull down and the two added blocks are answered by Jay's structure. New questions cover the split inside sections, supine arms in every class, how strict Level 1 is, and where the closing pull down went.
+- **Images for the 68 new exercises are made one at a time** with the same pacing rules and checks as before.
+

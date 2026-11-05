@@ -301,7 +301,7 @@
       '<button type="button" class="btn" data-action="pdf">' + icon('pdf') + 'Save as PDF</button>' +
       '<button type="button" class="btn" data-action="save-class">' + icon('save') + 'Save class</button></div>';
     var old = isOldLayout(cls);
-    if (old) h += '<div class="notice">' + icon('info') + '<div>This class was built with the old 10 block layout, before Jay\'s four sections. You can still print it. Press Build another for the new layout.</div></div>';
+    if (old) h += '<div class="notice">' + icon('info') + '<div>This class was built with the old 10 block layout, before the four sections. You can still print it. Press Build another for the new layout.</div></div>';
     var locked = cls.blocks.filter(function (b) { return b.locked; }).length;
     if (locked && !old) h += '<div class="notice ok">' + icon('lock') + '<div>' + locked + ' locked ' + (locked === 1 ? 'block stays' : 'blocks stay') + ' the same when you press Build another.</div></div>';
 
@@ -421,7 +421,7 @@
     var saved = findTemplate(timingWork.id);
     var changed = !saved || flow.blocks.some(function (b) { return saved.minutes[b.id] !== timingWork.minutes[b.id]; });
     var def = S.getDefaultTemplate();
-    var h = '<div class="narrow"><h1>Block timings</h1><p class="lede">Minutes for each of the ' + flow.blocks.length + ' blocks, in Jay\'s four sections. Each section stays inside its range and the class adds up to ' + target + '.</p>';
+    var h = '<div class="narrow"><h1>Block timings</h1><p class="lede">Minutes for each of the ' + flow.blocks.length + ' blocks, in four sections. Each section stays inside its range and the class adds up to ' + target + '.</p>';
     var oldCount = oldTemplateCount();
     if (oldCount) h += '<div class="notice">' + icon('info') + '<div>' + oldCount + ' saved ' + (oldCount === 1 ? 'timing was' : 'timings were') + ' made for the old 10 block layout, so ' + (oldCount === 1 ? 'it is' : 'they are') + ' set aside. Make a new one below.</div></div>';
     h += '<section class="section"><div class="field"><label for="tpl">Timing template</label><select id="tpl" class="select" data-action="tpl-pick">' +

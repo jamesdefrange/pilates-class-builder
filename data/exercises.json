@@ -11,7 +11,8 @@
     "minutes": "min, typical and max minutes the generator may give it.",
     "prepares": "Joints and movement patterns this exercise warms up, used to build toward a peak pose.",
     "pose": "Plain description of the position, used for the image prompt.",
-    "family": "Similar exercises share a family. The generator avoids too many from one family."
+    "family": "Similar exercises share a family. The generator avoids too many from one family.",
+    "tags": "Extra labels: supine-arms (supine arms in the abs block) and the skills coordination, balance and stability used by the level rules."
   },
   "exercises": [
     {

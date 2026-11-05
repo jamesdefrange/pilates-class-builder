@@ -1,17 +1,75 @@
 {
   "about": "Things only Jay can confirm. Shown on the Questions for Jay screen and in QUESTIONS-FOR-JAY.md.",
   "questions": [
-    { "q": "Your reformer springs: is red heavy, blue medium and yellow light right for your studio? How many springs does each reformer have?", "why": "Every spring color in the app is a guess based on Balanced Body.", "file": "equipment.json" },
-    { "q": "Reformer about 70 percent: did you mean 70 percent of each class, or that 70 percent of your classes use the reformer?", "why": "The app aims for about 70 percent of each class on the reformer.", "file": "equipment.json" },
-    { "q": "What is the closing pull down? A standing roll down, or something on the springboard or reformer?", "why": "The last block is set up as standing roll downs and calm finishing moves.", "file": "class-types.json" },
-    { "q": "I added two blocks: side work (4 minutes) and a stretch (4 minutes). Are those the right two, in the right places?", "why": "You named 8 blocks. Flow has 10.", "file": "class-types.json" },
-    { "q": "At Level 1, is a small head and shoulders curl (HNS) fine?", "why": "The app allows it at Level 1 and does not count it as a body part lifting.", "file": "levels.json" },
-    { "q": "At Level 1, is side-lying leg work (one leg at a time) unilateral for you?", "why": "The app treats it as unilateral, so it waits until Level 1.5.", "file": "levels.json" },
-    { "q": "Limited chair at Level 1.5: is up to 12 minutes of easy chair work about right?", "why": "That is the limit the app uses.", "file": "levels.json" },
-    { "q": "Plank on the reformer with feet on the platform: where are the hands, footbar or carriage?", "why": "The app shows hands on the footbar.", "file": "exercises.json" },
-    { "q": "For older clients, is one trip down to the floor per class the right limit?", "why": "The app never sends older clients to the floor more than once.", "file": "client-groups.json" },
-    { "q": "Is kneeling on the carriage (knee stretches, kneeling arm work) fine for your older clients?", "why": "The app allows it from Level 1.5.", "file": "exercises.json" },
-    { "q": "Does the 10 minute long box rule also apply when the box is turned the short way for abs?", "why": "The app treats both as the box being on.", "file": "equipment.json" },
-    { "q": "On the chair, which spring settings do you call light, medium and heavy?", "why": "Chair springs show as light, medium or heavy with no hole positions yet.", "file": "equipment.json" }
+    {
+      "q": "Your reformer springs: is red heavy, blue medium and yellow light right for your studio? How many springs does each reformer have?",
+      "why": "Every spring color in the app is a guess based on Balanced Body.",
+      "file": "equipment.json"
+    },
+    {
+      "q": "Reformer about 70 percent: did you mean 70 percent of each class, or that 70 percent of your classes use the reformer?",
+      "why": "The app aims for about 70 percent of each class on the reformer.",
+      "file": "equipment.json"
+    },
+    {
+      "q": "Inside Strength and tone (18 minutes) the app gives plank 3, lower body 4, upper back 4, upper front 4 and side body 3. Inside Functional (12) it gives full body 7 and back extension 5. Is that how you split them?",
+      "why": "You gave the section minutes. The split inside each section is a guess.",
+      "file": "class-types.json"
+    },
+    {
+      "q": "Should every Abs block have one supine arms exercise, or only some classes?",
+      "why": "The app puts one in most classes, and never more than one on purpose.",
+      "file": "class-types.json"
+    },
+    {
+      "q": "Level 1 leaves out anything that needs coordination or balance, like footwork with arm presses. Is that too strict?",
+      "why": "Those exercises now start at Level 1.5.",
+      "file": "levels.json"
+    },
+    {
+      "q": "Your first notes had a closing pull down. It is now one of the options inside Stretch. Is that right?",
+      "why": "Your new structure ends with 5 minutes of Stretch and no separate wind down.",
+      "file": "class-types.json"
+    },
+    {
+      "q": "At Level 1, is a small head and shoulders curl (HNS) fine?",
+      "why": "The app allows it at Level 1 and does not count it as a body part lifting.",
+      "file": "levels.json"
+    },
+    {
+      "q": "At Level 1, is side-lying leg work (one leg at a time) unilateral for you?",
+      "why": "The app treats it as unilateral, so it waits until Level 1.5.",
+      "file": "levels.json"
+    },
+    {
+      "q": "Limited chair at Level 1.5: is up to 12 minutes of easy chair work about right?",
+      "why": "That is the limit the app uses.",
+      "file": "levels.json"
+    },
+    {
+      "q": "Plank on the reformer with feet on the platform: where are the hands, footbar or carriage?",
+      "why": "The app shows hands on the footbar.",
+      "file": "exercises.json"
+    },
+    {
+      "q": "For older clients, is one trip down to the floor per class the right limit?",
+      "why": "The app never sends older clients to the floor more than once.",
+      "file": "client-groups.json"
+    },
+    {
+      "q": "Is kneeling on the carriage (knee stretches, kneeling arm work) fine for your older clients?",
+      "why": "The app allows it from Level 1.5.",
+      "file": "exercises.json"
+    },
+    {
+      "q": "Does the 10 minute long box rule also apply when the box is turned the short way for abs?",
+      "why": "The app treats both as the box being on.",
+      "file": "equipment.json"
+    },
+    {
+      "q": "On the chair, which spring settings do you call light, medium and heavy?",
+      "why": "Chair springs show as light, medium or heavy with no hole positions yet.",
+      "file": "equipment.json"
+    }
   ]
 }

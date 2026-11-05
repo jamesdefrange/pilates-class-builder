@@ -36,6 +36,11 @@ The four levels (1, 1.5, 2, 2.5). Each has:
 - `allowUnilateral`: single leg or single arm work.
 - `maxChairMinutes`: 0 means no chair, `null` means no limit.
 - `allowInversions`.
+- `avoidSkills`: skill tags the level never uses. Level 1 leaves out coordination and balance (Jay: foundation work, no tricky moves).
+- `preferSkills`: skill tags the builder leans toward. Level 1.5 prefers coordination, balance and stability (Jay).
+- `transitionFactor`: how hard the builder works to keep clients in one position. High at Level 1, low at Level 1.5.
+
+Each level also has `guidance`, Jay's own words on how the level should feel. It shows on the setup screen.
 
 ### client-groups.json
 
@@ -45,8 +50,10 @@ Older, middle-aged, younger. Hard rules (never broken): `allowInversions`, `maxS
 
 Class types. Only Flow is switched on; the others show as coming soon. Flow has:
 
-- `blocks`: the 10 blocks in order. Never reorder unless Jay asks.
-- `timingTemplates`: built-in block minutes. Each must add up to 50. Jay can make his own in the app (saved in his browser).
+- `sections`: Jay's four sections in order, each with its blocks, usual minutes and allowed `range`: Warm up 15, Strength and tone 15 to 20, Functional 10 to 15, Lengthening 5.
+- `blocks`: the 11 blocks in order, each tagged with its section. Never reorder unless Jay asks.
+- `timingTemplates`: built-in block minutes. Each must add up to 50 and keep every section inside its range. Jay can make his own in the app (saved in his browser).
+- `overusedByJay`: exercises Jay called overused. They are weighted down hard but can still appear.
 - `scoring`: weights for the soft rules. Higher means the builder cares more. For example `equipmentChange` and `springChange` set how hard it works to avoid changes, `shareDeviation` how closely it follows the equipment percentages, `variety` how much randomness there is between builds.
 
 ### equipment.json
@@ -57,7 +64,7 @@ Class types. Only Flow is switched on; the others show as coming soon. Flow has:
 
 ### exercises.json
 
-The exercise library (255 exercises). Fields:
+The exercise library (323 exercises). Fields:
 
 | Field | Meaning |
 |---|---|
@@ -85,6 +92,7 @@ The exercise library (255 exercises). Fields:
 | `olderNote` | Extra note shown for older clients. |
 | `intensity` | 1 easy, 2 moderate, 3 hard within its level. |
 | `family` | Similar exercises share a family, so the builder spreads them out. |
+| `tags` | Extra labels: `supine-arms` (counts as supine arms in the abs block), and the skills `coordination`, `balance` and `stability` used by the level rules. |
 | `pose` | Plain description of the position, used to make the image. For springboard exercises, say which way the figure faces, for example "back toward the board" or "top of the head near the base of the board, feet pointing away". The image service gets this wrong otherwise. |
 | `image` | File name in /images. |
 | `source` | jay, research or assumption. |

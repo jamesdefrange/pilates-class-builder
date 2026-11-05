@@ -1,6 +1,6 @@
 # Pilates class builder
 
-A free web app for Jay that builds varied 50 minute Pilates flow classes. Each class leads up to a chosen peak pose, follows the level rules, keeps equipment and spring changes low, and prints as a cue card that folds in half.
+A free web app for Jay that builds varied 50 minute Pilates flow classes in his four sections (Warm up, Strength and tone, Functional, Lengthening). Each class leads up to a chosen peak pose, follows the level rules, keeps equipment and spring changes low, and prints as a cue card that folds in half.
 
 No logins, no server, no paid services. Everything Jay saves stays in his browser.
 
